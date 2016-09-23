@@ -5,9 +5,12 @@ import pandas as pd
 import numpy as np
 import time
 
+a = np.arange(6)
+b = np.arange(6).reshape((2, 3))
 
-training_frame = pd.read_csv("train.csv")
-Math.entropy(training_frame['Sensor2'], 250)
+print a
+print b.reshape(-1, 1)
+print a.reshape(1, -1)
 
 
 
