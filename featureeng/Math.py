@@ -157,6 +157,43 @@ def entropy(series, no_of_bins=5):
             ret.append(entropy_val[bin-1])
     return np.array(ret)
 
+def probabilty_distribution(series, no_of_bins=5):
+    '''
+            Calculate the probability of data for whole data set
+
+            :param series: Input number series
+            :param no_of_bins: Number of discrete levels
+            :return: calculated result in numpy array
+        '''
+    series = list(series)
+    # Calculate bin size
+    min_value = min(series)
+    max_value = max(series)
+    bin_size = 1.0 * (max_value - min_value) / no_of_bins
+
+    '''
+     Bin size becomes zero when the values in the series are not changing
+     That means probability of occuring that value is 1 which means entropy is zero
+    '''
+
+    if bin_size == 0.0:
+        return np.zeros(shape=len(series))
+
+    # Generating histogram
+    p, x = np.histogram(series, bins=no_of_bins)
+
+    # Calculate probability
+    p = 1.0 * p / sum(p)
+
+    ret = []
+    for num in series:
+        bin = int((num - min_value) / bin_size)
+        if 0 <= bin < no_of_bins:
+            ret.append(p[bin])
+        else:
+            ret.append(p[bin - 1])
+    return np.array(ret)
+
 
 
 
