@@ -118,7 +118,8 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             current_work += 1
             column = testing_frame[column_name]
             p_header = "prob_250_" + column_name
-            testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
+            # testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
+            testing_frame[p_header] = pd.Series(Math.probability_distribution_java(series=column, no_of_bins=250), index=testing_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
 
@@ -247,7 +248,8 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
             current_work += 1
             column = training_frame[column_name]
             p_header = "prob_250_" + column_name
-            training_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=training_frame.index)
+            # training_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=training_frame.index)
+            training_frame[p_header] = pd.Series(Math.probability_distribution_java(series=column, no_of_bins=250), index=training_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
 

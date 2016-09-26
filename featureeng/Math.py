@@ -195,3 +195,35 @@ def probabilty_distribution(series, no_of_bins=5):
         else:
             ret.append(p[bin - 1])
     return np.array(ret)
+
+def probability_distribution_java(series, no_of_bins=5):
+    series = list(series)
+    # Calculate bin size
+    min_value = min(series)
+    max_value = max(series)
+
+    bin_size = 1.0 * (max_value - min_value) / no_of_bins
+
+    if bin_size == 0.0:
+        # if value is not changing probability is one
+        return np.ones(shape=len(series))
+
+    hist = np.zeros(shape=no_of_bins)
+
+    for num in series:
+        bin = int((num - min_value) / bin_size)
+        if 0 <= bin < no_of_bins:
+            hist[bin] += 1
+        else:
+            hist[bin-1] += 1
+
+    hist = 1.0 * hist / sum(hist)
+
+    ret = []
+    for num in series:
+        bin = int((num - min_value) / bin_size)
+        if 0 <= bin < no_of_bins:
+            ret.append(hist[bin])
+        else:
+            ret.append(hist[bin - 1])
+    return np.array(ret)
