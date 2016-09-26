@@ -1,4 +1,7 @@
 import pandas as pd
+import numpy as np
+from featureeng import Math, Select, DataSetSpecific, Progress
+
 def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False):
     print "Testing frame process has started"
     print "---------------------------------"
@@ -28,7 +31,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             column = testing_frame[column_name]
             slices = Select.slice(data_column=column, indices=indices)
 
-            ma_header = column_name + "_ma_5"
+            ma_header = "ma_5_" + column_name
             ma_calculated_array = np.array([])
             for slice in slices:
                 ma_calculated_array = np.concatenate(
@@ -47,7 +50,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             column = testing_frame[column_name]
             slices = Select.slice(data_column=column, indices=indices)
 
-            mm_header = column_name + "_mm_5"
+            mm_header = "mm_5_" + column_name
             mm_calculated_array = np.array([])
             for slice in slices:
                 mm_calculated_array = np.concatenate(
@@ -66,7 +69,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             column = testing_frame[column_name]
             slices = Select.slice(data_column=column, indices=indices)
 
-            sd_header = column_name + "_sd_10"
+            sd_header = "sd_10_" + column_name
             sd_calculated_array = np.array([])
             for slice in slices:
                 sd_calculated_array = np.concatenate(
@@ -85,7 +88,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             column = testing_frame[column_name]
             slices = Select.slice(data_column=column, indices=indices)
 
-            me_header = column_name + "_me_10_5"
+            me_header = "me_10_5_" + column_name
             me_calculated_array = np.array([])
             for slice in slices:
                 #me_calculated_array = np.concatenate((me_calculated_array, Math.moving_entropy(series=slice, window=10, no_of_bins=5, default=True)), axis=0)
@@ -102,7 +105,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
         for column_name in selected_column_names:
             current_work += 1
             column = testing_frame[column_name]
-            e_header = column_name + "_entropy_250"
+            e_header = "entropy_250_" + column_name
             testing_frame[e_header] = pd.Series(Math.entropy(series=column, no_of_bins=250), index=testing_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
@@ -114,7 +117,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
         for column_name in selected_column_names:
             current_work += 1
             column = testing_frame[column_name]
-            p_header = column_name + "_prob_250"
+            p_header = "prob_250_" + column_name
             testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
@@ -162,7 +165,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
             column = training_frame[column_name]
             slices = Select.slice(data_column=column, indices=indices)
 
-            ma_header = column_name + "_ma_5"
+            ma_header = "ma_5_" + column_name
             ma_calculated_array = np.array([])
             for slice in slices:
                 ma_calculated_array = np.concatenate(
@@ -180,7 +183,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
             column = training_frame[column_name]
             slices = Select.slice(data_column=column, indices=indices)
 
-            mm_header = column_name + "_mm_5"
+            mm_header = "mm_5_" + column_name
             mm_calculated_array = np.array([])
             for slice in slices:
                 mm_calculated_array = np.concatenate(
@@ -198,7 +201,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
             column = training_frame[column_name]
             slices = Select.slice(data_column=column, indices=indices)
 
-            sd_header = column_name + "_sd_10"
+            sd_header = "sd_10_" + column_name
             sd_calculated_array = np.array([])
             for slice in slices:
                 sd_calculated_array = np.concatenate(
@@ -216,7 +219,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
             column = training_frame[column_name]
             slices = Select.slice(data_column=column, indices=indices)
 
-            me_header = column_name + "_me_10_5"
+            me_header = "me_10_5_" + column_name
             me_calculated_array = np.array([])
             for slice in slices:
                 me_calculated_array = np.concatenate((me_calculated_array, Math.moving_entropy(series=slice, window=10, no_of_bins=5, default=True)), axis=0)
@@ -232,7 +235,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
         for column_name in selected_column_names:
             current_work += 1
             column = training_frame[column_name]
-            e_header = column_name + "_entropy_250"
+            e_header = "entropy_250_" + column_name
             training_frame[e_header] = pd.Series(Math.entropy(series=column, no_of_bins=250), index=training_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress", suffix="Complete")
 
@@ -243,7 +246,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
         for column_name in selected_column_names:
             current_work += 1
             column = training_frame[column_name]
-            p_header = column_name + "_prob_250"
+            p_header = "prob_250_" + column_name
             training_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=training_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")

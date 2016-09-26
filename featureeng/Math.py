@@ -178,7 +178,8 @@ def probabilty_distribution(series, no_of_bins=5):
     '''
 
     if bin_size == 0.0:
-        return np.zeros(shape=len(series))
+        # if value is not changing probability is one
+        return np.ones(shape=len(series))
 
     # Generating histogram
     p, x = np.histogram(series, bins=no_of_bins)
