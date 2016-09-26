@@ -89,6 +89,18 @@ def process():
         training_frame[e_header] = pd.Series(Math.entropy(series=column, no_of_bins=250), index=training_frame.index)
         Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress", suffix="Complete")
 
+
+    # current_work = 0
+    # # Probability distribution
+    # print "Applying Probability Distribution"
+    # for column_name in selected_column_names:
+    #     current_work += 1
+    #     column = training_frame[column_name]
+    #     p_header = column_name + "_prob_250"
+    #     training_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=training_frame.index)
+    #     Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+    #                            suffix="Complete")
+
     # Add remaining useful life
     time_column = training_frame['Time']
     rul = DataSetSpecific.remaining_usefullifetime(indices=indices, time_series=time_column)

@@ -80,7 +80,6 @@ def process():
     #         me_calculated_array = np.concatenate((me_calculated_array, Math.moving_entropy(series=slice, no_of_bins=250)), axis=0)
     #     testing_frame[me_header] = pd.Series(me_calculated_array, index=testing_frame.index)
 
-
     current_work = 0
     # Entropy
     print "Applying Entropy"
@@ -92,7 +91,21 @@ def process():
         Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                suffix="Complete")
 
+    # current_work = 0
+    # # Probability distribution
+    # print "Applying Probability Distribution"
+    # for column_name in selected_column_names:
+    #     current_work += 1
+    #     column = testing_frame[column_name]
+    #     p_header = column_name + "_prob_250"
+    #     testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
+    #     Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+    #                            suffix="Complete")
+
+
     filtered_frame = pd.DataFrame(columns=testing_frame.columns)
+
+    # Add last index to the indices
     indices = np.insert(indices, len(indices), len(testing_frame['UnitNumber']) - 1, axis=0)
     for index in indices:
         filtered_frame.loc[len(filtered_frame)] = testing_frame.loc[index]

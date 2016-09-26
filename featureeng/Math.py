@@ -169,6 +169,7 @@ def probabilty_distribution(series, no_of_bins=5):
     # Calculate bin size
     min_value = min(series)
     max_value = max(series)
+
     bin_size = 1.0 * (max_value - min_value) / no_of_bins
 
     '''
@@ -193,7 +194,3 @@ def probabilty_distribution(series, no_of_bins=5):
         else:
             ret.append(p[bin - 1])
     return np.array(ret)
-
-
-
-
