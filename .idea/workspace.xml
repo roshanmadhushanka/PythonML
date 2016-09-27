@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flow10.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flow11.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flow8.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flow9.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parser/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/estimator.pkl" afterPath="$PROJECT_DIR$/estimator.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mapper.pkl" afterPath="$PROJECT_DIR$/mapper.pkl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Compare.py" afterPath="$PROJECT_DIR$/Compare.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flow6.py" afterPath="$PROJECT_DIR$/Flow6.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flow7.py" afterPath="$PROJECT_DIR$/Flow7.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataprocessor/ProcessData.py" afterPath="$PROJECT_DIR$/dataprocessor/ProcessData.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/estimator.pmml" afterPath="$PROJECT_DIR$/estimator.pmml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureeng/Math.py" afterPath="$PROJECT_DIR$/featureeng/Math.py" />
     </list>
     <ignored path="Update.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -578,7 +565,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474890290398</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="setting up parser&#10;">
+      <created>1474955269463</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1474955269463</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -640,7 +634,8 @@
     <MESSAGE value="Add probability distribution function" />
     <MESSAGE value="Change Process Data Class. Setup two methods for train and test" />
     <MESSAGE value="Resolving probability distribution calculation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolving probability distribution calculation" />
+    <MESSAGE value="setting up parser&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting up parser&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
