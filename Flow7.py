@@ -17,6 +17,8 @@ testing_frame = pd.read_csv("JavaTest.csv")
 # Select training columns
 training_columns = list(training_frame.columns)
 training_columns.remove(response_column) # Remove RUL 
+training_columns.remove("UnitNumber")    # Remove UnitNumber
+training_columns.remove("Time")          # Remove Time
 
 # Set mapper
 df_mapper = DataFrameMapper([(training_columns, None), (response_column, None)])

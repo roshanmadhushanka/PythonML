@@ -1,6 +1,6 @@
-# Random Forest Regressor
+# Lasso Regression
 
-from sklearn.ensemble import RandomForestRegressor
+from sklearn import linear_model
 from sklearn.metrics import  mean_squared_error, mean_absolute_error
 from sklearn_pandas import DataFrameMapper
 from sklearn.externals import joblib
@@ -12,8 +12,8 @@ import os
 response_column = "RUL"
 
 # Process data
-training_frame = ProcessData.trainData(moving_average=True, standard_deviation=True, moving_entropy=True)
-testing_frame = ProcessData.testData(moving_average=True, standard_deviation=True, moving_entropy=True)
+training_frame = ProcessData.trainData(moving_average=True, standard_deviation=True, probability_distribution=True)
+testing_frame = ProcessData.testData(moving_average=True, standard_deviation=True, probability_distribution=True)
 
 # Select training columns
 training_columns = list(training_frame.columns)
@@ -43,10 +43,10 @@ tX = test[:, 0:column_count-1]
 tY = test[:, column_count-1]
 
 # Setting up algorithm
-rf = RandomForestRegressor(max_depth=20)
+ls = linear_model.Lasso(alpha=0.1, max_iter=20)
 
 # Train model
-rf.fit(X=x, y=y)
+ls.fit(X=x, y=y)
 
 # Get prediction results
 result = []
@@ -55,7 +55,7 @@ for row in tX:
         row = row.reshape(-1, 1)
     elif len(row) > 1:
         row = row.reshape(1, -1)
-    result.append(rf.predict(row)[0])
+    result.append(ls.predict(row)[0])
 
 # Analyze performance
 print "Performance"
@@ -65,7 +65,7 @@ print "Mean Absolute Error", mean_absolute_error(tY, np.array(result))
 
 # Dump pickle files
 joblib.dump(df_mapper, "mapper.pkl", compress = 3)
-joblib.dump(rf, "estimator.pkl", compress = 3)
+joblib.dump(ls, "estimator.pkl", compress = 3)
 
 # Build pmml
 os.system("java -jar converter-executable-1.1-SNAPSHOT.jar --pkl-input estimator.pkl --pmml-output estimator.pmml")

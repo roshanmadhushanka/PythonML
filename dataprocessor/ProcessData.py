@@ -92,7 +92,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             me_calculated_array = np.array([])
             for slice in slices:
                 #me_calculated_array = np.concatenate((me_calculated_array, Math.moving_entropy(series=slice, window=10, no_of_bins=5, default=True)), axis=0)
-                me_calculated_array = np.concatenate((me_calculated_array, Math.moving_entropy(series=slice, no_of_bins=250)), axis=0)
+                me_calculated_array = np.concatenate((me_calculated_array, Math.moving_entropy(series=slice, no_of_bins=250, default=True)), axis=0)
             testing_frame[me_header] = pd.Series(me_calculated_array, index=testing_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
@@ -119,7 +119,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             column = testing_frame[column_name]
             p_header = "prob_250_" + column_name
             # testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
-            testing_frame[p_header] = pd.Series(Math.probability_distribution_java(series=column, no_of_bins=250), index=testing_frame.index)
+            testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
 
@@ -249,7 +249,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
             column = training_frame[column_name]
             p_header = "prob_250_" + column_name
             # training_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=training_frame.index)
-            training_frame[p_header] = pd.Series(Math.probability_distribution_java(series=column, no_of_bins=250), index=training_frame.index)
+            training_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=training_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
 
@@ -261,3 +261,4 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
     print "Training frame process is completed"
     training_frame.to_csv("Training.csv", index=False)
     return training_frame
+
