@@ -2,6 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flow13.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flow14.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pima-indians-diabetes.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL-H20-Test-0002.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DL-H20-Train-0002.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaTest.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaTrain.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PythonTrain.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Siddhi Testing.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Siddhi.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Training.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/compare/JavaTrain.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/compare/PythonTest.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/count.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/estimator.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/estimator.pmml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/java_python.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mapper-estimator.pmml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mapper.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modified-test.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modified-train.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/random_forest_regression.pmml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Update.iws" />
@@ -22,18 +46,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Flow10.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flow10.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
-              <folding>
-                <element signature="e#29#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Flow6.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flow6.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,30 +98,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flow9.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flow9.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-              <folding>
-                <element signature="e#20#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flow8.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flow8.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-              <folding>
-                <element signature="e#20#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Flow7.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flow7.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flow12.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Flow12.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flow12.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-555">
@@ -128,6 +116,40 @@
               <folding>
                 <element signature="e#15#65#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flow13.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flow13.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flow14.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Flow14.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#25#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pima-indians-diabetes.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pima-indians-diabetes.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="767" column="28" selection-start-line="767" selection-start-column="28" selection-end-line="767" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -179,6 +201,9 @@
         <option value="$PROJECT_DIR$/Flow5.py" />
         <option value="$PROJECT_DIR$/Flow4.py" />
         <option value="$PROJECT_DIR$/Flow12.py" />
+        <option value="$PROJECT_DIR$/pima-indians-diabetes.csv" />
+        <option value="$PROJECT_DIR$/Flow13.py" />
+        <option value="$PROJECT_DIR$/Flow14.py" />
       </list>
     </option>
   </component>
@@ -270,24 +295,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.Flow12">
-    <configuration default="false" name="Flow8" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flow8.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Flow13">
     <configuration default="false" name="Flow10" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -352,6 +360,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Update" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sim.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Flow13" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flow13.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -491,19 +516,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Flow8" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Flow10" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Flow11" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Flow12" />
-      <item index="4" class="java.lang.String" itemvalue="Python.sim" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Flow10" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Flow11" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Flow12" />
+      <item index="3" class="java.lang.String" itemvalue="Python.sim" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Flow13" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Flow12" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sim" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Flow11" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Flow10" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Flow8" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Flow13" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Flow12" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sim" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Flow11" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Flow10" />
       </list>
     </recent_temporary>
   </component>
@@ -612,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475053851619</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="PMML model complete">
+      <created>1475053888677</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1475053888677</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -685,13 +717,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/python2.7/dist-packages/numpy/core/function_base.py" />
-    <entry file="file://$PROJECT_DIR$/plot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Train.py" />
     <entry file="file://$PROJECT_DIR$/Train.py" />
     <entry file="file://$PROJECT_DIR$/plot.png">
       <provider selected="true" editor-type-id="images">
@@ -855,7 +880,7 @@
         <state relative-caret-position="15">
           <caret line="8" column="43" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="43" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -873,7 +898,7 @@
         <state relative-caret-position="225">
           <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,7 +908,7 @@
         <state relative-caret-position="381">
           <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
           <folding>
-            <element signature="e#17#27#0" expanded="true" />
+            <element signature="e#17#27#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -974,6 +999,34 @@
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="e#15#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pima-indians-diabetes.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="767" column="28" selection-start-line="767" selection-start-column="28" selection-end-line="767" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flow13.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flow14.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
