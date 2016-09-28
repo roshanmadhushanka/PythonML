@@ -5,6 +5,7 @@ from sklearn.metrics import  mean_squared_error, mean_absolute_error
 from sklearn_pandas import DataFrameMapper
 from sklearn.externals import joblib
 from dataprocessor import ProcessData
+from parser import DataFrameParser
 import numpy as np
 import os
 
@@ -68,6 +69,5 @@ joblib.dump(df_mapper, "mapper.pkl", compress = 3)
 joblib.dump(rg, "estimator.pkl", compress = 3)
 
 # Build pmml
-os.system("java -jar converter-executable-1.1-SNAPSHOT.jar --pkl-input estimator.pkl --pmml-output estimator.pmml")
-
-
+command = "java -jar converter-executable-1.1-SNAPSHOT.jar --pkl-mapper-input mapper.pkl --pkl-estimator-input estimator.pkl --pmml-output mapper-estimator.pmml"
+os.system(command)

@@ -67,6 +67,5 @@ joblib.dump(df_mapper, "mapper.pkl", compress = 3)
 joblib.dump(rf, "estimator.pkl", compress = 3)
 
 # Build pmml
-os.system("java -jar converter-executable-1.1-SNAPSHOT.jar --pkl-input estimator.pkl --pmml-output estimator.pmml")
-
-
+command = "java -jar converter-executable-1.1-SNAPSHOT.jar --pkl-mapper-input mapper.pkl --pkl-estimator-input estimator.pkl --pmml-output mapper-estimator.pmml"
+os.system(command)

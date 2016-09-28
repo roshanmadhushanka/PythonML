@@ -1,5 +1,6 @@
-# Ridge Regression
+# Siddhi Test
 
+from sklearn.ensemble import RandomForestRegressor
 from sklearn import linear_model
 from sklearn.metrics import  mean_squared_error, mean_absolute_error
 from sklearn_pandas import DataFrameMapper
@@ -8,12 +9,17 @@ from dataprocessor import ProcessData
 import numpy as np
 import os
 
+# Define file names
+mapper_pkl = "mapper.pkl"
+estimator_pkl = "estimator.pkl"
+estimator_pmml = "model.pmml"
+
 # Define response variable
 response_column = "RUL"
 
 # Process data
-training_frame = ProcessData.trainData(moving_average=True, standard_deviation=True, probability_distribution=True)
-testing_frame = ProcessData.testData(moving_average=True, standard_deviation=True, probability_distribution=True)
+training_frame = ProcessData.trainData()
+testing_frame = ProcessData.testData()
 
 # Select training columns
 training_columns = list(training_frame.columns)
@@ -43,10 +49,11 @@ tX = test[:, 0:column_count-1]
 tY = test[:, column_count-1]
 
 # Setting up algorithm
-rg = linear_model.Ridge(alpha=0.5)
+#rf = RandomForestRegressor(max_depth=20)
+rf = linear_model.LinearRegression()
 
 # Train model
-rg.fit(X=x, y=y)
+rf.fit(X=x, y=y)
 
 # Get prediction results
 result = []
@@ -55,7 +62,11 @@ for row in tX:
         row = row.reshape(-1, 1)
     elif len(row) > 1:
         row = row.reshape(1, -1)
-    result.append(rg.predict(row)[0])
+    result.append(rf.predict(row)[0])
+
+print "Result"
+print "------"
+print result
 
 # Analyze performance
 print "Performance"
@@ -64,10 +75,14 @@ print "Root Mean Squared Error", mean_squared_error(tY, np.array(result)) ** 0.5
 print "Mean Absolute Error", mean_absolute_error(tY, np.array(result))
 
 # Dump pickle files
-joblib.dump(df_mapper, "mapper.pkl", compress = 3)
-joblib.dump(rg, "estimator.pkl", compress = 3)
+print df_mapper.features
+print rf.get_params()
+
+joblib.dump(df_mapper, mapper_pkl, compress = 3)
+joblib.dump(rf, estimator_pkl, compress = 3)
 
 # Build pmml
 command = "java -jar converter-executable-1.1-SNAPSHOT.jar --pkl-mapper-input mapper.pkl --pkl-estimator-input estimator.pkl --pmml-output mapper-estimator.pmml"
 os.system(command)
+
 

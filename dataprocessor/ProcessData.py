@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from featureeng import Math, Select, DataSetSpecific, Progress
 
-def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False):
+def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, rul=True):
     print "Testing frame process has started"
     print "---------------------------------"
     # Test data set preprocessor
@@ -133,7 +133,9 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
     for index in indices:
         filtered_frame.loc[len(filtered_frame)] = testing_frame.loc[index]
 
-    filtered_frame['RUL'] = pd.Series(ground_truth['RUL'], index=filtered_frame.index)
+    if rul:
+        filtered_frame['RUL'] = pd.Series(ground_truth['RUL'], index=filtered_frame.index)
+        print "Applying RUL"
 
     print "Testing frame process is completed"
     filtered_frame.to_csv("Testing.csv", index=False)
