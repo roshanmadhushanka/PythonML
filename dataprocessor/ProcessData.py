@@ -7,7 +7,7 @@ _moving_average_window = 5
 _moving_standard_deviation_window = 10
 _moving_probability_window = 10
 
-def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, probability_from_file=False, moving_k_closest_average=False, moving_threshold_average=False, rul=True):
+def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, probability_from_file=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False,rul=True):
     print "Testing frame process has started"
     print "---------------------------------"
     # Test data set preprocessor
@@ -180,6 +180,20 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
 
+    if moving_median_centered_average:
+        # Moving median centered average
+        current_work = 0
+        print "Applying Median Centered Average"
+        for column_name in selected_column_names:
+            current_work += 1
+            column = testing_frame[column_name]
+            p_header = "threshold_" + column_name
+            testing_frame[p_header] = pd.Series(
+                Math.moving_median_centered_average(series=column, window=5, boundary=1, default=True),
+                index=testing_frame.index)
+            Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+                                   suffix="Complete")
+
 
 
 
@@ -202,7 +216,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
     filtered_frame.to_csv("Testing.csv", index=False)
     return filtered_frame
 
-def trainData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, moving_k_closest_average=False, moving_threshold_average=False):
+def trainData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False):
     print "Training frame process has started"
     print "----------------------------------"
 
@@ -353,6 +367,20 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
             p_header = "threshold_" + column_name
             training_frame[p_header] = pd.Series(
                 Math.moving_threshold_average(series=column, window=5, threshold=-1, default=True),
+                index=training_frame.index)
+            Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+                                       suffix="Complete")
+
+    if moving_median_centered_average:
+        # Moving median centered average
+        current_work = 0
+        print "Applying Median Centered Average"
+        for column_name in selected_column_names:
+            current_work += 1
+            column = training_frame[column_name]
+            p_header = "threshold_" + column_name
+            training_frame[p_header] = pd.Series(
+                Math.moving_median_centered_average(series=column, window=5, boundary=1, default=True),
                 index=training_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                        suffix="Complete")

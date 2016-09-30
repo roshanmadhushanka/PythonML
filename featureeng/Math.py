@@ -74,6 +74,35 @@ def moving_threshold_average(series, threshold=-1, window=5, default=False):
     else:
         return ret
 
+def moving_median_centered_average(series, window=5, boundary=1, default=False):
+    '''
+    Median centered average
+
+    :param series: Number series to compute
+    :param window: Selected time window
+    :param boundry: Boundary neglect from both ends
+    :param default: True -> Replace initial values inside the time window to zero
+                    False -> Neglect and continue
+    :return: calculated result in numpy array
+    '''
+
+    # Convert pandas.series to list
+    series = list(series)
+
+    size = len(series)
+    ret = np.zeros(shape=size - window + 1)
+    for i in range(size - window + 1):
+        subset = series[i:i + window]
+        subset = subset.sort()
+        subset = subset[boundary:-boundary]
+        ret[i] = sum(subset) / float(len(subset))
+
+    # Add default values for initial window
+    if (default):
+        return np.concatenate((np.zeros(shape=window - 1), ret), axis=0)
+    else:
+        return ret
+
 def moving_k_closest_average(series, window=5, kclosest=3, default=False):
     '''
 

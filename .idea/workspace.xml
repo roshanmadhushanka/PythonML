@@ -26,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Testing - H2O DL.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Testing - H2O DL.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Testing - H2O DL.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcessData.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProcessData.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="356" column="53" selection-start-line="356" selection-start-column="53" selection-end-line="356" selection-end-column="53" />
+            <state relative-caret-position="430">
+              <caret line="378" column="29" selection-start-line="378" selection-start-column="29" selection-end-line="378" selection-end-column="29" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -121,25 +121,27 @@
       <file leaf-file-name="Math.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/featureeng/Math.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+            <state relative-caret-position="120">
+              <caret line="76" column="80" selection-start-line="76" selection-start-column="80" selection-end-line="76" selection-end-column="80" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
                 <element signature="e#136#836#0" expanded="false" />
-                <element signature="e#2265#3182#0" expanded="false" />
-                <element signature="e#2265#2670#1" expanded="false" />
-                <element signature="e#3240#3992#0" expanded="false" />
-                <element signature="e#3240#3586#1" expanded="false" />
-                <element signature="e#4062#4835#0" expanded="false" />
-                <element signature="e#4062#4419#1" expanded="false" />
-                <element signature="e#4909#5995#0" expanded="false" />
-                <element signature="e#4909#5348#1" expanded="false" />
-                <element signature="e#6036#7121#0" expanded="false" />
-                <element signature="e#6036#6251#1" expanded="false" />
-                <element signature="e#7178#8272#0" expanded="false" />
-                <element signature="e#7178#7417#1" expanded="false" />
-                <element signature="e#8350#9606#0" expanded="false" />
-                <element signature="e#8350#8717#1" expanded="false" />
+                <element signature="e#919#2184#0" expanded="false" />
+                <element signature="e#919#1298#1" expanded="false" />
+                <element signature="e#2271#3123#0" expanded="false" />
+                <element signature="e#3204#4121#0" expanded="false" />
+                <element signature="e#4179#4931#0" expanded="false" />
+                <element signature="e#4179#4525#1" expanded="false" />
+                <element signature="e#5001#5774#0" expanded="false" />
+                <element signature="e#5001#5358#1" expanded="false" />
+                <element signature="e#5848#6934#0" expanded="false" />
+                <element signature="e#5848#6287#1" expanded="false" />
+                <element signature="e#6975#8060#0" expanded="false" />
+                <element signature="e#6975#7190#1" expanded="false" />
+                <element signature="e#8117#9211#0" expanded="false" />
+                <element signature="e#8117#8356#1" expanded="false" />
+                <element signature="e#9289#10545#0" expanded="false" />
+                <element signature="e#9289#9656#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -214,10 +216,10 @@
         <option value="$PROJECT_DIR$/simulation/RandomForestResult.py" />
         <option value="$PROJECT_DIR$/simulation/Simulator.py" />
         <option value="$PROJECT_DIR$/dataprocessor/Process.py" />
+        <option value="$PROJECT_DIR$/Testing - H2O DL.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/featureeng/Math.py" />
         <option value="$PROJECT_DIR$/dataprocessor/ProcessData.py" />
-        <option value="$PROJECT_DIR$/Testing - H2O DL.py" />
       </list>
     </option>
   </component>
@@ -373,7 +375,7 @@
       <recent name="$PROJECT_DIR$/dataprocessor" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Testing - H2O DL">
+  <component name="RunManager" selected="Python.test">
     <configuration default="false" name="Flow14" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -602,8 +604,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Testing - H2O DL" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Testing - H2O DL" />
         <item index="2" class="java.lang.String" itemvalue="Python.Testing - SKL RFR" />
         <item index="3" class="java.lang.String" itemvalue="Python.Testing - H2O RFR" />
         <item index="4" class="java.lang.String" itemvalue="Python.Flow14" />
@@ -750,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475225724096</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Math complete&#10;">
+      <created>1475228572381</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1475228572381</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -771,7 +780,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36125654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36125654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -827,7 +836,8 @@
     <MESSAGE value="Probability load from file" />
     <MESSAGE value="Sumulation for Random Forest Regressor in H2O&#10;" />
     <MESSAGE value="K Closest average calculation&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="K Closest average calculation&#10;" />
+    <MESSAGE value="Math complete&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Math complete&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1198,6 +1208,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Testing - H2O DL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1210,45 +1230,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/featureeng/Math.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        <state relative-caret-position="120">
+          <caret line="76" column="80" selection-start-line="76" selection-start-column="80" selection-end-line="76" selection-end-column="80" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
             <element signature="e#136#836#0" expanded="false" />
-            <element signature="e#2265#3182#0" expanded="false" />
-            <element signature="e#2265#2670#1" expanded="false" />
-            <element signature="e#3240#3992#0" expanded="false" />
-            <element signature="e#3240#3586#1" expanded="false" />
-            <element signature="e#4062#4835#0" expanded="false" />
-            <element signature="e#4062#4419#1" expanded="false" />
-            <element signature="e#4909#5995#0" expanded="false" />
-            <element signature="e#4909#5348#1" expanded="false" />
-            <element signature="e#6036#7121#0" expanded="false" />
-            <element signature="e#6036#6251#1" expanded="false" />
-            <element signature="e#7178#8272#0" expanded="false" />
-            <element signature="e#7178#7417#1" expanded="false" />
-            <element signature="e#8350#9606#0" expanded="false" />
-            <element signature="e#8350#8717#1" expanded="false" />
+            <element signature="e#919#2184#0" expanded="false" />
+            <element signature="e#919#1298#1" expanded="false" />
+            <element signature="e#2271#3123#0" expanded="false" />
+            <element signature="e#3204#4121#0" expanded="false" />
+            <element signature="e#4179#4931#0" expanded="false" />
+            <element signature="e#4179#4525#1" expanded="false" />
+            <element signature="e#5001#5774#0" expanded="false" />
+            <element signature="e#5001#5358#1" expanded="false" />
+            <element signature="e#5848#6934#0" expanded="false" />
+            <element signature="e#5848#6287#1" expanded="false" />
+            <element signature="e#6975#8060#0" expanded="false" />
+            <element signature="e#6975#7190#1" expanded="false" />
+            <element signature="e#8117#9211#0" expanded="false" />
+            <element signature="e#8117#8356#1" expanded="false" />
+            <element signature="e#9289#10545#0" expanded="false" />
+            <element signature="e#9289#9656#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="356" column="53" selection-start-line="356" selection-start-column="53" selection-end-line="356" selection-end-column="53" />
+        <state relative-caret-position="430">
+          <caret line="378" column="29" selection-start-line="378" selection-start-column="29" selection-end-line="378" selection-end-column="29" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing - H2O DL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
-          <folding>
-            <element signature="e#14#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
