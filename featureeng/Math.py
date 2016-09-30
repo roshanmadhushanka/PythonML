@@ -1,9 +1,6 @@
-import numpy as np
-import sys
-import time
 from heapq import nsmallest
-
 from scipy.special import entr
+import numpy as np
 
 def moving_average(series, window=5, default=False):
     '''
@@ -30,12 +27,12 @@ def moving_average(series, window=5, default=False):
     else:
         return ret
 
-def moving_threshold_average(series, threshold=0.001, window=5, default=False):
+def moving_threshold_average(series, threshold=-1, window=5, default=False):
     '''
     Calculate moving threshold average
 
     :param series: Number series to compute
-    :param threshold: Threshold error
+    :param threshold: Threshold error, -1 for automatic calculate
     :param window: Selected time window
     :param default: True -> Replace initial values inside the time window to zero
                     False -> Neglect and continue
@@ -45,13 +42,29 @@ def moving_threshold_average(series, threshold=0.001, window=5, default=False):
     # Convert pandas.series to list
     series = list(series)
 
+    if threshold == -1:
+        # calculate threshol value
+        _min = min(series)
+        _max = max(series)
+        _avg = np.mean(series)
+
+        limit = 0
+
+        if(abs(_min - _avg) > abs(_max - _avg)):
+            limit = abs(_max - _avg)
+        else:
+            limit = abs(_min - _avg)
+
+        threshold = limit / 10.0
+
+
     size = len(series)
     ret = np.zeros(shape=size - window + 1)
     for i in range(size - window + 1):
         subset = series[i:i + window]
-        avg = sum(subset) / float(len(subset))
-        if abs(subset[-1] - avg) < threshold:
-            ret[i] = avg
+        average = sum(subset) / float(len(subset))
+        if abs(subset[-1] - average) < threshold:
+            ret[i] = average
         else:
             ret[i] = subset[-1]
 
@@ -61,9 +74,9 @@ def moving_threshold_average(series, threshold=0.001, window=5, default=False):
     else:
         return ret
 
-
 def moving_k_closest_average(series, window=5, kclosest=3, default=False):
     '''
+
     Calculate moving k closest average
 
     :param series: Number series to compute
@@ -81,7 +94,7 @@ def moving_k_closest_average(series, window=5, kclosest=3, default=False):
     ret = np.zeros(shape=size - window + 1)
     for i in range(size - window + 1):
         subset = series[i:i + window]
-        k_closest = nsmallest(kclosest, subset, key=lambda x: abs(x - 6.5))
+        k_closest = nsmallest(kclosest, subset, key=lambda x: abs(x - subset[-1]))
         ret[i] = sum(k_closest) / float(len(k_closest))
 
     # Add default values for initial window

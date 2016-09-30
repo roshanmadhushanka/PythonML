@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simulation/RandomForestResult.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simulation/Simulator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simulation/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing - H2O DL.py" afterPath="$PROJECT_DIR$/Testing - H2O DL.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataprocessor/ProcessData.py" afterPath="$PROJECT_DIR$/dataprocessor/ProcessData.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureeng/Math.py" afterPath="$PROJECT_DIR$/featureeng/Math.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
     <ignored path="Update.iws" />
@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Testing - H2O DL.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Testing - H2O DL.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Testing - H2O DL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
+            <state relative-caret-position="150">
+              <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
               <folding>
                 <element signature="e#14#24#0" expanded="true" />
               </folding>
@@ -38,13 +38,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Simulator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Simulator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulation/Simulator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
               <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
               <folding>
                 <element signature="e#40#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessData.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="356" column="53" selection-start-line="356" selection-start-column="53" selection-end-line="356" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +75,8 @@
       <file leaf-file-name="RandomForestResult.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simulation/RandomForestResult.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="70" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -97,19 +109,11 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simulation/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="49" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="75">
+              <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,30 +121,36 @@
       <file leaf-file-name="Math.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/featureeng/Math.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-47">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#1916#2320#1" expanded="false" />
-                <element signature="e#2392#2738#1" expanded="false" />
-                <element signature="e#3214#3571#1" expanded="false" />
-                <element signature="e#4061#4500#1" expanded="false" />
-                <element signature="e#5188#5403#1" expanded="false" />
-                <element signature="e#6330#6569#1" expanded="false" />
-                <element signature="e#7502#7869#1" expanded="false" />
+                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#136#836#0" expanded="false" />
+                <element signature="e#2265#3182#0" expanded="false" />
+                <element signature="e#2265#2670#1" expanded="false" />
+                <element signature="e#3240#3992#0" expanded="false" />
+                <element signature="e#3240#3586#1" expanded="false" />
+                <element signature="e#4062#4835#0" expanded="false" />
+                <element signature="e#4062#4419#1" expanded="false" />
+                <element signature="e#4909#5995#0" expanded="false" />
+                <element signature="e#4909#5348#1" expanded="false" />
+                <element signature="e#6036#7121#0" expanded="false" />
+                <element signature="e#6036#6251#1" expanded="false" />
+                <element signature="e#7178#8272#0" expanded="false" />
+                <element signature="e#7178#7417#1" expanded="false" />
+                <element signature="e#8350#9606#0" expanded="false" />
+                <element signature="e#8350#8717#1" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcessData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
+      <file leaf-file-name="test.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="98" column="131" selection-start-line="98" selection-start-column="131" selection-end-line="98" selection-end-column="132" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -195,18 +205,19 @@
         <option value="$PROJECT_DIR$/featureeng/ProbabilityOut.py" />
         <option value="$PROJECT_DIR$/Flow14.py" />
         <option value="$PROJECT_DIR$/featureeng/Progress.py" />
-        <option value="$PROJECT_DIR$/dataprocessor/ProcessData.py" />
         <option value="$PROJECT_DIR$/Testing - H2O RFR.py" />
         <option value="$PROJECT_DIR$/Testing - SKL RFR.py" />
-        <option value="$PROJECT_DIR$/featureeng/Math.py" />
-        <option value="$PROJECT_DIR$/Testing - H2O DL.py" />
         <option value="$PROJECT_DIR$/simulation/__init__.py" />
         <option value="$PROJECT_DIR$/file/FileHandler.py" />
         <option value="$PROJECT_DIR$/result 1.txt" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/simulation/Result.py" />
         <option value="$PROJECT_DIR$/simulation/RandomForestResult.py" />
         <option value="$PROJECT_DIR$/simulation/Simulator.py" />
+        <option value="$PROJECT_DIR$/dataprocessor/Process.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/featureeng/Math.py" />
+        <option value="$PROJECT_DIR$/dataprocessor/ProcessData.py" />
+        <option value="$PROJECT_DIR$/Testing - H2O DL.py" />
       </list>
     </option>
   </component>
@@ -362,7 +373,7 @@
       <recent name="$PROJECT_DIR$/dataprocessor" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.Testing - H2O DL">
     <configuration default="false" name="Flow14" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -591,8 +602,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Testing - H2O DL" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Testing - H2O DL" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
         <item index="2" class="java.lang.String" itemvalue="Python.Testing - SKL RFR" />
         <item index="3" class="java.lang.String" itemvalue="Python.Testing - H2O RFR" />
         <item index="4" class="java.lang.String" itemvalue="Python.Flow14" />
@@ -725,7 +736,21 @@
       <option name="project" value="LOCAL" />
       <updated>1475214274166</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Sumulation for Random Forest Regressor in H2O&#10;">
+      <created>1475224614870</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1475224614870</updated>
+    </task>
+    <task id="LOCAL-00018" summary="K Closest average calculation&#10;">
+      <created>1475225724096</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1475225724096</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -746,7 +771,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36125654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36125654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -800,7 +825,9 @@
     <MESSAGE value="PMML model complete" />
     <MESSAGE value="Keras Testing" />
     <MESSAGE value="Probability load from file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Probability load from file" />
+    <MESSAGE value="Sumulation for Random Forest Regressor in H2O&#10;" />
+    <MESSAGE value="K Closest average calculation&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="K Closest average calculation&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -809,7 +836,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/site-packages/sklearn/utils/validation.py" />
     <entry file="file:///usr/local/lib/python2.7/dist-packages/pandas/core/indexing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -821,6 +847,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="1990" column="0" selection-start-line="1990" selection-start-column="0" selection-end-line="1990" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -921,6 +948,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -962,6 +990,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,17 +1036,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataprocessor/TestData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="90" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="90" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,43 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="98" column="131" selection-start-line="98" selection-start-column="131" selection-end-line="98" selection-end-column="132" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/featureeng/Math.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#1916#2320#1" expanded="false" />
-            <element signature="e#2392#2738#1" expanded="false" />
-            <element signature="e#3214#3571#1" expanded="false" />
-            <element signature="e#4061#4500#1" expanded="false" />
-            <element signature="e#5188#5403#1" expanded="false" />
-            <element signature="e#6330#6569#1" expanded="false" />
-            <element signature="e#7502#7869#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing - H2O DL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
-          <folding>
-            <element signature="e#14#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simulation/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1156,14 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Testing - H2O RFR.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-56">
@@ -1182,10 +1162,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simulation/RandomForestResult.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="70" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -1198,6 +1186,69 @@
           <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
           <folding>
             <element signature="e#40#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataprocessor/Process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureeng/Math.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#136#836#0" expanded="false" />
+            <element signature="e#2265#3182#0" expanded="false" />
+            <element signature="e#2265#2670#1" expanded="false" />
+            <element signature="e#3240#3992#0" expanded="false" />
+            <element signature="e#3240#3586#1" expanded="false" />
+            <element signature="e#4062#4835#0" expanded="false" />
+            <element signature="e#4062#4419#1" expanded="false" />
+            <element signature="e#4909#5995#0" expanded="false" />
+            <element signature="e#4909#5348#1" expanded="false" />
+            <element signature="e#6036#7121#0" expanded="false" />
+            <element signature="e#6036#6251#1" expanded="false" />
+            <element signature="e#7178#8272#0" expanded="false" />
+            <element signature="e#7178#7417#1" expanded="false" />
+            <element signature="e#8350#9606#0" expanded="false" />
+            <element signature="e#8350#8717#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="356" column="53" selection-start-line="356" selection-start-column="53" selection-end-line="356" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing - H2O DL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
           </folding>
         </state>
       </provider>

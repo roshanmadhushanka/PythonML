@@ -7,7 +7,7 @@ _moving_average_window = 5
 _moving_standard_deviation_window = 10
 _moving_probability_window = 10
 
-def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, probability_from_file=False, rul=True):
+def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, probability_from_file=False, moving_k_closest_average=False, moving_threshold_average=False, rul=True):
     print "Testing frame process has started"
     print "---------------------------------"
     # Test data set preprocessor
@@ -153,6 +153,35 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
 
+    if moving_k_closest_average:
+        # Moving k closest average
+        current_work = 0
+        print "Applying K Closest Average"
+        for column_name in selected_column_names:
+            current_work += 1
+            column = testing_frame[column_name]
+            p_header = "k_closest_" + column_name
+            testing_frame[p_header] = pd.Series(Math.moving_k_closest_average(series=column, window=5, kclosest=3, default=True),
+                index=testing_frame.index)
+            Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+                                   suffix="Complete")
+
+    if moving_threshold_average:
+        # Moving threshold average
+        current_work = 0
+        print "Applying Threshold Average"
+        for column_name in selected_column_names:
+            current_work += 1
+            column = testing_frame[column_name]
+            p_header = "threshold_" + column_name
+            testing_frame[p_header] = pd.Series(
+                Math.moving_threshold_average(series=column, window=5, threshold=-1, default=True),
+                index=testing_frame.index)
+            Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+                                   suffix="Complete")
+
+
+
 
 
 
@@ -173,9 +202,10 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
     filtered_frame.to_csv("Testing.csv", index=False)
     return filtered_frame
 
-def trainData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False):
+def trainData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, moving_k_closest_average=False, moving_threshold_average=False):
     print "Training frame process has started"
     print "----------------------------------"
+
     # Data set preprocessor
     training_frame = pd.read_csv("train.csv")
 
@@ -299,6 +329,33 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                        suffix="Complete")
 
+    if moving_k_closest_average:
+        # Moving k closest average
+        current_work = 0
+        print "Applying K Closest Average"
+        for column_name in selected_column_names:
+            current_work += 1
+            column = training_frame[column_name]
+            p_header = "k_closest_" + column_name
+            training_frame[p_header] = pd.Series(
+                Math.moving_k_closest_average(series=column, window=5, kclosest=3, default=True),
+                index=training_frame.index)
+            Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+                                       suffix="Complete")
+
+    if moving_threshold_average:
+        # Moving threshold average
+        current_work = 0
+        print "Applying Threshold Average"
+        for column_name in selected_column_names:
+            current_work += 1
+            column = training_frame[column_name]
+            p_header = "threshold_" + column_name
+            training_frame[p_header] = pd.Series(
+                Math.moving_threshold_average(series=column, window=5, threshold=-1, default=True),
+                index=training_frame.index)
+            Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+                                       suffix="Complete")
 
     # Add remaining useful life
     time_column = training_frame['Time']
