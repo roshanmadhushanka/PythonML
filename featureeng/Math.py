@@ -62,19 +62,33 @@ def moving_threshold_average(series, threshold=0.001, window=5, default=False):
         return ret
 
 
-def moving_k_closest_average(series, window=5, nclosest=3, default=False):
+def moving_k_closest_average(series, window=5, kclosest=3, default=False):
     '''
     Calculate moving k closest average
 
     :param series: Number series to compute
     :param window: Selected time window
-    :param nclosest: Number of closet value to the original value. always less than window
+    :param kclosest: Number of closet value to the original value. always less than window
     :param default: True -> Replace initial values inside the time window to zero
                     False -> Neglect and continue
     :return: calculated result in numpy array
     '''
 
-    print ""
+    # Convert pandas.series to list
+    series = list(series)
+
+    size = len(series)
+    ret = np.zeros(shape=size - window + 1)
+    for i in range(size - window + 1):
+        subset = series[i:i + window]
+        k_closest = nsmallest(kclosest, subset, key=lambda x: abs(x - 6.5))
+        ret[i] = sum(k_closest) / float(len(k_closest))
+
+    # Add default values for initial window
+    if (default):
+        return np.concatenate((np.zeros(shape=window - 1), ret), axis=0)
+    else:
+        return ret
 
 def moving_median(series, window=5, default=False):
     '''
