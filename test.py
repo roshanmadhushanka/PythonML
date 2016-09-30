@@ -1,2 +1,4 @@
-import random
-from featureeng import Math
+from simulation import RandomForestResult, Simulator
+
+Simulator.randomforest_simulator()
+
