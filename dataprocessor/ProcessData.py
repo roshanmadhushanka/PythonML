@@ -1,8 +1,13 @@
 import pandas as pd
 import numpy as np
 from featureeng import Math, Select, DataSetSpecific, Progress
+from file import FileHandler
 
-def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, rul=True):
+_moving_average_window = 5
+_moving_standard_deviation_window = 10
+_moving_probability_window = 10
+
+def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, probability_from_file=False, rul=True):
     print "Testing frame process has started"
     print "---------------------------------"
     # Test data set preprocessor
@@ -91,8 +96,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             me_header = "me_10_5_" + column_name
             me_calculated_array = np.array([])
             for slice in slices:
-                #me_calculated_array = np.concatenate((me_calculated_array, Math.moving_entropy(series=slice, window=10, no_of_bins=5, default=True)), axis=0)
-                me_calculated_array = np.concatenate((me_calculated_array, Math.moving_entropy(series=slice, no_of_bins=250, default=True)), axis=0)
+                me_calculated_array = np.concatenate((me_calculated_array, Math.moving_entropy(series=slice, window=10, no_of_bins=5, default=True)), axis=0)
             testing_frame[me_header] = pd.Series(me_calculated_array, index=testing_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
@@ -117,11 +121,39 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
         for column_name in selected_column_names:
             current_work += 1
             column = testing_frame[column_name]
-            p_header = "prob_250_" + column_name
-            # testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
+            p_header = "prob_" + column_name
             testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
+
+    if moving_probability:
+        # Moving probability distribution
+        current_work = 0
+        print "Applying Moving probability"
+        for column_name in selected_column_names:
+            current_work += 1
+            column = testing_frame[column_name]
+            p_header = "prob_" + column_name
+            testing_frame[p_header] = pd.Series(Math.moving_probability(series=column, window=10, no_of_bins=4, default=True),
+                                                index=testing_frame.index)
+            Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+                                   suffix="Complete")
+
+    if probability_from_file:
+        # Load probabilities from file
+        file_name = 'json.txt'
+        current_work = 0
+        print "Applying Probability From File"
+        for column_name in selected_column_names:
+            current_work += 1
+            column = testing_frame[column_name]
+            p_header = "prob_" + column_name
+            testing_frame[p_header] = pd.Series(from_file(column, column_name),
+                index=testing_frame.index)
+            Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+                                   suffix="Complete")
+
+
 
 
     filtered_frame = pd.DataFrame(columns=testing_frame.columns)
@@ -141,7 +173,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
     filtered_frame.to_csv("Testing.csv", index=False)
     return filtered_frame
 
-def trainData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False):
+def trainData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False):
     print "Training frame process has started"
     print "----------------------------------"
     # Data set preprocessor
@@ -249,11 +281,24 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
         for column_name in selected_column_names:
             current_work += 1
             column = training_frame[column_name]
-            p_header = "prob_250_" + column_name
-            # training_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=training_frame.index)
+            p_header = "prob_" + column_name
             training_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=training_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
+
+    if moving_probability:
+        # Moving probability distribution
+        current_work = 0
+        print "Applying Moving probability"
+        for column_name in selected_column_names:
+            current_work += 1
+            column = training_frame[column_name]
+            p_header = "prob_" + column_name
+            training_frame[p_header] = pd.Series(Math.moving_probability(series=column, window=10, no_of_bins=4, default=True),
+                                                 index=training_frame.index)
+            Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
+                                       suffix="Complete")
+
 
     # Add remaining useful life
     time_column = training_frame['Time']
@@ -264,3 +309,46 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
     training_frame.to_csv("Training.csv", index=False)
     return training_frame
 
+def from_file(series, column_name, no_of_bins=250):
+    file_name = "json.txt"
+    data = FileHandler.read_json(file_name)
+
+    rang = data[column_name]['rang'].split(",")
+    x = map(float, rang)
+
+    prob = data[column_name]['prob'].split(",")
+    p = map(float, prob)
+
+    bin_size = float(data[column_name]['sbin'])
+
+    '''
+            Calculate the probability of data for whole data set
+
+            :param series: Input number series
+            :param no_of_bins: Number of discrete levels
+            :return: calculated result in numpy array
+        '''
+    series = list(series)
+
+    # Calculate bin size
+    min_value = x[0]
+
+    '''
+     Bin size becomes zero when the values in the series are not changing
+     That means probability of occuring that value is 1 which means entropy is zero
+    '''
+
+    if bin_size == 0.0:
+        # if value is not changing probability is one
+        return np.ones(shape=len(series))
+
+    ret = []
+    for num in series:
+        bin = int((num - min_value) / bin_size)
+        if 0 <= bin < no_of_bins:
+            ret.append(p[bin])
+        elif bin == no_of_bins:
+            ret.append(p[no_of_bins - 1])
+        else:
+            ret.append(0.0)
+    return np.array(ret)

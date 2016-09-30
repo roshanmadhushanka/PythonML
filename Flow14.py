@@ -1,6 +1,4 @@
-# Iris data set - Keras
+from featureeng import Math
+from dataprocessor import ProcessData
 
-from keras.models import Sequential
-from keras.layers import Dense
-import numpy as np
-
+testing_frame = ProcessData.testData(probability_from_file=True)
