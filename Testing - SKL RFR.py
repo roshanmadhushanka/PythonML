@@ -18,8 +18,8 @@ estimator_pmml = "model.pmml"
 response_column = "RUL"
 
 # Process data
-training_frame = ProcessData.trainData(moving_average=True, standard_deviation=True, probability_distribution=True)
-testing_frame = ProcessData.testData(moving_average=True, standard_deviation=True, probability_from_file=True)
+training_frame = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True, moving_entropy=True)
+testing_frame = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, moving_entropy=True)
 
 # Select training columns
 training_columns = list(training_frame.columns)

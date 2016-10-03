@@ -11,8 +11,8 @@ h2o.init()
 response_column = u'RUL'
 
 # load pre-processed data frames
-training_frame = ProcessData.trainData(moving_average=True, standard_deviation=True, moving_entropy=True)
-testing_frame = ProcessData.testData(moving_average=True, standard_deviation=True, moving_entropy=True)
+training_frame = ProcessData.trainData()
+testing_frame = ProcessData.testData()
 
 # create h2o frames
 train = h2o.H2OFrame(training_frame)

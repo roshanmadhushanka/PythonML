@@ -55,7 +55,7 @@ def moving_threshold_average(series, threshold=-1, window=5, default=False):
         else:
             limit = abs(_min - _avg)
 
-        threshold = limit / 10.0
+        threshold = limit / 2.0
 
 
     size = len(series)
@@ -93,7 +93,7 @@ def moving_median_centered_average(series, window=5, boundary=1, default=False):
     ret = np.zeros(shape=size - window + 1)
     for i in range(size - window + 1):
         subset = series[i:i + window]
-        subset = subset.sort()
+        subset.sort()
         subset = subset[boundary:-boundary]
         ret[i] = sum(subset) / float(len(subset))
 
