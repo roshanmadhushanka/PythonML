@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="Median centered average">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flow16.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flow17.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultipleModelPrediction.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultipleModelPrediction1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Update.iml" afterPath="$PROJECT_DIR$/.idea/Update.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing - H2O DL.py" afterPath="$PROJECT_DIR$/Testing - H2O DL.py" />
     </list>
     <ignored path="Update.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +49,8 @@
       <file leaf-file-name="MultipleModelPrediction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultipleModelPrediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="82" column="44" selection-start-line="69" selection-start-column="0" selection-end-line="82" selection-end-column="44" />
+            <state relative-caret-position="940">
+              <caret line="82" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
                 <element signature="e#14#24#0" expanded="true" />
               </folding>
@@ -65,13 +58,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultipleModelPrediction1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MultipleModelPrediction1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MultipleModelPrediction1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
+            <state relative-caret-position="535">
               <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultipleModelPrediction2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MultipleModelPrediction2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
+              <folding>
+                <element signature="e#14#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,16 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
               <caret line="619" column="0" selection-start-line="619" selection-start-column="0" selection-end-line="619" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/keras/engine/training.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -171,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/featureeng/Featuring.py" />
         <option value="$PROJECT_DIR$/Train.py" />
         <option value="$PROJECT_DIR$/ProgressBar.py" />
         <option value="$PROJECT_DIR$/Test.py" />
@@ -222,6 +216,7 @@
         <option value="$PROJECT_DIR$/Testing - H2O DL.py" />
         <option value="$PROJECT_DIR$/MultipleModelPrediction.py" />
         <option value="$PROJECT_DIR$/MultipleModelPrediction1.py" />
+        <option value="$PROJECT_DIR$/MultipleModelPrediction2.py" />
       </list>
     </option>
   </component>
@@ -497,24 +492,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Python.MultipleModelPrediction1">
-    <configuration default="false" name="Flow16" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flow16.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.MultipleModelPrediction2">
     <configuration default="false" name="H2O DL Auto" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -579,6 +557,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Update" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MultipleModelPrediction1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MultipleModelPrediction2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MultipleModelPrediction2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -718,19 +713,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Flow16" />
-      <item index="1" class="java.lang.String" itemvalue="Python.H2O DL Auto" />
-      <item index="2" class="java.lang.String" itemvalue="Python.MultipleModelPrediction" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Testing - H2O DL" />
-      <item index="4" class="java.lang.String" itemvalue="Python.MultipleModelPrediction1" />
+      <item index="0" class="java.lang.String" itemvalue="Python.H2O DL Auto" />
+      <item index="1" class="java.lang.String" itemvalue="Python.MultipleModelPrediction" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Testing - H2O DL" />
+      <item index="3" class="java.lang.String" itemvalue="Python.MultipleModelPrediction1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.MultipleModelPrediction2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.MultipleModelPrediction1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.MultipleModelPrediction" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Testing - H2O DL" />
-        <item index="3" class="java.lang.String" itemvalue="Python.H2O DL Auto" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Flow16" />
+        <item index="0" class="java.lang.String" itemvalue="Python.MultipleModelPrediction2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.MultipleModelPrediction1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.MultipleModelPrediction" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Testing - H2O DL" />
+        <item index="4" class="java.lang.String" itemvalue="Python.H2O DL Auto" />
       </list>
     </recent_temporary>
   </component>
@@ -888,7 +883,21 @@
       <option name="project" value="LOCAL" />
       <updated>1475230981842</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Multiple Model Eavulation">
+      <created>1475482126704</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1475482126704</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Multiple Model Eavulation with any number of models">
+      <created>1475483758934</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1475483758934</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -902,14 +911,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16048035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3387271" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37068063" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -967,7 +976,9 @@
     <MESSAGE value="K Closest average calculation&#10;" />
     <MESSAGE value="Math complete&#10;" />
     <MESSAGE value="Median centered average" />
-    <option name="LAST_COMMIT_MESSAGE" value="Median centered average" />
+    <MESSAGE value="Multiple Model Eavulation" />
+    <MESSAGE value="Multiple Model Eavulation with any number of models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multiple Model Eavulation with any number of models" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -976,13 +987,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/pandas/core/internals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56565">
-          <caret line="3816" column="0" selection-start-line="3816" selection-start-column="0" selection-end-line="3816" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/pandas/core/series.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2580">
@@ -1250,7 +1254,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1368,22 +1372,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MultipleModelPrediction1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MultipleModelPrediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="82" column="44" selection-start-line="69" selection-start-column="0" selection-end-line="82" selection-end-column="44" />
+        <state relative-caret-position="940">
+          <caret line="82" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="e#14#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultipleModelPrediction1.py">
+    <entry file="file://$PROJECT_DIR$/MultipleModelPrediction2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+        <state relative-caret-position="91">
+          <caret line="20" column="91" selection-start-line="20" selection-start-column="91" selection-end-line="20" selection-end-column="91" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#14#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
