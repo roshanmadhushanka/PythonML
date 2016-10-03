@@ -12,8 +12,8 @@ h2o.init()
 response_column = 'RUL'
 
 # load pre-processed data frames
-training_frame = ProcessData.trainData(moving_median_centered_average=True, standard_deviation=True, probability_distribution=True)
-testing_frame = ProcessData.testData(moving_median_centered_average=True, standard_deviation=True, probability_from_file=True)
+training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True, moving_median_centered_average=True, moving_threshold_average=True)
+testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True, moving_median_centered_average=True, moving_threshold_average=True)
 
 # create h2o frames
 train = h2o.H2OFrame(training_frame)
@@ -28,7 +28,7 @@ training_columns.remove("UnitNumber")
 training_columns.remove("Time")
 
 # Building mode
-model = H2ODeepLearningEstimator(hidden=[200, 200], score_each_iteration=True, variable_importances=True)
+model = H2ODeepLearningEstimator(hidden=[200, 200], score_each_iteration=False, variable_importances=True)
 model.show()
 
 # Training model
