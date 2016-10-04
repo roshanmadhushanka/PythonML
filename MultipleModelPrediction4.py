@@ -11,7 +11,7 @@ from h2o.estimators import H2ODeepLearningEstimator
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # config
-_nmodels = 10
+_nmodels = 50
 
 # initialize server
 h2o.init()
@@ -45,12 +45,13 @@ model_arr = range(_nmodels)
 print "Building models"
 print "---------------"
 for i in range(_nmodels):
-    model_arr[i] = H2ODeepLearningEstimator(hidden=[100, 100], score_each_iteration=True, variable_importances=True)
+    model_arr[i] = H2ODeepLearningEstimator(hidden=[200, 200], score_each_iteration=True, variable_importances=True)
 print "Build model complete...\n"
 
 print "Train models"
 print "------------"
 for i in range(_nmodels):
+    print "Train : " + str(i + 1) + "/" + str(_nmodels)
     model_arr[i].train(x=training_columns, y=response_column, training_frame=train)
 print "Train model complete...\n"
 

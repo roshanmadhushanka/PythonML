@@ -7,8 +7,8 @@ from sklearn_pandas import DataFrameMapper
 from dataprocessor import ProcessData
 import math
 
-_nmodels = 10
-_lim = 2
+_nmodels = 50
+_lim = 20
 
 # initialize server
 h2o.init()
@@ -17,8 +17,8 @@ h2o.init()
 response_column = 'RUL'
 
 # load pre-processed data frames
-training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True, moving_entropy=True, probability_distribution=True)
-testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True, moving_entropy=True, probability_from_file=True)
+training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True, probability_distribution=True)
+testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True, probability_from_file=True)
 
 # create h2o frames
 train = h2o.H2OFrame(training_frame)
@@ -48,9 +48,14 @@ for i in range(_nmodels):
 print "Training models"
 print "---------------"
 for i in range(_nmodels):
+    print "Train : " + str(i+1) + "/" + str(_nmodels)
     model_arry[i].train(x=training_columns, y=response_column, training_frame=train)
 
-
+print "Error in models"
+print "---------------"
+for i in range(_nmodels):
+    print model_arry[i].mse(model_arry[i].model_performance(test_data=test))
+    
 predicted_arr = range(_nmodels)
 for i in range(_nmodels):
     predicted_arr[i] = model_arry[i].predict(test)
