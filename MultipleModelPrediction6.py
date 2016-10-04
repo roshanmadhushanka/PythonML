@@ -20,8 +20,8 @@ _lim = 1
 h2o.init()
 
 # get processed data
-pTrain = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
-pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
+pTrain = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True)
+pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True)
 
 # convert to h2o frames
 hTrain = h2o.H2OFrame(pTrain)
@@ -38,7 +38,7 @@ training_columns.remove("UnitNumber")
 training_columns.remove("Time")
 
 # split frames
-train, validate = hTrain.split_frame([0.9])
+train, validate = hTrain.split_frame([0.95])
 test = hTest
 ground_truth = np.array(pTest['RUL'])
 
@@ -68,6 +68,8 @@ print "Validation model complete...\n"
 print "Calculating weights"
 print "-----------------"
 weight_arr = np.amax(mse_val)/mse_val
+print "Models", model_arr
+print "Weights",weight_arr
 print "Calculation weights complete...\n"
 
 print "Select Models"
