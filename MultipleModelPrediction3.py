@@ -7,33 +7,42 @@ from sklearn_pandas import DataFrameMapper
 from dataprocessor import ProcessData
 import math
 
+h2o.init()
+
 _nmodels = 10
 _lim = 2
-
-# initialize server
-h2o.init()
 
 # define response variable
 response_column = 'RUL'
 
-# load pre-processed data frames
-training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True, moving_entropy=True)
-testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True, moving_entropy=True)
+# Pandas frame
+data_frame = ProcessData.trainData()
+test_frame = ProcessData.testData()
 
-# create h2o frames
-train = h2o.H2OFrame(training_frame)
-test = h2o.H2OFrame(testing_frame)
-train.set_names(list(training_frame.columns))
-test.set_names(list(testing_frame.columns))
+# Create h2o frame
+h2o_data = h2o.H2OFrame(data_frame)
+h2o_data.set_names(list(data_frame.columns))
+
+h2o_test = h2o.H2OFrame(test_frame)
+h2o_test.set_names(list(test_frame.columns))
+
+# split frame
+data = h2o_data.split_frame(ratios=(0.9, 0.09))
+
+# split data
+train_data = data[0]
+validate_data = data[1]
+test_data = h2o_test
 
 # Feature selection
-training_columns = list(training_frame.columns)
+training_columns = list(data_frame.columns)
 training_columns.remove(response_column)
 training_columns.remove("UnitNumber")
 training_columns.remove("Time")
 
 # ground truth
-tY = np.array(testing_frame['RUL'])
+ground_truth = np.array(test_frame['RUL'])
+validate_rsponse = np.array(validate_data['RUL'])
 
 # model array
 model_arry = range(_nmodels)
@@ -48,13 +57,16 @@ for i in range(_nmodels):
 print "Training models"
 print "---------------"
 for i in range(_nmodels):
-    model_arry[i].train(x=training_columns, y=response_column, training_frame=train)
+    model_arry[i].train(x=training_columns, y=response_column, training_frame=train_data)
 
 
 predicted_arr = range(_nmodels)
 for i in range(_nmodels):
-    predicted_arr[i] = model_arry[i].predict(test)
+    predicted_arr[i] = model_arry[i].predict(validate_data)
 
+error_arr = np.zeros(shape=_nmodels)
+for i in range(_nmodels):
+    error_arr[i] = mean_squared_error()
 
 predicted_vals = np.zeros(shape=100)
 for i in range(len(test[:,0])):
@@ -69,4 +81,4 @@ for i in range(len(test[:,0])):
 print "Root Mean Squared Error :", math.sqrt(mean_squared_error(tY, predicted_vals))
 print "Mean Absolute Error     :", mean_absolute_error(tY, predicted_vals)
 
-# frame.split_frame([0.7])
+
