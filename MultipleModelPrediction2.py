@@ -17,8 +17,8 @@ h2o.init()
 response_column = 'RUL'
 
 # load pre-processed data frames
-training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True, moving_entropy=True)
-testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True, moving_entropy=True)
+training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True, moving_entropy=True, probability_distribution=True)
+testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True, moving_entropy=True, probability_from_file=True)
 
 # create h2o frames
 train = h2o.H2OFrame(training_frame)

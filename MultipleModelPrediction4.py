@@ -1,3 +1,8 @@
+'''
+Assign weigths to multiple models
+Select all models to predict values
+'''
+
 import h2o
 import numpy as np
 import math
@@ -7,15 +12,13 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # config
 _nmodels = 10
-_smodels = 5
-_lim = 1
 
 # initialize server
 h2o.init()
 
 # get processed data
-pTrain = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True)
-pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True)
+pTrain = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
+pTest = ProcessData.testData(moving_threshold_average=True, standard_deviation=True, probability_from_file=True)
 
 # convert to h2o frames
 hTrain = h2o.H2OFrame(pTrain)
@@ -32,9 +35,7 @@ training_columns.remove("UnitNumber")
 training_columns.remove("Time")
 
 # split frames
-data = hTrain.split_frame(ratios=(0.9, 0.09))
-train = data[0]
-validate = data[1]
+train, validate = hTrain.split_frame([0.9])
 test = hTest
 ground_truth = np.array(pTest['RUL'])
 
@@ -65,14 +66,6 @@ print "-----------------"
 weight_arr = np.amax(mse_val)/mse_val
 print "Calculation weights complete...\n"
 
-print "Select Models"
-print "-------------"
-selected_models = weight_arr.argsort()[-_smodels:][::-1]
-model_arr = [model_arr[i] for i in selected_models]
-weight_arr = [weight_arr[i] for i in selected_models]
-_nmodels = _smodels
-print "Select complete...\n"
-
 print "Predicting"
 print "----------"
 predicted_arr = range(_nmodels)
@@ -84,13 +77,11 @@ print "Filter Predictions"
 print "------------------"
 predicted_vals = np.zeros(shape=100)
 for i in range(len(test[:,0])):
-    tmp = []
+    value = 0.0
     for j in range(_nmodels):
-        tmp.append(predicted_arr[j][i, 0]*weight_arr[j])
-
-    tmp.sort()
-    predicted_vals[i] = (sum(tmp[_lim:-_lim]) / float(len(tmp[_lim:-_lim]) * np.average(weight_arr)))
-
+        value += predicted_arr[j][i, 0]*weight_arr[j]
+    value = value / np.sum(weight_arr)
+    predicted_vals[i] = value
 print "Filter predictions complete...\n"
 
 print "Result"

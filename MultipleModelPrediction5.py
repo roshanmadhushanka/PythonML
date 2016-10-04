@@ -1,3 +1,8 @@
+'''
+Assign weights to model
+select k number of models to predict
+'''
+
 import h2o
 import numpy as np
 import math
@@ -32,9 +37,7 @@ training_columns.remove("UnitNumber")
 training_columns.remove("Time")
 
 # split frames
-data = hTrain.split_frame(ratios=(0.9, 0.09))
-train = data[0]
-validate = data[1]
+train, validate = hTrain.split_frame([0.9])
 test = hTest
 ground_truth = np.array(pTest['RUL'])
 
@@ -84,12 +87,11 @@ print "Filter Predictions"
 print "------------------"
 predicted_vals = np.zeros(shape=100)
 for i in range(len(test[:,0])):
-    tmp = []
+    value = 0.0
     for j in range(_nmodels):
-        tmp.append(predicted_arr[j][i, 0]*weight_arr[j])
+        value += predicted_arr[j][i, 0]*weight_arr[j]
 
-    tmp.sort()
-    predicted_vals[i] = (sum(tmp[_lim:-_lim]) / float(len(tmp[_lim:-_lim]) * np.average(weight_arr)))
+    predicted_vals[i] = value / float(np.sum(weight_arr))
 
 print "Filter predictions complete...\n"
 
