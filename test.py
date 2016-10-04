@@ -1,8 +1,97 @@
-from featureeng import Math
-import random
+import h2o
+import numpy as np
+import math
+from dataprocessor import ProcessData
+from h2o.estimators import H2ODeepLearningEstimator
+from sklearn.metrics import mean_squared_error, mean_absolute_error
 
-lst = [4, 8, 5, 3, 5, 9, 9, 1, 8, 5, 7, 3, 9, 9, 1, 4, 3, 3, 7, 1, 6, 8, 4, 8, 4, 5, 3, 4, 8, 1, 4, 6, 1, 7, 5, 4, 7, 4, 2, 8, 6, 7, 5, 3, 3, 2, 6, 3, 8, 6, 9, 3, 4, 7, 7, 7, 0, 7, 4, 1, 2, 2, 6, 6, 2, 8, 6, 3, 8, 1, 8, 3, 7, 0, 2, 7, 0, 4, 8, 8, 6, 6, 9, 0, 1, 1, 8, 3, 9, 1, 9, 1, 7, 4, 4, 3, 9, 6, 7, 1]
+# config
+_nmodels = 3
+_lim = 1
 
-arr = Math.moving_median_centered_average(series=lst, window=5,boundary=1)
+# initialize server
+h2o.init()
 
-print arr
+# get processed data
+pTrain = ProcessData.trainData()
+pTest = ProcessData.testData()
+
+# convert to h2o frames
+hTrain = h2o.H2OFrame(pTrain)
+hTest = h2o.H2OFrame(pTest)
+hTrain.set_names(list(pTrain.columns))
+hTest.set_names(list(pTest.columns))
+
+# select column names
+response_column = 'RUL'
+
+training_columns = list(pTrain.columns)
+training_columns.remove(response_column)
+training_columns.remove("UnitNumber")
+training_columns.remove("Time")
+
+# split frames
+data = hTrain.split_frame(ratios=(0.9, 0.09))
+train = data[0]
+validate = data[1]
+test = hTest
+ground_truth = np.array(pTest['RUL'])
+
+# Building model
+model_arr = range(_nmodels)
+
+print "Building models"
+print "---------------"
+for i in range(_nmodels):
+    model_arr[i] = H2ODeepLearningEstimator(hidden=[100, 100], score_each_iteration=True, variable_importances=True)
+print "Build model complete...\n"
+
+print "Train models"
+print "------------"
+for i in range(_nmodels):
+    model_arr[i].train(x=training_columns, y=response_column, training_frame=train)
+print "Train model complete...\n"
+
+print "Validate models"
+print "---------------"
+mse_val = np.zeros(shape=_nmodels)
+for i in range(_nmodels):
+    mse_val[i] = model_arr[i].mse(model_arr[i].model_performance(test_data=validate))
+print "Validation model complete...\n"
+
+print "Calculating weights"
+print "-----------------"
+weight_arr = np.amax(mse_val)/mse_val
+print "Calculation weights complete...\n"
+
+print "Predicting"
+print "----------"
+predicted_arr = range(_nmodels)
+for i in range(_nmodels):
+    predicted_arr[i] = model_arr[i].predict(test)
+print "Prediction complete...\n"
+
+print "Filter Predictions"
+print "------------------"
+predicted_vals = np.zeros(shape=100)
+for i in range(len(test[:,0])):
+    value = 0.0
+    for j in range(_nmodels):
+        value += predicted_arr[j][i, 0]*weight_arr[j]
+    value = value / np.sum(weight_arr)
+    predicted_vals[i] = value
+print "Filter predictions complete...\n"
+
+print "Result"
+print "------"
+
+print "Root Mean Squared Error :", math.sqrt(mean_squared_error(ground_truth, predicted_vals))
+print "Mean Absolute Error     :", mean_absolute_error(ground_truth, predicted_vals)
+
+
+
+
+
+
+
+
