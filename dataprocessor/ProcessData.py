@@ -225,7 +225,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
         filtered_frame['RUL'] = pd.Series(ground_truth['RUL'], index=filtered_frame.index)
         print "Applying RUL"
 
-    print "Testing frame process is completed"
+    print "Testing frame process is completed\n"
     filtered_frame.to_csv("Testing.csv", index=False)
     return filtered_frame
 
@@ -417,7 +417,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
     rul = DataSetSpecific.remaining_usefullifetime(indices=indices, time_series=time_column)
     training_frame['RUL'] = pd.Series(rul, index=training_frame.index)
 
-    print "Training frame process is completed"
+    print "Training frame process is completed\n"
     training_frame.to_csv("Training.csv", index=False)
     return training_frame
 

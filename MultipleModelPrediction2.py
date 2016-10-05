@@ -7,8 +7,10 @@ from sklearn_pandas import DataFrameMapper
 from dataprocessor import ProcessData
 import math
 
-_nmodels = 10
-_lim = 3
+_nmodels = 10 #SD, MKA, PROB
+_lim = 4
+# _nmodels = 20
+# _lim = 7
 
 # initialize server
 h2o.init()
