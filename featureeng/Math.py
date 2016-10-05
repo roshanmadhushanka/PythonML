@@ -132,6 +132,26 @@ def moving_k_closest_average(series, window=5, kclosest=3, default=False):
     else:
         return ret
 
+def moving_weighted_average(series, window=5, weights=[1, 2, 3, 4, 5], default=False):
+    if len(weights) <> window:
+        return np.zeros(shape=len(series))
+
+    # Convert pandas.series to list
+    series = list(series)
+
+    size = len(series)
+    ret = np.zeros(shape=size - window + 1)
+    for i in range(size - window + 1):
+        subset = np.array(series[i:i + window])
+        weights = np.array(weights)
+        ret[i] = sum(subset*weights) / float(sum(weights))
+
+    # Add default values for initial window
+    if (default):
+        return np.concatenate((np.zeros(shape=window - 1), ret), axis=0)
+    else:
+        return ret
+
 def moving_median(series, window=5, default=False):
     '''
         Calculate median within a moving window
