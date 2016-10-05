@@ -12,7 +12,7 @@ from h2o.estimators import H2ODeepLearningEstimator
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # config
-_nmodels = 10
+_nmodels = 50
 _smodels = 5
 _lim = 1
 
