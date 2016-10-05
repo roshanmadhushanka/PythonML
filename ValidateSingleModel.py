@@ -1,7 +1,6 @@
 '''
-Assign weights to model
-select k number of models to predict
-select sorted middle n number of predictions out of k and get the average
+Assign weigths to multiple models
+Select all models to predict values
 '''
 
 import h2o
@@ -13,15 +12,14 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # config
 _nmodels = 10
-_smodels = 5
-_lim = 1
+_lim = 2
 
 # initialize server
 h2o.init()
 
 # get processed data
 pTrain = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True)
-pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True)
+pTest = ProcessData.testData(moving_threshold_average=True, standard_deviation=True)
 
 # convert to h2o frames
 hTrain = h2o.H2OFrame(pTrain)
@@ -38,7 +36,7 @@ training_columns.remove("UnitNumber")
 training_columns.remove("Time")
 
 # split frames
-train, validate = hTrain.split_frame([0.7])
+train, validate = hTrain.split_frame([0.8])
 test = hTest
 ground_truth = np.array(pTest['RUL'])
 
@@ -55,29 +53,8 @@ print "Train models"
 print "------------"
 for i in range(_nmodels):
     print "Train : " + str(i + 1) + "/" + str(_nmodels)
-    model_arr[i].train(x=training_columns, y=response_column, training_frame=train)
+    model_arr[i].train(x=training_columns, y=response_column, training_frame=h2o.rbind(train, validate))
 print "Train model complete...\n"
-
-print "Validate models"
-print "---------------"
-mse_val = np.zeros(shape=_nmodels)
-for i in range(_nmodels):
-    mse_val[i] = model_arr[i].mse(model_arr[i].model_performance(test_data=validate))
-print "Validation model complete...\n"
-
-print "Calculating weights"
-print "-----------------"
-weight_arr = np.amax(mse_val)/mse_val
-print "Weights",weight_arr
-print "Calculation weights complete...\n"
-
-print "Select Models"
-print "-------------"
-selected_models = weight_arr.argsort()[-_smodels:][::-1]
-model_arr = [model_arr[i] for i in selected_models]
-weight_arr = [weight_arr[i] for i in selected_models]
-_nmodels = _smodels
-print "Select complete...\n"
 
 print "Predicting"
 print "----------"
@@ -92,11 +69,9 @@ predicted_vals = np.zeros(shape=100)
 for i in range(len(test[:,0])):
     tmp = []
     for j in range(_nmodels):
-        tmp.append(predicted_arr[j][i, 0]*weight_arr[j])
+        tmp.append(predicted_arr[j][i, 0])
 
-    tmp.sort()
-    predicted_vals[i] = (sum(tmp[_lim:-_lim]) / float(len(tmp[_lim:-_lim]) * np.average(weight_arr)))
-
+    predicted_vals[i] = (sum(tmp[_lim:-_lim]) / float(len(tmp[_lim:-_lim])))
 print "Filter predictions complete...\n"
 
 print "Result"

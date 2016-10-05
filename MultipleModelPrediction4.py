@@ -35,7 +35,7 @@ training_columns.remove("UnitNumber")
 training_columns.remove("Time")
 
 # split frames
-train, validate = hTrain.split_frame([0.95])
+train, validate = hTrain.split_frame([0.7])
 test = hTest
 ground_truth = np.array(pTest['RUL'])
 
@@ -65,7 +65,6 @@ print "Validation model complete...\n"
 print "Calculating weights"
 print "-----------------"
 weight_arr = np.amax(mse_val)/mse_val
-print "Models", model_arr
 print "Weights",weight_arr
 print "Calculation weights complete...\n"
 

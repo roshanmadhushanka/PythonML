@@ -8,7 +8,7 @@ from dataprocessor import ProcessData
 import math
 
 _nmodels = 10
-_lim = 2
+_lim = 3
 
 # initialize server
 h2o.init()
@@ -17,8 +17,8 @@ h2o.init()
 response_column = 'RUL'
 
 # load pre-processed data frames
-training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True)
-testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True)
+training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True, probability_distribution=True)
+testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True, probability_from_file=True)
 
 # create h2o frames
 train = h2o.H2OFrame(training_frame)

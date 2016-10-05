@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from featureeng import Math, Select, DataSetSpecific, Progress
+from featureeng import Math, Select, DataSetSpecific, Progress, ProbabilityOut
 from file import FileHandler
 
 _moving_average_window = 5
@@ -125,6 +125,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
+        ProbabilityOut.saveToFile()
 
     if moving_probability:
         # Moving probability distribution
