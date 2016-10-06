@@ -13,8 +13,8 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # config
 _nmodels = 50
-_smodels = 5
-_lim = 1
+_smodels = 10
+_lim = 3
 
 # initialize server
 h2o.init()
@@ -62,7 +62,7 @@ print "Validate models"
 print "---------------"
 mse_val = np.zeros(shape=_nmodels)
 for i in range(_nmodels):
-    mse_val[i] = model_arr[i].mse(model_arr[i].model_performance(test_data=validate))
+    mse_val[i] = model_arr[i].mae(model_arr[i].model_performance(test_data=validate))
 print "Validation model complete...\n"
 
 print "Calculating weights"
