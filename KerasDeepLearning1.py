@@ -49,31 +49,24 @@ testX = numpy.reshape(testX, (testX.shape[0], testX.shape[1], 1))
 model = Sequential()
 layers = [1, 50, 100, 1]
 
-model.add(LSTM(
-        input_dim=layers[0],
-        output_dim=layers[1],
-        return_sequences=True))
+model.add(LSTM(input_dim=layers[0],output_dim=layers[1],return_sequences=True))
 model.add(Dropout(0.2))
-
-model.add(LSTM(
-        layers[2],
-        return_sequences=False))
+model.add(LSTM(layers[2],return_sequences=False))
 model.add(Dropout(0.2))
-
-model.add(Dense(
-        output_dim=layers[3]))
+model.add(Dense(output_dim=layers[3]))
 model.add(Activation("linear"))
 
 
 model.compile(loss='mean_squared_error', optimizer='adam')
-model.fit(trainX, trainY, nb_epoch=5, batch_size=1, verbose=2)
-#
+model.fit(trainX, trainY, nb_epoch=1, batch_size=1, verbose=2)
 
-# # Estimate model performance
-# trainScore = model.evaluate(trainX, trainY, verbose=0)
-# trainScore = math.sqrt(trainScore)
-#
-# predictions = model.predict(testX)
-# print predictions
+
+# Estimate model performance
+trainScore = model.evaluate(trainX, trainY, verbose=0)
+trainScore = math.sqrt(trainScore)
+print trainScore
+
+predictions = model.predict(testX)
+print predictions
 
 
