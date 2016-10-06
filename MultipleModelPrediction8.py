@@ -27,8 +27,7 @@ h2o.init()
 response_column = 'RUL'
 
 # load pre-processed data frames
-training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True,
-                                       probability_distribution=True)
+training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True, probability_distribution=True)
 testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True, probability_from_file=True)
 
 # create h2o frames
@@ -79,7 +78,7 @@ for i in range(len(test[:, 0])):
     p = list(p)
     x = list(x)
     k = p.index(max(p)) # Index of most occurring value
-    lst = [y for y in tmp if (y >= x[i] and y <= x[i+1])]
+    lst = [y for y in tmp if (y >= x[k] and y <= x[k+1])]
     print "P",p
     print "X",x
     print "tmp", tmp
