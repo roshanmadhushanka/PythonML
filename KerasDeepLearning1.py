@@ -49,11 +49,9 @@ testX = numpy.reshape(testX, (testX.shape[0], testX.shape[1], 1))
 model = Sequential()
 layers = [1, 50, 100, 1]
 
-model.add(LSTM(input_dim=layers[0],output_dim=layers[1],return_sequences=True))
-model.add(Dropout(0.2))
-model.add(LSTM(layers[2],return_sequences=False))
-model.add(Dropout(0.2))
-model.add(Dense(output_dim=layers[3]))
+model.add(LSTM(input_dim=1,output_dim=10))
+#model.add(LSTM(50))
+model.add(Dense(output_dim=1))
 model.add(Activation("linear"))
 
 
