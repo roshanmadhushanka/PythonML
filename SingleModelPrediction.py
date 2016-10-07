@@ -1,5 +1,6 @@
 import h2o
 import math
+import numpy as np
 from dataprocessor import ProcessData
 from h2o.estimators import H2ODeepLearningEstimator
 
@@ -36,5 +37,14 @@ mean_squared_error = model.mse(model.model_performance(test_data=test))
 
 # Output
 print "Root Mean Squared Error", math.sqrt(mean_squared_error)
+
+# Print predictions
+predict = list(model.predict(test_data=test))
+print "Predict"
+print predict
+
+testY = np.array(testing_frame['RUL'])
+
+print "Root Mean Squared Error :", math.sqrt(mean_squared_error(testY, np.array(list(predict))))
 
 
