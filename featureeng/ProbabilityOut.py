@@ -53,8 +53,6 @@ def saveToFile():
     for column_name in selected_column_names:
         tmp = {}
         prob, rang, bin_size = probabilty_distribution(training_frame[column_name], no_of_bins=250)
-
-
         tmp["prob"] = ",".join(map(str, prob))
         tmp["rang"] = ",".join(map(str, rang))
         tmp["sbin"] = bin_size

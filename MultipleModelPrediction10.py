@@ -1,8 +1,9 @@
-# RMSE 30.27
+# RMSE 29.1534870986
 '''
 Multiple models predict the value
 Based on that predicted values create a histogram of k number of bins
 Select the most predicted value
+Gradient Boost
 '''
 
 # h2o testing
@@ -10,14 +11,13 @@ import math
 
 import h2o
 import numpy as np
-from h2o.estimators import H2ODeepLearningEstimator
+from h2o.estimators import H2OGradientBoostingEstimator
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 from dataprocessor import ProcessData
 
 _nmodels = 10  # SD, MKA, PROB
 _nbins = 5
-_validation_ratio = 0.8
 
 # _nmodels = 20
 # _lim = 7
@@ -25,28 +25,27 @@ _validation_ratio = 0.8
 # initialize server
 h2o.init()
 
-# get processed data
-pTrain = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
-pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
-
-# convert to h2o frames
-hTrain = h2o.H2OFrame(pTrain)
-hTest = h2o.H2OFrame(pTest)
-hTrain.set_names(list(pTrain.columns))
-hTest.set_names(list(pTest.columns))
-
-# select column names
+# define response variable
 response_column = 'RUL'
 
-training_columns = list(pTrain.columns)
+# load pre-processed data frames
+training_frame = ProcessData.trainData(standard_deviation=True, moving_k_closest_average=True, probability_distribution=True)
+testing_frame = ProcessData.testData(standard_deviation=True, moving_k_closest_average=True, probability_from_file=True)
+
+# create h2o frames
+train = h2o.H2OFrame(training_frame)
+test = h2o.H2OFrame(testing_frame)
+train.set_names(list(training_frame.columns))
+test.set_names(list(testing_frame.columns))
+
+# Feature selection
+training_columns = list(training_frame.columns)
 training_columns.remove(response_column)
 training_columns.remove("UnitNumber")
 training_columns.remove("Time")
 
-# split frames
-train, validate = hTrain.split_frame([_validation_ratio])
-test = hTest
-ground_truth = np.array(pTest['RUL'])
+# ground truth
+tY = np.array(testing_frame['RUL'])
 
 # model array
 model_arry = range(_nmodels)
@@ -55,13 +54,13 @@ model_arry = range(_nmodels)
 print "Building models"
 print "---------------"
 for i in range(_nmodels):
-    model_arry[i] = H2ODeepLearningEstimator(hidden=[200, 200], score_each_iteration=True, variable_importances=True, epochs=100)
+    model_arry[i] = H2OGradientBoostingEstimator()
 
 print "Training models"
 print "---------------"
 for i in range(_nmodels):
     print "Train : " + str(i + 1) + "/" + str(_nmodels)
-    model_arry[i].train(x=training_columns, y=response_column, training_frame=train, validation_frame=validate)
+    model_arry[i].train(x=training_columns, y=response_column, training_frame=train)
 
 print "Error in models"
 print "---------------"
@@ -91,7 +90,7 @@ for i in range(len(test[:, 0])):
     #predicted_vals[i] = x[p.index(max(p))+1]
     predicted_vals[i] = sum(lst) / float(len(lst))
 
-print "Root Mean Squared Error :", math.sqrt(mean_squared_error(ground_truth, predicted_vals))
-print "Mean Absolute Error     :", mean_absolute_error(ground_truth, predicted_vals)
+print "Root Mean Squared Error :", math.sqrt(mean_squared_error(tY, predicted_vals))
+print "Mean Absolute Error     :", mean_absolute_error(tY, predicted_vals)
 
 # frame.split_frame([0.7])

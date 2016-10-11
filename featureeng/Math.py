@@ -373,3 +373,4 @@ def moving_probability(series, window=10, no_of_bins=5, default=False):
         return np.concatenate((np.zeros(shape=window - 1), ret), axis=0)
     else:
         return ret
+

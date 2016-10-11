@@ -1,6 +1,8 @@
+# RMSE 30.4148733582
 '''
 Multiple Models in
 SciKit Learn - RFR
+histogram
 '''
 
 from sklearn.ensemble import RandomForestRegressor
@@ -20,8 +22,8 @@ _nbins = 5
 response_column = 'RUL'
 
 # load pre-processed data frames
-training_frame = ProcessData.trainData()
-testing_frame = ProcessData.testData()
+training_frame = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
+testing_frame = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
 
 # Feature selection
 training_columns = list(training_frame.columns)

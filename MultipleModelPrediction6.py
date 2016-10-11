@@ -1,3 +1,4 @@
+# RMSE 25.6437958394
 '''
 Assign weights to model
 select k number of models to predict
@@ -15,13 +16,14 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 _nmodels = 10
 _smodels = 5
 _lim = 1
+_validation_ratio = 0.8
 
 # initialize server
 h2o.init()
 
 # get processed data
-pTrain = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True)
-pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True)
+pTrain = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
+pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
 
 # convert to h2o frames
 hTrain = h2o.H2OFrame(pTrain)
@@ -38,7 +40,7 @@ training_columns.remove("UnitNumber")
 training_columns.remove("Time")
 
 # split frames
-train, validate = hTrain.split_frame([0.7])
+train, validate = hTrain.split_frame([_validation_ratio])
 test = hTest
 ground_truth = np.array(pTest['RUL'])
 
@@ -101,7 +103,6 @@ print "Filter predictions complete...\n"
 
 print "Result"
 print "------"
-
 print "Root Mean Squared Error :", math.sqrt(mean_squared_error(ground_truth, predicted_vals))
 print "Mean Absolute Error     :", mean_absolute_error(ground_truth, predicted_vals)
 
