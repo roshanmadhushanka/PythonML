@@ -51,12 +51,11 @@ anomaly_train_columns.remove('UnitNumber')
 anomaly_train_columns.remove('Time')
 
 column_count = len(anomaly_train_columns)
-outer_layer_size = column_count / 2
-inner_layer_size = column_count / 4
+inner_layer_size = column_count / 5
 # Define model
 anomaly_model = H2OAutoEncoderEstimator(
         activation="Rectifier",
-        hidden=[outer_layer_size, inner_layer_size, outer_layer_size],
+        hidden=[inner_layer_size, inner_layer_size, inner_layer_size],
         sparse=True,
         l1=1e-4,
         epochs=100,
@@ -81,12 +80,12 @@ print "-------------------------------------------------------------------------
 print "Reconstruction Error Array Size :", len(reconstruction_error)
 filtered_train = pd.DataFrame()
 count = 0
-for i in trange(hTrain.nrow):
+for i in range(hTrain.nrow):
     if reconstruction_error[i,0] < threshold:
         df1 = pTrain.iloc[i, :]
         filtered_train = filtered_train.append(df1, ignore_index=True)
         count += 1
-    #Progress.printProgress(iteration=(i+1), total=hTrain.nrow, decimals=1, prefix="Progress", suffix="Complete")
+    Progress.printProgress(iteration=(i+1), total=hTrain.nrow, decimals=1, prefix="Progress", suffix="Complete")
 
 print filtered_train
 print "Original Size :", hTrain.nrow
