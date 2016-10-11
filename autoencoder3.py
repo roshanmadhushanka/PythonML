@@ -17,8 +17,8 @@ response_column = 'RUL'
 h2o.init()
 
 # Load data frames
-pData = ProcessData.trainData()
-pTest = ProcessData.testData()
+pData = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
+pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
 
 # Split data frame
 pValidate = pData.sample(frac=_validation_ratio, random_state=200)
@@ -33,6 +33,10 @@ hTrain.set_names(list(pTrain.columns))
 
 hTest = h2o.H2OFrame(pTest)
 hTest.set_names(list(pTest.columns))
+
+# Save validate and train frames
+pValidate.to_csv("Auto-Validate.csv", index=False)
+pTrain.to_csv("Auto-Train.csv", index=False)
 
 # Select relevant features
 anomaly_train_columns = list(hTrain.columns)
@@ -101,3 +105,4 @@ print "\nModel Performance"
 print "----------------------------------------------------------------------------------------------------------------"
 # Evaluate model
 print model.model_performance(test_data=hTest)
+
