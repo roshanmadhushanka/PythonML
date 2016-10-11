@@ -34,20 +34,23 @@ hTrain.set_names(list(pTrain.columns))
 hTest = h2o.H2OFrame(pTest)
 hTest.set_names(list(pTest.columns))
 
-# Define model
-anomaly_model = H2OAutoEncoderEstimator(
-        activation="Rectifier",
-        hidden=[25, 12, 25],
-        sparse=True,
-        l1=1e-4,
-        epochs=100,
-    )
-
 # Select relevant features
 anomaly_train_columns = list(hTrain.columns)
 anomaly_train_columns.remove(response_column)
 anomaly_train_columns.remove('UnitNumber')
 anomaly_train_columns.remove('Time')
+
+column_count = len(anomaly_train_columns)
+outer_layer_size = column_count / 2
+inner_layer_size = column_count / 4
+# Define model
+anomaly_model = H2OAutoEncoderEstimator(
+        activation="Rectifier",
+        hidden=[outer_layer_size, inner_layer_size, outer_layer_size],
+        sparse=True,
+        l1=1e-4,
+        epochs=100,
+    )
 
 # Train model
 anomaly_model.train(x=anomaly_train_columns, training_frame=hTrain, validation_frame=hValidate)
