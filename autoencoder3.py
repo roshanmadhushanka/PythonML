@@ -9,6 +9,13 @@ from tqdm import trange
 from dataprocessor import ProcessData
 from featureeng import Progress
 
+def getReconstructionError(recon_error, percentile):
+    error_str = recon_error.get_frame_data()
+    err_list = map(float, error_str.split("\n")[1:-1])
+    var = np.array(err_list)  # input array
+    return np.percentile(var, percentile * 100)
+
+
 _validation_ratio = 0.1
 _reconstruction_error_rate = 0.9
 
@@ -62,7 +69,8 @@ anomaly_model.train(x=anomaly_train_columns, training_frame=hTrain, validation_f
 reconstruction_error = anomaly_model.anomaly(test_data=hTrain, per_feature=False)
 
 # Threshold
-threshold = reconstruction_error.max() * _reconstruction_error_rate
+#threshold = reconstruction_error.max() * _reconstruction_error_rate
+threshold = getReconstructionError(reconstruction_error, 0.9)
 
 print "Max Reconstruction Error       :", reconstruction_error.max()
 print "Threshold Reconstruction Error :", threshold
