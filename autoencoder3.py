@@ -31,6 +31,9 @@ hValidate.set_names(list(pValidate.columns))
 hTrain = h2o.H2OFrame(pTrain)
 hTrain.set_names(list(pTrain.columns))
 
+hTest = h2o.H2OFrame(pTest)
+hTest.set_names(list(pTest.columns))
+
 # Define model
 anomaly_model = H2OAutoEncoderEstimator(
         activation="Rectifier",
@@ -71,6 +74,7 @@ for i in range(hTrain.nrow):
         count += 1
     Progress.printProgress(iteration=(i+1), total=hTrain.nrow, decimals=1, prefix="Progress", suffix="Complete")
 
+print filtered_train
 print "Original Size :", hTrain.nrow
 print "Filtered Size :", len(filtered_train)
 print "Removed Rows  :", (hTrain.nrow-len(filtered_train))
@@ -89,3 +93,8 @@ filtered.set_names(list(filtered_train.columns))
 
 model = H2ODeepLearningEstimator(hidden=[500, 500], score_each_iteration=True, variable_importances=True, epochs=100)
 model.train(x=training_columns, y=response_column, training_frame=filtered)
+
+print "\nModel Performance"
+print "----------------------------------------------------------------------------------------------------------------"
+# Evaluate model
+print model.model_performance(test_data=hTest)
