@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoencoder3.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="autoencoder3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autoencoder3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="440">
+              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -71,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoencoder5.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="autoencoder5.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/autoencoder5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-160">
+            <state relative-caret-position="485">
               <caret line="61" column="70" selection-start-line="61" selection-start-column="70" selection-end-line="61" selection-end-column="70" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -880,7 +880,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476244568583</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Autoencoder without Sparse">
+      <created>1476245406807</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1476245406807</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1345,20 +1352,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autoencoder5.py">
+    <entry file="file://$PROJECT_DIR$/autoencoder3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="61" column="70" selection-start-line="61" selection-start-column="70" selection-end-line="61" selection-end-column="70" />
+        <state relative-caret-position="440">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autoencoder3.py">
+    <entry file="file://$PROJECT_DIR$/autoencoder5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="485">
+          <caret line="61" column="70" selection-start-line="61" selection-start-column="70" selection-end-line="61" selection-end-column="70" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

@@ -58,7 +58,6 @@ print "Layers:", layers
 anomaly_model = H2OAutoEncoderEstimator(
         activation="Rectifier",
         hidden=layers,
-        sparse=True,
         l1=1e-4,
         epochs=100,
     )
