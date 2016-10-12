@@ -52,12 +52,13 @@ anomaly_train_columns.remove('Time')
 
 column_count = len(anomaly_train_columns)
 
-inner_layer_size = column_count / 4
-print "Inner Layer Size :", inner_layer_size
+inner_layer_size = column_count / 2
+outer_layer_size = column_count
+print "Layers:", outer_layer_size, inner_layer_size, outer_layer_size
 # Define model
 anomaly_model = H2OAutoEncoderEstimator(
         activation="Rectifier",
-        hidden=[inner_layer_size, inner_layer_size, inner_layer_size],
+        hidden=[outer_layer_size, inner_layer_size, outer_layer_size],
         sparse=True,
         l1=1e-4,
         epochs=100,
@@ -71,7 +72,7 @@ reconstruction_error = anomaly_model.anomaly(test_data=hTrain, per_feature=False
 
 # Threshold
 #threshold = reconstruction_error.max() * _reconstruction_error_rate
-threshold = getReconstructionError(reconstruction_error, 0.99)
+threshold = getReconstructionError(reconstruction_error, 0.9)
 
 print "Max Reconstruction Error       :", reconstruction_error.max()
 print "Threshold Reconstruction Error :", threshold

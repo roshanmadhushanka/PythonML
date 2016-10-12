@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autoencoder5.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autoencoder3.py" afterPath="$PROJECT_DIR$/autoencoder3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autoencoder5.py" afterPath="$PROJECT_DIR$/autoencoder5.py" />
     </list>
     <ignored path="Update.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,8 +63,8 @@
       <file leaf-file-name="autoencoder3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autoencoder3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+            <state relative-caret-position="320">
+              <caret line="64" column="5" selection-start-line="54" selection-start-column="0" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -74,8 +75,8 @@
       <file leaf-file-name="autoencoder5.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/autoencoder5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+            <state relative-caret-position="-160">
+              <caret line="61" column="70" selection-start-line="61" selection-start-column="70" selection-end-line="61" selection-end-column="70" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -866,7 +867,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476239384350</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Autoencoder with Random Forest Regression">
+      <created>1476239673511</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1476239673511</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -932,7 +940,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Resolving probability distribution calculation" />
     <MESSAGE value="setting up parser&#10;" />
     <MESSAGE value="PMML model complete" />
     <MESSAGE value="Keras Testing" />
@@ -957,7 +964,8 @@
     <MESSAGE value="Auto encoders 3 Reconstruction Error percentile" />
     <MESSAGE value="Auto encoders 4" />
     <MESSAGE value="Auto Encoder Testing Phase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auto Encoder Testing Phase" />
+    <MESSAGE value="Autoencoder with Random Forest Regression" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autoencoder with Random Forest Regression" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1323,16 +1331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autoencoder3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Testing - H2O RFR.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1341,10 +1339,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/autoencoder3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="64" column="5" selection-start-line="54" selection-start-column="0" selection-end-line="64" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/autoencoder5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+        <state relative-caret-position="-160">
+          <caret line="61" column="70" selection-start-line="61" selection-start-column="70" selection-end-line="61" selection-end-column="70" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

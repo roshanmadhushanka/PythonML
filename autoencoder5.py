@@ -53,13 +53,13 @@ anomaly_train_columns.remove('Time')
 
 column_count = len(anomaly_train_columns)
 
-inner_layer_size = column_count / 4
-print "Inner Layer Size :", inner_layer_size
+inner_layer_size = column_count / 2
+outer_layer_size = column_count
+print "Layers:", outer_layer_size, inner_layer_size, outer_layer_size
 # Define model
 anomaly_model = H2OAutoEncoderEstimator(
         activation="Rectifier",
-        hidden=[inner_layer_size, inner_layer_size, inner_layer_size],
-        sparse=True,
+        hidden=[outer_layer_size, inner_layer_size, outer_layer_size],
         l1=1e-4,
         epochs=100,
     )
@@ -96,8 +96,8 @@ print "Filtered Size :", len(filtered_train)
 print "Removed Rows  :", (hTrain.nrow-len(filtered_train))
 
 # Feature Engineering
-pTrain = ProcessData.trainDataToFrame(filtered_train, moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
-pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
+pTrain = ProcessData.trainDataToFrame(filtered_train, moving_average=True, standard_deviation=True, probability_distribution=True)
+pTest = ProcessData.testData(moving_average=True, standard_deviation=True, probability_from_file=True)
 
 # Convert pandas to h2o frame - for model training
 hValidate = h2o.H2OFrame(pValidate)
