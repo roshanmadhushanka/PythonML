@@ -1,16 +1,15 @@
-import h2o
 import math
-import pandas as pd
+import h2o
 import numpy as np
+import pandas as pd
 from h2o.estimators import H2OAutoEncoderEstimator
 from h2o.estimators import H2ODeepLearningEstimator
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
-from tqdm import tqdm, tnrange
-from tqdm import trange
 
 from dataprocessor import ProcessData
 from featureeng import Progress
+
 
 def getReconstructionError(recon_error, percentile):
     error_str = recon_error.get_frame_data()
@@ -58,6 +57,8 @@ anomaly_train_columns.remove('Time')
 
 column_count = len(anomaly_train_columns)
 
+print "Auto Encoder Model"
+print "----------------------------------------------------------------------------------------------------------------"
 layers = [20, 6, 20]
 print "Layers:", layers
 # Define model
@@ -75,8 +76,8 @@ anomaly_model.train(x=anomaly_train_columns, training_frame=hTrain, validation_f
 reconstruction_error = anomaly_model.anomaly(test_data=hTrain, per_feature=False)
 
 # Threshold
-#threshold = reconstruction_error.max() * _reconstruction_error_rate
-threshold = getReconstructionError(reconstruction_error, 0.9)
+threshold = reconstruction_error.max() * _reconstruction_error_rate
+#threshold = getReconstructionError(reconstruction_error, 0.9)
 
 print "Max Reconstruction Error       :", reconstruction_error.max()
 print "Threshold Reconstruction Error :", threshold
@@ -129,7 +130,7 @@ model_arr = range(_nmodels)
 print "Building models"
 print "---------------"
 for i in range(_nmodels):
-    model_arr[i] = H2ODeepLearningEstimator(hidden=[200, 200], score_each_iteration=True, variable_importances=True)
+    model_arr[i] = H2ODeepLearningEstimator(hidden=[32, 32, 32, 32, 32], score_each_iteration=True, variable_importances=True)
 print "Build model complete...\n"
 
 print "Train models"

@@ -1,4 +1,5 @@
 # Deep Learning Layer Testing Auto Encoders
+# [32, 32, 32, 32, 32]
 
 import h2o
 import pandas as pd
@@ -71,8 +72,8 @@ anomaly_model.train(x=anomaly_train_columns, training_frame=hTrain, validation_f
 reconstruction_error = anomaly_model.anomaly(test_data=hTrain, per_feature=False)
 
 # Threshold
-#threshold = reconstruction_error.max() * _reconstruction_error_rate
-threshold = getReconstructionError(reconstruction_error, 0.9)
+threshold = reconstruction_error.max() * _reconstruction_error_rate
+#threshold = getReconstructionError(reconstruction_error, 0.9)
 
 print "Max Reconstruction Error       :", reconstruction_error.max()
 print "Threshold Reconstruction Error :", threshold

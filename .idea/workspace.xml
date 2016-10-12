@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MaxTrain.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataprocessor/Process.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dataprocessor/TestData.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dataprocessor/TrainData.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MaxTrain.py" afterPath="$PROJECT_DIR$/MaxTrain.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autoencoder6.py" afterPath="$PROJECT_DIR$/autoencoder6.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataprocessor/__init__.py" afterPath="$PROJECT_DIR$/dataprocessor/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test1.py" afterPath="$PROJECT_DIR$/test1.py" />
@@ -43,7 +43,7 @@
       <file leaf-file-name="test2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1124">
+            <state relative-caret-position="-944">
               <caret line="9" column="53" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="53" />
               <folding>
                 <element signature="e#356#420#0" expanded="true" />
@@ -65,8 +65,8 @@
       <file leaf-file-name="test1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,10 +99,10 @@
       <file leaf-file-name="MaxTrain.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MaxTrain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,8 +201,8 @@
         <option value="$PROJECT_DIR$/dataprocessor/Process.py" />
         <option value="$PROJECT_DIR$/dataprocessor/__init__.py" />
         <option value="$PROJECT_DIR$/test2.py" />
-        <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/autoencoder6.py" />
+        <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/MaxTrain.py" />
       </list>
     </option>
@@ -331,7 +331,7 @@
       <recent name="$PROJECT_DIR$/dataprocessor" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.autoencoder6">
+  <component name="RunManager" selected="Python.test1">
     <configuration default="false" name="autoencode1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -560,8 +560,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.autoencoder6" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.autoencoder6" />
         <item index="2" class="java.lang.String" itemvalue="Python.autoencoder3" />
         <item index="3" class="java.lang.String" itemvalue="Python.autoencoder2" />
         <item index="4" class="java.lang.String" itemvalue="Python.autoencode1" />
@@ -581,13 +581,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474255822808</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Build PMML model">
-      <created>1474609937069</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1474609937069</updated>
     </task>
     <task id="LOCAL-00002" summary="Build PMML model">
       <created>1474609953210</created>
@@ -925,7 +918,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476253342717</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Max Train">
+      <created>1476261883813</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1476261883814</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView">
@@ -991,7 +991,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PMML model complete" />
     <MESSAGE value="Keras Testing" />
     <MESSAGE value="Probability load from file" />
     <MESSAGE value="Sumulation for Random Forest Regressor in H2O&#10;" />
@@ -1016,7 +1015,8 @@
     <MESSAGE value="Auto Encoder Testing Phase" />
     <MESSAGE value="Autoencoder with Random Forest Regression" />
     <MESSAGE value="Autoencoder without Sparse" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autoencoder without Sparse" />
+    <MESSAGE value="Max Train" />
+    <option name="LAST_COMMIT_MESSAGE" value="Max Train" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1374,24 +1374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1124">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="53" />
-          <folding>
-            <element signature="e#356#420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1436,12 +1418,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-944">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="53" />
+          <folding>
+            <element signature="e#356#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MaxTrain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
