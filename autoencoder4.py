@@ -52,12 +52,12 @@ anomaly_train_columns.remove('Time')
 
 column_count = len(anomaly_train_columns)
 
-inner_layer_size = column_count / 5
+layers = [24, 12, 24]
+print "Layers:", layers
 # Define model
 anomaly_model = H2OAutoEncoderEstimator(
         activation="Rectifier",
-        hidden=[inner_layer_size, inner_layer_size, inner_layer_size],
-        sparse=True,
+        hidden=layers,
         l1=1e-4,
         epochs=100,
     )
