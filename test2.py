@@ -4,6 +4,7 @@ import numpy as np
 
 from sklearn import preprocessing
 from dataprocessor import ProcessData
+from model.ModelInfo import Detail
 
 # replace mean with min
 # df_norm = (df - df.mean()) / (df.max() - df.min())
@@ -20,4 +21,6 @@ min_max_scaler = preprocessing.MinMaxScaler()
 x_scaled = min_max_scaler.fit_transform(df[df.columns[:-1]])
 df_normalized = pd.DataFrame(x_scaled, columns=df.columns[:-1])
 print df_normalized
+
+
 

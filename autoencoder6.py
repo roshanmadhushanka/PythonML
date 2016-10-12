@@ -1,3 +1,5 @@
+# Deep Learning Layer Testing Auto Encoders
+
 import h2o
 import pandas as pd
 import numpy as np
@@ -119,11 +121,16 @@ training_columns.remove('Time')
 filtered = h2o.H2OFrame(filtered_train)
 filtered.set_names(list(filtered_train.columns))
 
-model = H2ODeepLearningEstimator(hidden=[500, 500], score_each_iteration=True, variable_importances=True, epochs=100)
-model.train(x=training_columns, y=response_column, training_frame=filtered)
+layers = [[200, 200], [512], [64, 64, 64], [32, 32, 32, 32, 32]]
+for layer in layers:
+    print "------------------------------------------------------------------------------------------------------------"
+    print "Layer :", layer
+    print "------------------------------------------------------------------------------------------------------------"
+    model = H2ODeepLearningEstimator(hidden=layer, score_each_iteration=True, variable_importances=True, epochs=100)
+    model.train(x=training_columns, y=response_column, training_frame=filtered)
 
-print "\nModel Performance"
-print "----------------------------------------------------------------------------------------------------------------"
-# Evaluate model
-print model.model_performance(test_data=hTest)
-
+    print "\nModel Performance"
+    print "-------------------------------------------------------------------------------------------------------------"
+    # Evaluate model
+    print model.model_performance(test_data=hTest)
+    print "------------------------------------------------------------------------------------------------------------\n"
