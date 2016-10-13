@@ -20,8 +20,8 @@ def getReconstructionError(recon_error, percentile):
     return np.percentile(var, percentile * 100)
 
 # Configuration
-_validation_ratio_1 = 0.1   # For Auto Encoder
-_validation_ratio_2 = 0.1   # For Predictive Model
+_validation_ratio_1 = 0.2   # For Auto Encoder
+_validation_ratio_2 = 0.2   # For Predictive Model
 _reconstruction_error_rate = 0.9
 _nmodels = 50
 _smodels = 10
@@ -119,8 +119,8 @@ print "Filtered Size :", len(filtered_train)
 print "Removed Rows  :", (hTrain.nrow-len(filtered_train))
 
 # Feature Engineering
-pTrain = ProcessData.trainDataToFrame(filtered_train, moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
-pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
+pTrain = ProcessData.trainDataToFrame(filtered_train, moving_average=True, standard_deviation=True)
+pTest = ProcessData.testData(moving_average=True, standard_deviation=True)
 
 # Convert pandas to h2o frame - for model training
 hData = h2o.H2OFrame(pTrain)
@@ -130,6 +130,11 @@ hTrain, hValidate = hData.split_frame(ratios=[_validation_ratio_2])
 
 hTest = h2o.H2OFrame(pTest)
 hTest.set_names(list(pTest.columns))
+
+# Save filtered frames
+h2o.export_file(hTrain, "FilterTrain.csv", force=True)
+h2o.export_file(hValidate, "FilterValidate.csv", force=True)
+h2o.export_file(hTest, "FilterTest.csv", force=True)
 
 # Ground truth data
 ground_truth = np.array(pTest['RUL'])
