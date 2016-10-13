@@ -16,8 +16,7 @@ def getReconstructionError(recon_error, percentile):
     return np.percentile(var, percentile * 100)
 
 
-_validation_ratio = 0.1
-_reconstruction_error_rate = 0.9
+_validation_ratio = 0.2
 
 # Define response column
 response_column = 'RUL'
@@ -52,7 +51,7 @@ anomaly_train_columns.remove('Time')
 
 column_count = len(anomaly_train_columns)
 
-layers = [24, 12, 24]
+layers = [20, 6, 20]
 print "Layers:", layers
 # Define model
 anomaly_model = H2OAutoEncoderEstimator(
@@ -67,16 +66,25 @@ anomaly_model.train(x=anomaly_train_columns, training_frame=hTrain, validation_f
 
 # Get reconstruction error
 reconstruction_error = anomaly_model.anomaly(test_data=hTrain, per_feature=False)
+
+print "Max Reconstruction Error       :", reconstruction_error.max()
+
+# Reconstruction error detail
 error_str = reconstruction_error.get_frame_data()
 err_list = map(float, error_str.split("\n")[1:-1])
 err_list = np.array(err_list)
 
-# Threshold
-threshold = np.amax(err_list) * _reconstruction_error_rate
-#threshold = getReconstructionError(reconstruction_error, 0.9)
+std = np.std(err_list)
+mean = np.average(err_list)
 
-print "Max Reconstruction Error       :", reconstruction_error.max()
-print "Threshold Reconstruction Error :", threshold
+'''
+Three Sigma Rule
+----------------
+std  = standard deviation of data
+mean = mean of data
+if abs(x - mean) > 3 * std then x is an outlier
+
+'''
 
 # Filter rows
 print "\nRemoving Anomalies"
@@ -85,7 +93,7 @@ print "Reconstruction Error Array Size :", len(reconstruction_error)
 filtered_train = pd.DataFrame()
 count = 0
 for i in range(hTrain.nrow):
-    if err_list[i] < threshold:
+    if abs(err_list[i] - mean) < 3 * std:
         df1 = pTrain.iloc[i, :]
         filtered_train = filtered_train.append(df1, ignore_index=True)
         count += 1
@@ -97,7 +105,7 @@ print "Filtered Size :", len(filtered_train)
 print "Removed Rows  :", (hTrain.nrow-len(filtered_train))
 
 # Feature Engineering
-pData = ProcessData.trainDataToFrame(filtered_train, moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
+pTrain = ProcessData.trainDataToFrame(filtered_train, moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
 pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
 
 # Convert pandas to h2o frame - for model training
@@ -122,7 +130,7 @@ training_columns.remove('Time')
 filtered = h2o.H2OFrame(filtered_train)
 filtered.set_names(list(filtered_train.columns))
 
-model = H2ODeepLearningEstimator(hidden=[500, 500], score_each_iteration=True, variable_importances=True, epochs=100)
+model = H2ODeepLearningEstimator(hidden=[32, 32, 32, 32, 32], score_each_iteration=True, variable_importances=True, epochs=100)
 model.train(x=training_columns, y=response_column, training_frame=filtered)
 
 print "\nModel Performance"

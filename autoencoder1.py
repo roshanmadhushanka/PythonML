@@ -52,9 +52,12 @@ anomaly_model.train(x=anomaly_train_columns, training_frame=hTrain, validation_f
 
 # Get reconstruction error
 reconstruction_error = anomaly_model.anomaly(test_data=hTrain, per_feature=False)
+error_str = reconstruction_error.get_frame_data()
+err_list = map(float, error_str.split("\n")[1:-1])
+err_list = np.array(err_list)
 
 # Threshold
-threshold = reconstruction_error.max() * _reconstruction_error_rate
+threshold = np.amax(err_list) * _reconstruction_error_rate
 
 print "Max Reconstruction Error       :", reconstruction_error.max()
 print "Threshold Reconstruction Error :", threshold
@@ -66,7 +69,7 @@ print "-------------------------------------------------------------------------
 filtered_train = pd.DataFrame()
 count = 0
 for i in range(hTrain.nrow):
-    if reconstruction_error[i,0] < threshold:
+    if err_list[i] < threshold:
         df1 = pd.DataFrame( hTrain[i, 0:].as_data_frame(use_pandas=True))
         filtered_train = filtered_train.append(df1, ignore_index=True)
         count += 1
