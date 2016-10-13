@@ -107,7 +107,7 @@ print "Reconstruction Error Array Size :", len(reconstruction_error)
 filtered_train = pd.DataFrame()
 count = 0
 for i in range(hTrain.nrow):
-    if abs(err_list[i] - q75) < 3 * iqr:
+    if abs(err_list[i] - q75) < 2 * iqr:
         df1 = pTrain.iloc[i, :]
         filtered_train = filtered_train.append(df1, ignore_index=True)
         count += 1

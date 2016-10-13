@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MaxTrain[DL][IQR].py" />
+    <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="IQR Max Train">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/autoencoder10[DL][3 Sigma].py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml/Algorithm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml/PredictionEngine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ml/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MaxTrain[DL][IQR].py" afterPath="$PROJECT_DIR$/MaxTrain[DL][IQR].py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autoencoder9[DL][IQR Rule].py" afterPath="$PROJECT_DIR$/autoencoder9[DL][IQR Rule].py" />
     </list>
     <ignored path="Update.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,36 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="autoencoder6.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autoencoder6.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-284">
-              <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
-              <folding>
-                <element signature="e#68#78#0" expanded="true" />
-                <marker date="1476333097008" expanded="true" signature="2604:2871" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoencoder3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autoencoder3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="autoencoder7 - three sigma rule.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/autoencoder7 - three sigma rule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="103" column="30" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+            <state relative-caret-position="316">
+              <caret line="94" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="e#16#26#0" expanded="true" />
               </folding>
@@ -60,21 +40,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoencoder9[DL][IQR Rule].py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="autoencoder10[DL][3 Sigma].py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autoencoder10[DL][3 Sigma].py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="979">
+              <caret line="99" column="3" selection-start-line="99" selection-start-column="3" selection-end-line="99" selection-end-column="3" />
+              <folding>
+                <element signature="e#16#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autoencoder9[DL][IQR Rule].py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/autoencoder9[DL][IQR Rule].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="91" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="211">
+              <caret line="111" column="97" selection-start-line="111" selection-start-column="97" selection-end-line="111" selection-end-column="97" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaxTrain[DL][IQR].py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="autoencoder8 - three sigma rule.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/autoencoder8 - three sigma rule.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1890">
+              <caret line="136" column="102" selection-start-line="136" selection-start-column="102" selection-end-line="136" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaxTrain[DL][IQR].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MaxTrain[DL][IQR].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="109" column="39" selection-start-line="109" selection-start-column="39" selection-end-line="109" selection-end-column="39" />
+            <state relative-caret-position="480">
+              <caret line="116" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <folding>
+                <element signature="e#16#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Algorithm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ml/Algorithm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PredictionEngine.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ml/PredictionEngine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="89" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -86,30 +112,6 @@
             <state relative-caret-position="300">
               <caret line="144" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="213" selection-end-column="43" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoencoder4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autoencoder4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-              <folding>
-                <marker date="1476333096672" expanded="true" signature="2566:2833" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoencoder5.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autoencoder5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-              <folding>
-                <marker date="1476333096856" expanded="true" signature="2618:2885" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -154,9 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/file/FileHandler.py" />
-        <option value="$PROJECT_DIR$/result 1.txt" />
-        <option value="$PROJECT_DIR$/simulation/Result.py" />
         <option value="$PROJECT_DIR$/simulation/RandomForestResult.py" />
         <option value="$PROJECT_DIR$/simulation/Simulator.py" />
         <option value="$PROJECT_DIR$/dataprocessor/Process.py" />
@@ -203,15 +202,18 @@
         <option value="$PROJECT_DIR$/autoencoder3.py" />
         <option value="$PROJECT_DIR$/test2.py" />
         <option value="$PROJECT_DIR$/MaxTrain[DL][3 Sigma].py" />
-        <option value="$PROJECT_DIR$/autoencoder9[DL][IQR Rule].py" />
         <option value="$PROJECT_DIR$/MaxTrain[DL][IQR].py" />
+        <option value="$PROJECT_DIR$/ml/Algorithm.py" />
+        <option value="$PROJECT_DIR$/ml/PredictionEngine.py" />
+        <option value="$PROJECT_DIR$/autoencoder10[DL][3 Sigma].py" />
+        <option value="$PROJECT_DIR$/autoencoder9[DL][IQR Rule].py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="992" />
+    <option name="x" value="868" />
     <option name="y" value="52" />
-    <option name="width" value="928" />
+    <option name="width" value="1052" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -282,6 +284,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ml" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1669,7 +1685,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476338632178</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="IQR Max Train">
+      <created>1476339509782</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1476339509782</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1682,15 +1705,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="992" y="52" width="928" height="1028" extended-state="4" />
-    <editor active="true" />
+    <frame x="868" y="52" width="1052" height="1028" extended-state="4" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2552486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2244898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38638744" sideWeight="0.5049127" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670158" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.4978166" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39805827" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39805827" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1735,7 +1758,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Resolving probability distribution calculation" />
     <MESSAGE value="setting up parser&#10;" />
     <MESSAGE value="PMML model complete" />
     <MESSAGE value="Keras Testing" />
@@ -1760,7 +1782,8 @@
     <MESSAGE value="Auto encoders 3 Reconstruction Error percentile" />
     <MESSAGE value="Auto encoders 4" />
     <MESSAGE value="IQR Rule" />
-    <option name="LAST_COMMIT_MESSAGE" value="IQR Rule" />
+    <MESSAGE value="IQR Max Train" />
+    <option name="LAST_COMMIT_MESSAGE" value="IQR Max Train" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1769,27 +1792,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pima-indians-diabetes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KerasDeepLearning1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="58" column="61" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Testing - H2O RFR.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1963,6 +1965,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4080">
           <caret line="243" column="50" selection-start-line="243" selection-start-column="50" selection-end-line="243" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2042,6 +2045,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2108,26 +2112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autoencoder7 - three sigma rule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="103" column="30" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
-          <folding>
-            <element signature="e#16#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoencoder8 - three sigma rule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="136" column="102" selection-start-line="136" selection-start-column="102" selection-end-line="136" selection-end-column="102" />
-          <folding>
-            <element signature="e#16#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/anomaly/Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2146,18 +2130,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autoencoder9[DL][IQR Rule].py">
+    <entry file="file://$PROJECT_DIR$/MaxTrain[DL][IQR].py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="91" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="116" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml/Algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml/PredictionEngine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="89" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MaxTrain[DL][IQR].py">
+    <entry file="file://$PROJECT_DIR$/autoencoder8 - three sigma rule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="109" column="39" selection-start-line="109" selection-start-column="39" selection-end-line="109" selection-end-column="39" />
+        <state relative-caret-position="1890">
+          <caret line="136" column="102" selection-start-line="136" selection-start-column="102" selection-end-line="136" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoencoder7 - three sigma rule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="94" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoencoder10[DL][3 Sigma].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="979">
+          <caret line="99" column="3" selection-start-line="99" selection-start-column="3" selection-end-line="99" selection-end-column="3" />
+          <folding>
+            <element signature="e#16#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoencoder9[DL][IQR Rule].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="111" column="97" selection-start-line="111" selection-start-column="97" selection-end-line="111" selection-end-column="97" />
           <folding />
         </state>
       </provider>
