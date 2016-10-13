@@ -1,9 +1,10 @@
-# Deep Learning
+# Random Forest
 import h2o
 import pandas as pd
 import numpy as np
 from h2o.estimators import H2OAutoEncoderEstimator
 from h2o.estimators import H2ODeepLearningEstimator
+from h2o.estimators import H2ORandomForestEstimator
 from tqdm import tqdm, tnrange
 from tqdm import trange
 
@@ -19,6 +20,7 @@ def getReconstructionError(recon_error, percentile):
 
 _validation_ratio_1 = 0.2
 _validation_ratio_2 = 0.2
+
 # Define response column
 response_column = 'RUL'
 
@@ -115,6 +117,7 @@ hData.set_names(list(pData.columns))
 
 hTrain, hValidate = hData.split_frame(ratios=[_validation_ratio_2])
 
+
 hTest = h2o.H2OFrame(pTest)
 hTest.set_names(list(pTest.columns))
 
@@ -130,7 +133,7 @@ training_columns.remove('Time')
 filtered = h2o.H2OFrame(filtered_train)
 filtered.set_names(list(filtered_train.columns))
 
-model = H2ODeepLearningEstimator(hidden=[500, 500], score_each_iteration=True, variable_importances=True, epochs=100)
+model =  H2ORandomForestEstimator(ntrees=50, max_depth=20, nbins=100, seed=12345)
 model.train(x=training_columns, y=response_column, training_frame=filtered, validation_frame=hValidate)
 
 print "\nModel Performance"
