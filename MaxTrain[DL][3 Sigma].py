@@ -141,7 +141,7 @@ model_arr = range(_nmodels)
 print "Building models"
 print "---------------"
 for i in range(_nmodels):
-    model_arr[i] = H2ODeepLearningEstimator(hidden=[500, 500], score_each_iteration=True, variable_importances=True)
+    model_arr[i] = H2ODeepLearningEstimator(hidden=[32, 32, 32, 32, 32], score_each_iteration=True, variable_importances=True)
 print "Build model complete...\n"
 
 # Training models
