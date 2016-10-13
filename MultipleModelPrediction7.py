@@ -64,7 +64,7 @@ print "Validate models"
 print "---------------"
 mse_val = np.zeros(shape=_nmodels)
 for i in range(_nmodels):
-    mse_val[i] = model_arr[i].mae(model_arr[i].model_performance(test_data=validate))
+    mse_val[i] = model_arr[i].mse(model_arr[i].model_performance(test_data=validate))
 print "Validation model complete...\n"
 
 print "Calculating weights"
