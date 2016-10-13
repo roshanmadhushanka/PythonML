@@ -1,5 +1,7 @@
+# Deep Learning
 import math
 import h2o
+import time
 import numpy as np
 import pandas as pd
 from h2o.estimators import H2OAutoEncoderEstimator
@@ -18,7 +20,8 @@ def getReconstructionError(recon_error, percentile):
     return np.percentile(var, percentile * 100)
 
 # Configuration
-_validation_ratio = 0.2
+_validation_ratio_1 = 0.1   # For Auto Encoder
+_validation_ratio_2 = 0.1   # For Predictive Model
 _reconstruction_error_rate = 0.9
 _nmodels = 50
 _smodels = 10
@@ -27,15 +30,16 @@ _lim = 3
 # Define response column
 response_column = 'RUL'
 
+clock = time.clock();
+
 # initialize server
 h2o.init()
 
 # Load data frames
 pData = ProcessData.trainData()
-#pTest = ProcessData.testData()
 
 # Split data frame
-pValidate = pData.sample(frac=_validation_ratio, random_state=200)
+pValidate = pData.sample(frac=_validation_ratio_1, random_state=200)
 pTrain = pData.drop(pValidate.index)
 
 # Convert pandas to h2o frame - for anomaly detection
@@ -77,7 +81,7 @@ reconstruction_error = anomaly_model.anomaly(test_data=hTrain, per_feature=False
 
 # Threshold
 threshold = reconstruction_error.max() * _reconstruction_error_rate
-#threshold = getReconstructionError(reconstruction_error, 0.9)
+#threshold = getReconstructionError(reconstruction_error, 0.98)
 
 print "Max Reconstruction Error       :", reconstruction_error.max()
 print "Threshold Reconstruction Error :", threshold
@@ -105,11 +109,10 @@ pTrain = ProcessData.trainDataToFrame(filtered_train, moving_k_closest_average=T
 pTest = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
 
 # Convert pandas to h2o frame - for model training
-hValidate = h2o.H2OFrame(pValidate)
-hValidate.set_names(list(pValidate.columns))
+hData = h2o.H2OFrame(pTrain)
+hData.set_names(list(pTrain.columns))
 
-hTrain = h2o.H2OFrame(pTrain)
-hTrain.set_names(list(pTrain.columns))
+hTrain, hValidate = hData.split_frame(ratios=[_validation_ratio_2])
 
 hTest = h2o.H2OFrame(pTest)
 hTest.set_names(list(pTest.columns))
@@ -124,15 +127,15 @@ training_columns.remove('UnitNumber')
 training_columns.remove('Time')
 
 
-# Building model
+# Building models
 model_arr = range(_nmodels)
-
 print "Building models"
 print "---------------"
 for i in range(_nmodels):
     model_arr[i] = H2ODeepLearningEstimator(hidden=[32, 32, 32, 32, 32], score_each_iteration=True, variable_importances=True)
 print "Build model complete...\n"
 
+# Training models
 print "Train models"
 print "------------"
 for i in range(_nmodels):
@@ -140,6 +143,7 @@ for i in range(_nmodels):
     model_arr[i].train(x=training_columns, y=response_column, training_frame=hTrain)
 print "Train model complete...\n"
 
+# Validate models using hValidate data [anomaly removed]
 print "Validate models"
 print "---------------"
 mse_val = np.zeros(shape=_nmodels)
@@ -147,12 +151,14 @@ for i in range(_nmodels):
     mse_val[i] = model_arr[i].mae(model_arr[i].model_performance(test_data=hValidate))
 print "Validation model complete...\n"
 
+# Evaluating each model for prediction
 print "Calculating weights"
 print "-----------------"
 weight_arr = np.amax(mse_val)/mse_val
 print "Weights",weight_arr
 print "Calculation weights complete...\n"
 
+# Select best models
 print "Select Models"
 print "-------------"
 selected_models = weight_arr.argsort()[-_smodels:][::-1]
@@ -161,6 +167,7 @@ weight_arr = [weight_arr[i] for i in selected_models]
 _nmodels = _smodels
 print "Select complete...\n"
 
+# Predict from selected model
 print "Predicting"
 print "----------"
 predicted_arr = range(_nmodels)
@@ -168,6 +175,7 @@ for i in range(_nmodels):
     predicted_arr[i] = model_arr[i].predict(hTest)
 print "Prediction complete...\n"
 
+# Filter predicted values
 print "Filter Predictions"
 print "------------------"
 predicted_vals = np.zeros(shape=100)
@@ -186,6 +194,7 @@ for i in range(len(hTest[:,0])):
 
 print "Filter predictions complete...\n"
 
+# Summary
 print "Result"
 print "------"
 print "Root Mean Squared Error :", math.sqrt(mean_squared_error(ground_truth, predicted_vals))
@@ -193,3 +202,4 @@ print "Mean Absolute Error     :", mean_absolute_error(ground_truth, predicted_v
 
 
 
+print "Time Taken :", time.clock() - clock;
