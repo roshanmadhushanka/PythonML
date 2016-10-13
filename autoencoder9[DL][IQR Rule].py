@@ -75,17 +75,20 @@ error_str = reconstruction_error.get_frame_data()
 err_list = map(float, error_str.split("\n")[1:-1])
 err_list = np.array(err_list)
 
-std = np.std(err_list)
-mean = np.average(err_list)
-
 '''
-Three Sigma Rule
+IQR Rule
 ----------------
-std  = standard deviation of data
-mean = mean of data
-if abs(x - mean) > 3 * std then x is an outlier
+Q25 = 25 th percentile
+Q75 = 75 th percentile
+IQR = Q75 - Q25 Inner quartile range
+if abs(x-Q75) > 1.5 * IQR : A mild outlier
+if abs(x-Q75) > 3.0 * IQR : An extreme outlier
 
 '''
+
+q25 = np.percentile(err_list, 25)
+q75 = np.percentile(err_list, 75)
+iqr = q75 - q25
 
 # Filter rows
 print "\nRemoving Anomalies"
@@ -94,7 +97,7 @@ print "Reconstruction Error Array Size :", len(reconstruction_error)
 filtered_train = pd.DataFrame()
 count = 0
 for i in range(hTrain.nrow):
-    if abs(err_list[i] - mean) < 3 * std:
+    if abs(err_list[i] - q75) < 3 * iqr:
         df1 = pTrain.iloc[i, :]
         filtered_train = filtered_train.append(df1, ignore_index=True)
         count += 1
