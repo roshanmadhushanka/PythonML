@@ -97,7 +97,7 @@ print "Reconstruction Error Array Size :", len(reconstruction_error)
 filtered_train = pd.DataFrame()
 count = 0
 for i in range(hTrain.nrow):
-    if abs(err_list[i] - q75) < 2 * iqr:
+    if abs(err_list[i] - q75) < 3 * iqr:
         df1 = pTrain.iloc[i, :]
         filtered_train = filtered_train.append(df1, ignore_index=True)
         count += 1
@@ -133,7 +133,7 @@ training_columns.remove('Time')
 filtered = h2o.H2OFrame(filtered_train)
 filtered.set_names(list(filtered_train.columns))
 
-model = H2ODeepLearningEstimator(hidden=[500, 500], score_each_iteration=True, variable_importances=True, epochs=100)
+model = H2ODeepLearningEstimator(hidden=[64, 64, 64], score_each_iteration=True, variable_importances=True, epochs=100, activation='Tanh')
 model.train(x=training_columns, y=response_column, training_frame=filtered, validation_frame=hValidate)
 
 print "\nModel Performance"

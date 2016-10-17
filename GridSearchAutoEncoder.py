@@ -27,7 +27,7 @@ training_columns.remove('Time')
 # print models
 
 hyper_parameters = {'activation': ['Tanh', 'TanhWithDropout', 'Rectifier', 'RectifierWithDropout', 'Maxout',
-                                   'MaxoutWithDropout'], 'epochs': [10, 50, 100], 'hidden':[[20, 6, 20], [64, 64, 64]]}
+                                   'MaxoutWithDropout'], 'epochs': [10, 50, 100], 'hidden':[range(100)]}
 grid_search = H2OGridSearch(H2ODeepLearningEstimator, hyper_params=hyper_parameters)
 grid_search.train(x=training_columns, y='RUL', training_frame=hData)
 grid_search.show()
