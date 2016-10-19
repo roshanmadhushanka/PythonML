@@ -41,7 +41,7 @@ def probabilty_distribution(series, no_of_bins=5):
 
 def saveToFile():
     # Data set preprocessor
-    training_frame = pd.read_csv("train.csv")
+    training_frame = pd.read_csv("datasets/train.csv")
 
     # Obtain all column names
     all_column_names = list(training_frame.columns)

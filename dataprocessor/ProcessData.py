@@ -11,8 +11,8 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
     print "Testing frame process has started"
     print "---------------------------------"
     # Test data set preprocessor
-    testing_frame = pd.read_csv("test.csv")
-    ground_truth = pd.read_csv("rul.csv")
+    testing_frame = pd.read_csv("datasets/test.csv")
+    ground_truth = pd.read_csv("datasets/rul.csv")
 
     # Obtain all column names
     all_column_names = list(testing_frame.columns)
@@ -125,7 +125,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
             testing_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=testing_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
-        ProbabilityOut.saveToFile()
+
 
     if moving_probability:
         # Moving probability distribution
@@ -235,7 +235,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
     print "----------------------------------"
 
     # Data set preprocessor
-    training_frame = pd.read_csv("train.csv")
+    training_frame = pd.read_csv("datasets/train.csv")
 
     # Obtain all column names
     all_column_names = list(training_frame.columns)
@@ -342,6 +342,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
             training_frame[p_header] = pd.Series(Math.probabilty_distribution(series=column, no_of_bins=250), index=training_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                    suffix="Complete")
+        ProbabilityOut.saveToFile()
 
     if moving_probability:
         # Moving probability distribution
