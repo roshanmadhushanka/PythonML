@@ -36,6 +36,7 @@ model.train(x=training_columns, y=response_column, training_frame=train)
 
 # Performance testing
 performance = model.model_performance(test_data=test)
+
 print "\nPerformance data"
 print "----------------------------------------------------------------------------------------------------------------"
 performance.show()

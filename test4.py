@@ -1,4 +1,5 @@
-# Without autoencoders check anomalies
+#RMSE: 25.8696031725
+# Without autoencoders chech anomalies
 from h2o.estimators import H2ODeepLearningEstimator
 
 from dataprocessor import ProcessData
@@ -39,8 +40,8 @@ print len(anomaly_series)
 df = pData.drop(pData.index[anomaly_series])
 
 # Feature engineering
-data_frame = ProcessData.trainDataToFrame(df, moving_k_closest_average=True, standard_deviation=True)
-testing_frame = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True)
+data_frame = ProcessData.trainDataToFrame(df, moving_k_closest_average=True, standard_deviation=True, moving_median=True)
+testing_frame = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, moving_median=True)
 
 # Create h2o frame
 hData = h2o.H2OFrame(data_frame)

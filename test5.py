@@ -1,4 +1,4 @@
-# Without autoencoders check anomalies
+# Without autoencoders chech anomalies
 from h2o.estimators import H2ODeepLearningEstimator
 
 from dataprocessor import ProcessData
@@ -26,7 +26,7 @@ tot = 0
 anomaly_series = []
 for column in selected_columns:
     series = pData[column]
-    anomaly = Test.threeSigma(series, threshold=4)
+    anomaly = Test.iqr(series, threshold=2)
     anomaly_series.extend(anomaly)
 
 # Sort indexes
