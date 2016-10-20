@@ -1,14 +1,13 @@
 # Deep Learning
 import h2o
-import pandas as pd
 import numpy as np
+import pandas as pd
 from h2o.estimators import H2OAutoEncoderEstimator
 from h2o.estimators import H2ODeepLearningEstimator
-from tqdm import tqdm, tnrange
-from tqdm import trange
 
 from dataprocessor import ProcessData
 from featureeng import Progress
+
 
 def getReconstructionError(recon_error, percentile):
     error_str = recon_error.get_frame_data()
