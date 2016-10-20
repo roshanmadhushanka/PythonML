@@ -1,5 +1,5 @@
-# Without autoencoders check anomalies
-from h2o.estimators import H2ODeepLearningEstimator
+# GridSearch for RandomForest
+from h2o.estimators import H2ORandomForestEstimator
 from h2o.grid import H2OGridSearch
 
 from dataprocessor import ProcessData
@@ -40,8 +40,8 @@ print len(anomaly_series)
 df = pData.drop(pData.index[anomaly_series])
 
 # Feature engineering
-data_frame = ProcessData.trainDataToFrame(df, moving_k_closest_average=True, standard_deviation=True)
-testing_frame = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True)
+data_frame = ProcessData.trainDataToFrame(df, moving_k_closest_average=True, standard_deviation=True, probability_distribution=True)
+testing_frame = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True)
 
 # Create h2o frame
 hData = h2o.H2OFrame(data_frame)
@@ -64,12 +64,9 @@ training_columns.remove('RUL')
 
 response_column = 'RUL'
 
-hyper_parameters = {'distribution': ['auto', 'bernoulli', 'multinomial', 'gaussian', 'poisson', 'gamma', 'tweedie', 'laplace', 'quantile', 'huber'],
-                    'fold_assignment':['auto', 'random', 'modulo', 'stratified'],
-                    'histogram_type':['auto', 'uniform_adaptive', 'random', 'quantiles_global', 'round_robin']
-                    }
+hyper_parameters = {'ntrees': [50, 75, 100], 'max_depth': [20, 50], 'nbins': [100, 250] }
 
-grid_search = H2OGridSearch(H2ODeepLearningEstimator, hyper_params=hyper_parameters)
+grid_search = H2OGridSearch(H2ORandomForestEstimator, hyper_params=hyper_parameters)
 grid_search.train(x=training_columns, y='RUL', training_frame=hTrain, validation_frame=hValidate)
 grid_search.show()
 models = grid_search.sort_by("mse")

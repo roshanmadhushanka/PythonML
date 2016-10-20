@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GridSearch[DeepLearning].py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TunedModel[RandomForest].py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridSearch[GradientBoosting].py" afterPath="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridSearch[RandomForest].py" afterPath="$PROJECT_DIR$/GridSearch[RandomForest].py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training.csv" afterPath="$PROJECT_DIR$/Training.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hTrainMy.csv" afterPath="$PROJECT_DIR$/hTrainMy.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hValidateMy.csv" afterPath="$PROJECT_DIR$/hValidateMy.csv" />
     </list>
     <ignored path="Update.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,12 +29,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GridSearch[GradientBoosting].py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GridSearch[GradientBoosting].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GridSearch[GradientBoosting].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            <state relative-caret-position="315">
+              <caret line="58" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TunedModel[RandomForest].py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TunedModel[RandomForest].py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+              <folding>
+                <element signature="e#28#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridSearch[DeepLearning].py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+              <folding>
+                <element signature="e#31#82#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,10 +66,10 @@
       <file leaf-file-name="GridSearch[RandomForest].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GridSearch[RandomForest].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="-180">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <element signature="e#39#90#0" expanded="true" />
+                <element signature="e#30#81#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,8 +101,8 @@
       <file leaf-file-name="TunedModel[GradientBoosting].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TunedModel[GradientBoosting].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+            <state relative-caret-position="330">
+              <caret line="22" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="e#39#49#0" expanded="true" />
               </folding>
@@ -87,30 +117,6 @@
               <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleModelPrediction4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backup/SingleModelPrediction4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleModelPrediction3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backup/SingleModelPrediction3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,8 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SingleModelPrediction4.py" />
-        <option value="$PROJECT_DIR$/MultipleModelPrediction2.py" />
         <option value="$PROJECT_DIR$/MultipleModelPrediction9.py" />
         <option value="$PROJECT_DIR$/MultipleModelPrediction10.py" />
         <option value="$PROJECT_DIR$/MultipleModelPrediction5.py" />
@@ -200,8 +204,10 @@
         <option value="$PROJECT_DIR$/parser/DataFrameParser.py" />
         <option value="$PROJECT_DIR$/presenting/Chart.py" />
         <option value="$PROJECT_DIR$/TunedModel[GradientBoosting].py" />
-        <option value="$PROJECT_DIR$/GridSearch[RandomForest].py" />
         <option value="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
+        <option value="$PROJECT_DIR$/TunedModel[RandomForest].py" />
+        <option value="$PROJECT_DIR$/GridSearch[DeepLearning].py" />
+        <option value="$PROJECT_DIR$/GridSearch[RandomForest].py" />
       </list>
     </option>
   </component>
@@ -326,41 +332,7 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GridSearch[GradientBoosting]">
-    <configuration default="false" name="GridSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GridSearchRandomForest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GridSearchRandomForest/GridSearch.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TEST6-HyperTunedModel (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TEST6-HyperTunedModel.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.GridSearch[RandomForest]">
     <configuration default="false" name="GridSearch[GradientBoosting]" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -408,6 +380,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Update" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Temp 1- CreateProbabilityOut.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GridSearch[RandomForest]" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GridSearch[RandomForest].py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TunedModel[RandomForest]" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TunedModel[RandomForest].py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -547,19 +553,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.GridSearch" />
-      <item index="1" class="java.lang.String" itemvalue="Python.TEST6-HyperTunedModel (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
-      <item index="3" class="java.lang.String" itemvalue="Python.TunneModel[GradientBoosting]" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Temp 1- CreateProbabilityOut" />
+      <item index="0" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
+      <item index="1" class="java.lang.String" itemvalue="Python.TunneModel[GradientBoosting]" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Temp 1- CreateProbabilityOut" />
+      <item index="3" class="java.lang.String" itemvalue="Python.GridSearch[RandomForest]" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TunedModel[RandomForest]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TunneModel[GradientBoosting]" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Temp 1- CreateProbabilityOut" />
-        <item index="3" class="java.lang.String" itemvalue="Python.TEST6-HyperTunedModel (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.GridSearch" />
+        <item index="0" class="java.lang.String" itemvalue="Python.GridSearch[RandomForest]" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TunedModel[RandomForest]" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TunneModel[GradientBoosting]" />
+        <item index="3" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Temp 1- CreateProbabilityOut" />
       </list>
     </recent_temporary>
   </component>
@@ -942,7 +948,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257821" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.4978166" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28586388" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28586388" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1020,20 +1026,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/autoencoder8 - three sigma rule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="136" column="102" selection-start-line="136" selection-start-column="102" selection-end-line="136" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoencoder7 - three sigma rule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="94" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ColumnAnomalyCheck.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1409,29 +1401,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TunedModel[GradientBoosting].py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+        <state relative-caret-position="330">
+          <caret line="22" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="e#39#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GridSearch[RandomForest].py">
+    <entry file="file://$PROJECT_DIR$/TunedModel[RandomForest].py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        <state relative-caret-position="345">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
           <folding>
-            <element signature="e#39#90#0" expanded="true" />
+            <element signature="e#28#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GridSearch[GradientBoosting].py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        <state relative-caret-position="315">
+          <caret line="58" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GridSearch[RandomForest].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#30#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding>
+            <element signature="e#31#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
