@@ -1,4 +1,4 @@
-# Without autoencoders chech anomalies
+# Without autoencoders check anomalies
 from h2o.estimators import H2ODeepLearningEstimator
 from h2o.estimators import H2OGradientBoostingEstimator
 from h2o.grid import H2OGridSearch
@@ -28,7 +28,7 @@ tot = 0
 anomaly_series = []
 for column in selected_columns:
     series = pData[column]
-    anomaly = Test.iqr(series, threshold=3)
+    anomaly = Test.threeSigma(series, threshold=4)
     anomaly_series.extend(anomaly)
 
 # Sort indexes

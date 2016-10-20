@@ -1,4 +1,4 @@
-# Without autoencoders chech anomalies
+# Without autoencoders check anomalies
 from h2o.estimators import H2ODeepLearningEstimator
 from h2o.grid import H2OGridSearch
 

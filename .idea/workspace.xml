@@ -2,95 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GridSearch[RandomForest].py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Temp 1- CreateProbabilityOut.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TunedModel[GradientBoosting].py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/presenting/Chart.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/presenting/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ArticleExample.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ColumnAnomalyCheck.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Compare.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow10.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow11.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow12.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow13.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow14.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow15.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow16.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow17.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow3.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow4.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow5.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow6.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow7.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow8.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Flow9.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GridSearchAutoEncoder.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/H2O DL Auto.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/KerasDeepLearning.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/KerasDeepLearning1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MaxTrain.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MaxTrain1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MaxTrain[DL][3 Sigma].py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MaxTrain[DL][IQR].py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction10.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction3.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction4.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction5.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction6.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction7.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction8.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MultipleModelPrediction9.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Reference" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SingleModelPrediction.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SingleModelPrediction1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SingleModelPrediction2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SingleModelPrediction3.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SingleModelPrediction4.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TEST6-GridSearch.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TEST6-HyperTunedModel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing - H2O DL.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing - H2O RFR.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing - SKL RFR.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ValidateSingleModel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder10[DL][3 Sigma].py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder3.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder4.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder5.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder6.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder7 - three sigma rule.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder8 - three sigma rule.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autoencoder9[DL][IQR Rule].py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/converter-executable-1.1-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/ModelInfo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pima-indians-diabetes.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rul.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sim.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simulation/RandomForestResult.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simulation/Simulator.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simulation/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test3.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test4.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test5.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/train.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataprocessor/ProcessData.py" afterPath="$PROJECT_DIR$/dataprocessor/ProcessData.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureeng/ProbabilityOut.py" afterPath="$PROJECT_DIR$/featureeng/ProbabilityOut.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/DataFrameParser.py" afterPath="$PROJECT_DIR$/parser/DataFrameParser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridSearch[GradientBoosting].py" afterPath="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridSearch[RandomForest].py" afterPath="$PROJECT_DIR$/GridSearch[RandomForest].py" />
     </list>
     <ignored path="Update.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GridSearch[GradientBoosting].py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GridSearch[GradientBoosting].py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GridSearch[GradientBoosting].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="31" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -123,8 +36,8 @@
       <file leaf-file-name="GridSearch[RandomForest].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GridSearch[RandomForest].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="71" column="52" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
+            <state relative-caret-position="195">
+              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding>
                 <element signature="e#39#90#0" expanded="true" />
               </folding>
@@ -155,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TunedModel[GradientBoosting].py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TunedModel[GradientBoosting].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TunedModel[GradientBoosting].py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
@@ -285,10 +198,10 @@
         <option value="$PROJECT_DIR$/Temp 1- CreateProbabilityOut.py" />
         <option value="$PROJECT_DIR$/anomaly/graph.py" />
         <option value="$PROJECT_DIR$/parser/DataFrameParser.py" />
-        <option value="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
         <option value="$PROJECT_DIR$/presenting/Chart.py" />
         <option value="$PROJECT_DIR$/TunedModel[GradientBoosting].py" />
         <option value="$PROJECT_DIR$/GridSearch[RandomForest].py" />
+        <option value="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
       </list>
     </option>
   </component>
@@ -413,7 +326,7 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.TunneModel[GradientBoosting]">
+  <component name="RunManager" selected="Python.GridSearch[GradientBoosting]">
     <configuration default="false" name="GridSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -642,8 +555,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.TunneModel[GradientBoosting]" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
+        <item index="0" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TunneModel[GradientBoosting]" />
         <item index="2" class="java.lang.String" itemvalue="Python.Temp 1- CreateProbabilityOut" />
         <item index="3" class="java.lang.String" itemvalue="Python.TEST6-HyperTunedModel (1)" />
         <item index="4" class="java.lang.String" itemvalue="Python.GridSearch" />
@@ -663,13 +576,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474255822808</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Build PMML model">
-      <created>1474610032262</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1474610032262</updated>
     </task>
     <task id="LOCAL-00005" summary="Build PMML model">
       <created>1474610042188</created>
@@ -1007,7 +913,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476857237844</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="New Face">
+      <created>1476874028487</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1476874028488</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1029,7 +942,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257821" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.4978166" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28586388" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28586388" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1073,7 +986,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Probability load from file" />
     <MESSAGE value="Sumulation for Random Forest Regressor in H2O&#10;" />
     <MESSAGE value="K Closest average calculation&#10;" />
     <MESSAGE value="Math complete&#10;" />
@@ -1098,7 +1010,8 @@
     <MESSAGE value="IQR Test" />
     <MESSAGE value="Grid Search" />
     <MESSAGE value="My Outlier Detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="My Outlier Detection" />
+    <MESSAGE value="New Face" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Face" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1494,24 +1407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GridSearch[GradientBoosting].py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="31" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GridSearch[RandomForest].py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="71" column="52" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
-          <folding>
-            <element signature="e#39#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TunedModel[GradientBoosting].py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -1519,6 +1414,24 @@
           <folding>
             <element signature="e#39#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GridSearch[RandomForest].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="e#39#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GridSearch[GradientBoosting].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
