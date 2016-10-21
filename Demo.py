@@ -109,21 +109,21 @@ for column in rm_columns:
 # Building multiple models
 print "Building Models"
 print "---------------"
-model_array = range(_nmodels) # trange shows a progressbar
-for i in trange(_nmodels):
+model_array = range(_nmodels)
+for i in range(_nmodels):
     model_array[i] = H2ODeepLearningEstimator(epochs=100, loss='Automatic', activation='RectifierWithDropout', distribution='poisson', hidden=[512])
 
 # Training models
 print "Training Models"
 print "---------------"
-for i in trange(_nmodels):
+for i in range(_nmodels):
     model_array[i].train(x=dl_train_columns, y=response_column, training_frame=h_train)
 
 # Validate models and assign weights
 print "Validating Models"
 print "-----------------"
 rmse_vals = np.zeros(shape=_nmodels) # Store root mean squared error of each model
-for i in trange(_nmodels):
+for i in range(_nmodels):
     performance = model_array[i].model_performance(test_data=h_validate)
     rmse_vals[i] = math.sqrt(performance.mse())
 
@@ -147,7 +147,7 @@ for i in trange(_nmodels):
 print "Filtering Predictions"
 print "---------------------"
 final_prediction = np.zeros(shape=h_test.nrow)
-for i in trange(h_test.nrow):
+for i in range(h_test.nrow):
     per_model_result = []
     for j in range(_nmodels):
         per_model_result.append({'value': (prediction_array[j][i, 0] * weights_array[j]), 'weight': weights_array[j]})
