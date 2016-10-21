@@ -4,20 +4,16 @@ import pandas as pd
 import numpy as np
 from h2o.estimators import H2OAutoEncoderEstimator
 from h2o.estimators import H2ODeepLearningEstimator
-
-# Initialize server
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
-from tqdm import trange
-
 from presenting import Chart
 
+# Initialize server
 h2o.init()
 
 # Configuration parameters
-_vr_auto_encoder = 0.2  # Validation ratio for AutoEncoder
-_vr_model = 0.2  # Validation ratio for DeepLearning model
-#_reconstruction_error_rate = 0.9  # Reconstruction error proportion
+_vr_auto_encoder = 0.1  # Validation ratio for AutoEncoder
+_vr_model = 0.1         # Validation ratio for DeepLearning model
 _nmodels = 10 # Number of models going to train
 _smodels = 5  # Number of models select to predict
 _lim = 1      # Number of outliers removed from predictions, both maximums and minimums
@@ -140,7 +136,7 @@ _nmodels = _smodels
 print "Predicting"
 print "----------"
 prediction_array = range(_nmodels) # Store predictions related to each model. 2D array
-for i in trange(_nmodels):
+for i in range(_nmodels):
     prediction_array[i] = model_array[i].predict(h_test)
 
 # Filter predictions
@@ -154,10 +150,8 @@ for i in range(h_test.nrow):
 
     # Remove outliers
     sorted_filtered_results = sorted(per_model_result, key=lambda k: k['value'])[_lim:-_lim]
-
     # Weighted average
     result = sum(d['value'] for d in sorted_filtered_results) / float(sum(d['weight'] for d in sorted_filtered_results))
-
     final_prediction[i] = result
 
 

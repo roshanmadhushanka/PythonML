@@ -4,9 +4,6 @@
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo.py" afterPath="$PROJECT_DIR$/Demo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TunedModel[GradientBoosting].py" afterPath="$PROJECT_DIR$/TunedModel[GradientBoosting].py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TunedModel[RandomForest].py" afterPath="$PROJECT_DIR$/TunedModel[RandomForest].py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presenting/Chart.py" afterPath="$PROJECT_DIR$/presenting/Chart.py" />
     </list>
     <ignored path="Update.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,13 +26,23 @@
       <file leaf-file-name="Demo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="-119">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#1595#1716#1" expanded="false" />
-                <element signature="e#2369#2576#1" expanded="false" />
+                <element signature="e#1507#1628#1" expanded="false" />
+                <element signature="e#2281#2488#1" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hTrainMy.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hTrainMy.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -521,20 +528,6 @@
       <option name="presentableId" value="Default" />
       <updated>1474255822808</updated>
     </task>
-    <task id="LOCAL-00008" summary="Change Process Data Class. Setup two methods for train and test">
-      <created>1474861156645</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1474861156645</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Resolving probability distribution calculation">
-      <created>1474885060600</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1474885060600</updated>
-    </task>
     <task id="LOCAL-00010" summary="Resolving probability distribution calculation">
       <created>1474890290398</created>
       <option name="number" value="00010" />
@@ -864,7 +857,21 @@
       <option name="project" value="LOCAL" />
       <updated>1477019185017</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Demo Complete&#10;">
+      <created>1477025160699</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1477025160699</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Demo Complete&#10;">
+      <created>1477025549968</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1477025549968</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView">
@@ -884,9 +891,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38638744" sideWeight="0.5049127" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3257821" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09328969" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.4978166" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5040917" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -930,7 +937,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="K Closest average calculation&#10;" />
     <MESSAGE value="Math complete&#10;" />
     <MESSAGE value="MUltiple Model Training" />
     <MESSAGE value="Scoring Model" />
@@ -955,7 +961,8 @@
     <MESSAGE value="My Outlier Detection" />
     <MESSAGE value="New Face" />
     <MESSAGE value="GridSearch Autoencoder" />
-    <option name="LAST_COMMIT_MESSAGE" value="GridSearch Autoencoder" />
+    <MESSAGE value="Demo Complete&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demo Complete&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -964,7 +971,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.csv" />
     <entry file="file://$PROJECT_DIR$/MultipleModelPrediction9.py" />
     <entry file="file://$PROJECT_DIR$/SingleModelPrediction3.py" />
     <entry file="file://$PROJECT_DIR$/SingleModelPrediction2.py" />
@@ -1172,14 +1178,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hTrainMy.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="-119">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#1595#1716#1" expanded="false" />
-            <element signature="e#2369#2576#1" expanded="false" />
+            <element signature="e#1507#1628#1" expanded="false" />
+            <element signature="e#2281#2488#1" expanded="false" />
           </folding>
         </state>
       </provider>
