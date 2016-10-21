@@ -102,78 +102,9 @@ rm_columns = ['RUL', 'UnitNumber', 'Time']
 for column in rm_columns:
     dl_train_columns.remove(column)
 
-# Building multiple models
-print "Building Models"
-print "---------------"
-model_array = range(_nmodels)
-for i in range(_nmodels):
-    model_array[i] = H2ODeepLearningEstimator(epochs=100, loss='Automatic', activation='RectifierWithDropout', distribution='poisson', hidden=[512])
 
-# Training models
-print "Training Models"
-print "---------------"
-for i in range(_nmodels):
-    model_array[i].train(x=dl_train_columns, y=response_column, training_frame=h_train)
-
-# Validate models and assign weights
-print "Validating Models"
-print "-----------------"
-rmse_vals = np.zeros(shape=_nmodels) # Store root mean squared error of each model
-for i in range(_nmodels):
-    performance = model_array[i].model_performance(test_data=h_validate)
-    rmse_vals[i] = math.sqrt(performance.mse())
-
-# Calculate weights
-weights_array = 100 * np.amin(rmse_vals) / rmse_vals         # Lowest RMSE has highest weight and vice versa
-
-# Select models
-selected_models = weights_array.argsort()[-_smodels:][::-1]  # Filter indexes of (_smodels) number of models which have highest weights
-model_array = [model_array[i] for i in selected_models]      # Selected model array
-weights_array = [weights_array[i] for i in selected_models]  # Weights related to selected models
-_nmodels = _smodels
-
-# Predicting
-print "Predicting"
-print "----------"
-prediction_array = range(_nmodels) # Store predictions related to each model. 2D array
-for i in range(_nmodels):
-    prediction_array[i] = model_array[i].predict(h_test)
-
-# Filter predictions
-print "Filtering Predictions"
-print "---------------------"
-final_prediction = np.zeros(shape=h_test.nrow)
-for i in range(h_test.nrow):
-    per_model_result = []
-    for j in range(_nmodels):
-        per_model_result.append({'value': (prediction_array[j][i, 0] * weights_array[j]), 'weight': weights_array[j]})
-
-    # Remove outliers
-    sorted_filtered_results = sorted(per_model_result, key=lambda k: k['value'])[_lim:-_lim]
-    # Weighted average
-    result = sum(d['value'] for d in sorted_filtered_results) / float(sum(d['weight'] for d in sorted_filtered_results))
-    final_prediction[i] = result
-
-
-# Summary
-print "Result"
-print "------"
-print "Root Mean Squared Error :", math.sqrt(mean_squared_error(ground_truth_data, final_prediction))
-print "Mean Absolute Error     :", mean_absolute_error(ground_truth_data, final_prediction)
-
-Chart.residual_histogram(ground_truth_data, final_prediction)
-Chart.residual_vs_estimated(ground_truth_data, final_prediction)
-Chart.acutal_and_predict(ground_truth_data, final_prediction)
-
-
-
-
-
-
-
-
-
-
-
-
+model = H2ODeepLearningEstimator(epochs=100, loss='Automatic', activation='RectifierWithDropout', distribution='poisson', hidden=[512])
+model.train(x=dl_train_columns, y=response_column, training_frame=h_train, validation_frame=h_validate)
+performance = model.model_performance(test_data=h_test)
+print performance
 
