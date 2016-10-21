@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo-KFold.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo-SingleModel.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo.py" afterPath="$PROJECT_DIR$/Demo.py" />
     </list>
@@ -23,11 +25,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Demo.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Demo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="21" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#1507#1628#1" expanded="false" />
+                <element signature="e#2281#2488#1" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo-KFold.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo-KFold.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#1507#1628#1" expanded="false" />
+                <element signature="e#2281#2488#1" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridSearch[AutoEncoder].py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GridSearch[AutoEncoder].py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridSearch[DeepLearning].py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-799">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo-SingleModel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo-SingleModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="88" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#1507#1628#1" expanded="false" />
@@ -79,26 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Testing.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Training.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Training.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TunedModel[GradientBoosting].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TunedModel[GradientBoosting].py">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,8 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MultipleModelPrediction5.py" />
-        <option value="$PROJECT_DIR$/MultipleModelPrediction6.py" />
         <option value="$PROJECT_DIR$/MultipleModelPrediction.py" />
         <option value="$PROJECT_DIR$/MultipleModelPrediction8.py" />
         <option value="$PROJECT_DIR$/SingleModelPrediction.py" />
@@ -175,6 +203,8 @@
         <option value="$PROJECT_DIR$/Sup.py" />
         <option value="$PROJECT_DIR$/presenting/Chart.py" />
         <option value="$PROJECT_DIR$/Demo.py" />
+        <option value="$PROJECT_DIR$/Demo-SingleModel.py" />
+        <option value="$PROJECT_DIR$/Demo-KFold.py" />
       </list>
     </option>
   </component>
@@ -277,7 +307,7 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Demo">
+  <component name="RunManager" selected="Python.Demo-KFold">
     <configuration default="false" name="GridSearch[GradientBoosting]" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -291,40 +321,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Update" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TunneModel[GradientBoosting]" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TunedModel[GradientBoosting].py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Temp 1- CreateProbabilityOut" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Temp 1- CreateProbabilityOut.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -359,6 +355,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Update" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Demo-SingleModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo-SingleModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Demo-KFold" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo-KFold.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -499,18 +529,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
-      <item index="1" class="java.lang.String" itemvalue="Python.TunneModel[GradientBoosting]" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Temp 1- CreateProbabilityOut" />
-      <item index="3" class="java.lang.String" itemvalue="Python.GridSearch[AutoEncoder]" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Demo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.GridSearch[AutoEncoder]" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Demo" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Demo-SingleModel" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Demo-KFold" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Demo" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GridSearch[AutoEncoder]" />
-        <item index="2" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
-        <item index="3" class="java.lang.String" itemvalue="Python.TunneModel[GradientBoosting]" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Temp 1- CreateProbabilityOut" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Demo-KFold" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Demo" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Demo-SingleModel" />
+        <item index="3" class="java.lang.String" itemvalue="Python.GridSearch[AutoEncoder]" />
+        <item index="4" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
       </list>
     </recent_temporary>
   </component>
@@ -527,13 +557,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474255822808</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Resolving probability distribution calculation">
-      <created>1474890290398</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1474890290398</updated>
     </task>
     <task id="LOCAL-00011" summary="setting up parser&#10;">
       <created>1474955269463</created>
@@ -871,7 +894,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477025549968</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Demo Test&#10;">
+      <created>1477029281911</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1477029281911</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -887,13 +917,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29761904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16369048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38638744" sideWeight="0.5049127" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09328969" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.4978166" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19312602" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -937,7 +967,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Math complete&#10;" />
     <MESSAGE value="MUltiple Model Training" />
     <MESSAGE value="Scoring Model" />
     <MESSAGE value="Scoring Model Update 1" />
@@ -962,7 +991,8 @@
     <MESSAGE value="New Face" />
     <MESSAGE value="GridSearch Autoencoder" />
     <MESSAGE value="Demo Complete&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Demo Complete&#10;" />
+    <MESSAGE value="Demo Test&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demo Test&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -971,9 +1001,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MultipleModelPrediction9.py" />
-    <entry file="file://$PROJECT_DIR$/SingleModelPrediction3.py" />
-    <entry file="file://$PROJECT_DIR$/SingleModelPrediction2.py" />
     <entry file="file://$PROJECT_DIR$/SingleModelPrediction1.py" />
     <entry file="file://$PROJECT_DIR$/SingleModelPrediction.py" />
     <entry file="file://$PROJECT_DIR$/Testing - H2O RFR.py" />
@@ -1114,13 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GridSearch[AutoEncoder].py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backup/MultipleModelPrediction10.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1188,13 +1208,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="21" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#1507#1628#1" expanded="false" />
             <element signature="e#2281#2488#1" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo-SingleModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="88" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#1507#1628#1" expanded="false" />
+            <element signature="e#2281#2488#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo-KFold.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#1507#1628#1" expanded="false" />
+            <element signature="e#2281#2488#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GridSearch[AutoEncoder].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
