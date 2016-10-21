@@ -28,7 +28,7 @@ def residual_vs_estimated(actual, predict):
     plt.title('Residual Error vs Predict')
     plt.show()
 
-def acural_and_predict(actual, predicted):
+def acutal_and_predict(actual, predicted):
     if(len(actual) <> len(predicted)):
         return
 

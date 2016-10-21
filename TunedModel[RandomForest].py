@@ -41,7 +41,7 @@ actual = DataFrameParser.h2oToNumpyArray(hTest['RUL'])
 
 Chart.residual_histogram(actual, predict)
 Chart.residual_vs_estimated(actual, predict)
-Chart.acural_and_predict(actual, predict)
+Chart.acutal_and_predict(actual, predict)
 
 
 
