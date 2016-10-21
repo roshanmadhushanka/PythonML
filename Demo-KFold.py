@@ -13,10 +13,6 @@ h2o.init()
 
 # Configuration parameters
 _vr_auto_encoder = 0.1  # Validation ratio for AutoEncoder
-_vr_model = 0.1         # Validation ratio for DeepLearning model
-_nmodels = 10 # Number of models going to train
-_smodels = 5  # Number of models select to predict
-_lim = 1      # Number of outliers removed from predictions, both maximums and minimums
 
 # Load CSV data frames
 p_data = pd.read_csv('Training.csv')
