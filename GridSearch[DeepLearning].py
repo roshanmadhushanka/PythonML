@@ -64,10 +64,11 @@ training_columns.remove('RUL')
 
 response_column = 'RUL'
 
-hyper_parameters = {'distribution': ['auto', 'bernoulli', 'multinomial', 'gaussian', 'poisson', 'gamma', 'tweedie', 'laplace', 'quantile', 'huber'],
-                    'fold_assignment':['auto', 'random', 'modulo', 'stratified'],
-                    'histogram_type':['auto', 'uniform_adaptive', 'random', 'quantiles_global', 'round_robin']
-                    }
+hyper_parameters = {'activation': ['tanh', 'tanh_with_dropout', 'rectifier', 'rectifier_with_dropout', 'maxout', 'maxout_with_dropout'],
+                    'distribution': ['auto', 'bernoulli', 'multinomial', 'gaussian', 'poisson', 'gamma', 'tweedie', 'laplace', 'quantile', 'huber'],
+                    'epochs': [100],
+                    'hidden': [512],
+                    'loss': ['automatic']}
 
 grid_search = H2OGridSearch(H2ODeepLearningEstimator, hyper_params=hyper_parameters)
 grid_search.train(x=training_columns, y='RUL', training_frame=hTrain, validation_frame=hValidate)
