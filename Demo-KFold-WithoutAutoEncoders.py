@@ -5,9 +5,6 @@ from h2o.estimators import H2ODeepLearningEstimator
 # Initialize server
 h2o.init()
 
-# Configuration parameters
-_vr_auto_encoder = 0.1  # Validation ratio for AutoEncoder
-
 # Load CSV data frames
 p_train = pd.read_csv('Training.csv')
 p_test = pd.read_csv('Testing.csv')
