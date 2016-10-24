@@ -1,12 +1,8 @@
 import h2o
-import math
-import pandas as pd
 import numpy as np
+import pandas as pd
 from h2o.estimators import H2OAutoEncoderEstimator
 from h2o.estimators import H2ODeepLearningEstimator
-from sklearn.metrics import mean_absolute_error
-from sklearn.metrics import mean_squared_error
-from presenting import Chart
 
 # Initialize server
 h2o.init()
@@ -76,7 +72,7 @@ iqr = q75 - q25
 
 rm_index = [] # Stores row numbers which have anomalies
 for i in range(h_train.nrow):
-    if abs(err_list[i] - q75) > 4 * iqr:
+    if abs(err_list[i] - q75) > 3 * iqr:
         rm_index.append(i)
 
 # Remove anomalies

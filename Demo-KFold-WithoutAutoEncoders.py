@@ -1,7 +1,5 @@
 import h2o
-import numpy as np
 import pandas as pd
-from h2o.estimators import H2OAutoEncoderEstimator
 from h2o.estimators import H2ODeepLearningEstimator
 
 # Initialize server
@@ -29,8 +27,10 @@ rm_columns = ['RUL', 'UnitNumber', 'Time']
 for column in rm_columns:
     dl_train_columns.remove(column)
 
+
 model = H2ODeepLearningEstimator(epochs=100, loss='Automatic', activation='RectifierWithDropout', distribution='poisson', hidden=[512], nfolds=10)
 model.train(x=dl_train_columns, y=response_column, training_frame=h_train)
 performance = model.model_performance(test_data=h_test)
 print performance
+
 
