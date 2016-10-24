@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py" afterPath="$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo-KFold.py" afterPath="$PROJECT_DIR$/Demo-KFold.py" />
     </list>
     <ignored path="Update.iws" />
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Demo-KFold.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Demo-KFold.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Demo-KFold.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-331">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#1254#1375#1" expanded="false" />
@@ -55,7 +55,7 @@
       <file leaf-file-name="GridSearch[AutoEncoder].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GridSearch[AutoEncoder].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
+            <state relative-caret-position="578">
               <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
@@ -65,21 +65,19 @@
       <file leaf-file-name="GridSearch[DeepLearning].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-782">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Demo-KFold-WithoutAutoEncoders.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Demo-KFold-WithoutAutoEncoders.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,7 +85,7 @@
       <file leaf-file-name="Demo-SingleModel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo-SingleModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="1309">
               <caret line="88" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -111,7 +109,7 @@
       <file leaf-file-name="TunedModel[RandomForest].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TunedModel[RandomForest].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="612">
               <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="43" selection-end-column="41" />
               <folding />
             </state>
@@ -121,7 +119,7 @@
       <file leaf-file-name="Chart.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/presenting/Chart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
+            <state relative-caret-position="493">
               <caret line="30" column="22" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="22" />
               <folding />
             </state>
@@ -131,7 +129,7 @@
       <file leaf-file-name="Sup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
+            <state relative-caret-position="3553">
               <caret line="220" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
@@ -204,8 +202,8 @@
         <option value="$PROJECT_DIR$/presenting/Chart.py" />
         <option value="$PROJECT_DIR$/Demo.py" />
         <option value="$PROJECT_DIR$/Demo-SingleModel.py" />
-        <option value="$PROJECT_DIR$/Demo-KFold.py" />
         <option value="$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py" />
+        <option value="$PROJECT_DIR$/Demo-KFold.py" />
       </list>
     </option>
   </component>
@@ -241,6 +239,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,7 +288,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,23 +307,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.Demo-KFold">
-    <configuration default="false" name="GridSearch[GradientBoosting]" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="GridSearch[AutoEncoder]" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -390,6 +371,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Update" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo-KFold.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Demo-KFold-WithoutAutoEncoders" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -529,19 +527,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
-      <item index="1" class="java.lang.String" itemvalue="Python.GridSearch[AutoEncoder]" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Demo" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Demo-SingleModel" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Demo-KFold" />
+      <item index="0" class="java.lang.String" itemvalue="Python.GridSearch[AutoEncoder]" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Demo" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Demo-SingleModel" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Demo-KFold" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Demo-KFold-WithoutAutoEncoders" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.Demo-KFold" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Demo" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Demo-SingleModel" />
-        <item index="3" class="java.lang.String" itemvalue="Python.GridSearch[AutoEncoder]" />
-        <item index="4" class="java.lang.String" itemvalue="Python.GridSearch[GradientBoosting]" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Demo-KFold-WithoutAutoEncoders" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Demo" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Demo-SingleModel" />
+        <item index="4" class="java.lang.String" itemvalue="Python.GridSearch[AutoEncoder]" />
       </list>
     </recent_temporary>
   </component>
@@ -558,13 +556,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474255822808</updated>
-    </task>
-    <task id="LOCAL-00012" summary="setting up parser&#10;">
-      <created>1474955277103</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1474955277103</updated>
     </task>
     <task id="LOCAL-00013" summary="PMML model complete">
       <created>1475053851619</created>
@@ -902,7 +893,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477034992672</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="K Fold in DemoWithout Cross Validation&#10;">
+      <created>1477036761394</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1477036761395</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView">
@@ -916,25 +914,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16369048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16369048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38638744" sideWeight="0.5049127" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09328969" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.4978166" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4893617" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2913257" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -968,7 +966,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Scoring Model" />
     <MESSAGE value="Scoring Model Update 1" />
     <MESSAGE value="Probability Out Method Complete" />
     <MESSAGE value="Moving Weighted Average" />
@@ -993,7 +990,8 @@
     <MESSAGE value="Demo Complete&#10;" />
     <MESSAGE value="Demo Test&#10;" />
     <MESSAGE value="K Fold in Demo&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="K Fold in Demo&#10;" />
+    <MESSAGE value="K Fold in DemoWithout Cross Validation&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="K Fold in DemoWithout Cross Validation&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1152,7 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1160,7 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,13 +1164,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
+        <state relative-caret-position="3553">
           <caret line="220" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
           <folding>
             <element signature="e#16#27#0" expanded="true" />
@@ -1184,7 +1179,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/presenting/Chart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
+        <state relative-caret-position="493">
           <caret line="30" column="22" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="22" />
           <folding />
         </state>
@@ -1192,7 +1187,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TunedModel[RandomForest].py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="612">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="43" selection-end-column="41" />
           <folding />
         </state>
@@ -1220,7 +1215,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo-SingleModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="1309">
           <caret line="88" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -1232,7 +1227,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GridSearch[AutoEncoder].py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="578">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
@@ -1240,30 +1235,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-782">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo-KFold.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-331">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="312">
+          <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#1254#1375#1" expanded="false" />
             <element signature="e#2028#2235#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
