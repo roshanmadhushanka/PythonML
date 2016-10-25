@@ -57,14 +57,6 @@ rf.fit(X=x, y=y)
 # Get prediction results
 result = rf.predict(tX)
 
-# result = []
-# for row in tX:
-#     if len(row) == 1:
-#         row = row.reshape(-1, 1)
-#     elif len(row) > 1:
-#         row = row.reshape(1, -1)
-#     result.append(rf.predict(row)[0])
-
 print "Result"
 print "------"
 print result

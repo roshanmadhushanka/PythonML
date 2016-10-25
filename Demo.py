@@ -4,19 +4,22 @@ import pandas as pd
 import numpy as np
 from h2o.estimators import H2OAutoEncoderEstimator
 from h2o.estimators import H2ODeepLearningEstimator
-from sklearn.metrics import mean_absolute_error
-from sklearn.metrics import mean_squared_error
-from presenting import Chart
 
 # Initialize server
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_squared_error
+from tqdm import trange
+
+from presenting import Chart
+
 h2o.init()
 
 # Configuration parameters
 _vr_auto_encoder = 0.1  # Validation ratio for AutoEncoder
-_vr_model = 0.1         # Validation ratio for DeepLearning model
-_nmodels = 10 # Number of models going to train
-_smodels = 5  # Number of models select to predict
-_lim = 1      # Number of outliers removed from predictions, both maximums and minimums
+_vr_model = 0.1  # Validation ratio for DeepLearning model
+_nmodels = 10  # Number of models going to train
+_smodels = 5   # Number of models select to predict
+_lim = 1       # Number of outliers removed from predictions, both maximums and minimums
 
 # Load CSV data frames
 p_data = pd.read_csv('Training.csv')
@@ -80,7 +83,7 @@ iqr = q75 - q25
 
 rm_index = [] # Stores row numbers which have anomalies
 for i in range(h_train.nrow):
-    if abs(err_list[i] - q75) > 4 * iqr:
+    if abs(err_list[i] - q75) > 3 * iqr:
         rm_index.append(i)
 
 # Remove anomalies
@@ -150,8 +153,10 @@ for i in range(h_test.nrow):
 
     # Remove outliers
     sorted_filtered_results = sorted(per_model_result, key=lambda k: k['value'])[_lim:-_lim]
+
     # Weighted average
     result = sum(d['value'] for d in sorted_filtered_results) / float(sum(d['weight'] for d in sorted_filtered_results))
+
     final_prediction[i] = result
 
 

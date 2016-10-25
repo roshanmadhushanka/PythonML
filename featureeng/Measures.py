@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+from sklearn.metrics import mean_squared_error
+
 
 def correlation(seriesX, seriesY, method='pearson'):
     '''
@@ -22,4 +24,7 @@ def correlation(seriesX, seriesY, method='pearson'):
     _seriesY = pd.Series(seriesY)
 
     return _seriesX.corr(_seriesY, method=method)
+
+def r2(actual, predicted):
+    return 1 - (mean_squared_error(actual, np.array(predicted)) / np.var(actual))
 
