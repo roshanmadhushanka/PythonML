@@ -422,7 +422,7 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
     training_frame.to_csv("Training.csv", index=False)
     return training_frame
 
-def trainDataToFrame(training_frame, moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False):
+def trainDataToFrame(training_frame, moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False, rul=False):
     print "Training frame process has started"
     print "----------------------------------"
 
@@ -601,6 +601,11 @@ def trainDataToFrame(training_frame, moving_average=False, moving_median=False, 
                     index=training_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                        suffix="Complete")
+
+    if rul:
+        time_column = training_frame['Time']
+        rul = DataSetSpecific.remaining_usefullifetime(indices=indices, time_series=time_column)
+        training_frame['RUL'] = pd.Series(rul, index=training_frame.index)
 
     print "Training frame process is completed\n"
     training_frame.to_csv("Training.csv", index=False)
