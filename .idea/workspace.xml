@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo-KFold-ScikitLearn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DL-NoiseRemoval.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backup/test5.py" afterPath="$PROJECT_DIR$/test5.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataprocessor/Process.py" afterPath="$PROJECT_DIR$/dataprocessor/Process.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataprocessor/__init__.py" afterPath="$PROJECT_DIR$/dataprocessor/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo-KFold-ScikitLearn.py" afterPath="$PROJECT_DIR$/Demo-KFold-ScikitLearn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training.csv" afterPath="$PROJECT_DIR$/Training.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hTrainMy.csv" afterPath="$PROJECT_DIR$/hTrainMy.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hValidateMy.csv" afterPath="$PROJECT_DIR$/hValidateMy.csv" />
     </list>
     <ignored path="Update.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +43,30 @@
       <file leaf-file-name="TunedModel[DeepLearning].py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TunedModel[DeepLearning].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+            <state relative-caret-position="480">
+              <caret line="38" column="58" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DL-NoiseRemoval.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DL-NoiseRemoval.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="40" column="85" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
+              <folding>
+                <element signature="e#39#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridSearch[DeepLearning].py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="72" column="84" selection-start-line="72" selection-start-column="84" selection-end-line="72" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -57,16 +82,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TunedModel[RandomForest].py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TunedModel[RandomForest].py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Process.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataprocessor/Process.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,33 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProcessData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5157">
-              <caret line="344" column="35" selection-start-line="344" selection-start-column="35" selection-end-line="344" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataprocessor/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Demo-KFold-ScikitLearn.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Demo-KFold-ScikitLearn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo-KFold-ScikitLearn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="27" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -116,6 +109,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test5.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -148,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/autoencoder.py" />
         <option value="$PROJECT_DIR$/autoencode1.py" />
         <option value="$PROJECT_DIR$/autoencoder2.py" />
@@ -187,7 +189,6 @@
         <option value="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
         <option value="$PROJECT_DIR$/TunedModel[RandomForest].py" />
         <option value="$PROJECT_DIR$/GridSearch[RandomForest].py" />
-        <option value="$PROJECT_DIR$/TunedModel[DeepLearning].py" />
         <option value="$PROJECT_DIR$/GridSearch[DeepLearning].py" />
         <option value="$PROJECT_DIR$/Demo.py" />
         <option value="$PROJECT_DIR$/backup/Testing - SKL RFR.py" />
@@ -198,7 +199,9 @@
         <option value="$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py" />
         <option value="$PROJECT_DIR$/dataprocessor/Process.py" />
         <option value="$PROJECT_DIR$/dataprocessor/__init__.py" />
+        <option value="$PROJECT_DIR$/TunedModel[DeepLearning].py" />
         <option value="$PROJECT_DIR$/Demo-KFold-ScikitLearn.py" />
+        <option value="$PROJECT_DIR$/DL-NoiseRemoval.py" />
       </list>
     </option>
   </component>
@@ -332,6 +335,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="backup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="anomaly" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -347,15 +364,15 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/GridSearch[DL]" />
-      <recent name="$PROJECT_DIR$/" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backup" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/GridSearch[DL]" />
       <recent name="$PROJECT_DIR$/dataprocessor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/GridSearch[DL]" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -468,75 +485,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Python.Demo-KFold-ScikitLearn">
-    <configuration default="false" name="Demo-KFold-WithoutAutoEncoders" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ScikitLearn[Regression][AutoEncoders]" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScikitLearn[Regression][AutoEncoders].py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="FeatureSelection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FeatureSelection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Demo-KFold" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo-KFold.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.test5">
     <configuration default="false" name="Demo-KFold-ScikitLearn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -550,6 +499,74 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Update" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Demo-KFold-ScikitLearn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TunedModel[DeepLearning]" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TunedModel[DeepLearning].py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GridSearch[DeepLearning]" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GridSearch[DeepLearning].py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DL-NoiseRemoval" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DL-NoiseRemoval.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -689,19 +706,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Demo-KFold-WithoutAutoEncoders" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ScikitLearn[Regression][AutoEncoders]" />
-      <item index="2" class="java.lang.String" itemvalue="Python.FeatureSelection" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Demo-KFold" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Demo-KFold-ScikitLearn" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Demo-KFold-ScikitLearn" />
+      <item index="1" class="java.lang.String" itemvalue="Python.TunedModel[DeepLearning]" />
+      <item index="2" class="java.lang.String" itemvalue="Python.GridSearch[DeepLearning]" />
+      <item index="3" class="java.lang.String" itemvalue="Python.DL-NoiseRemoval" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test5" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Demo-KFold-ScikitLearn" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Demo-KFold-WithoutAutoEncoders" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Demo-KFold" />
-        <item index="3" class="java.lang.String" itemvalue="Python.FeatureSelection" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ScikitLearn[Regression][AutoEncoders]" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test5" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DL-NoiseRemoval" />
+        <item index="2" class="java.lang.String" itemvalue="Python.GridSearch[DeepLearning]" />
+        <item index="3" class="java.lang.String" itemvalue="Python.TunedModel[DeepLearning]" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Demo-KFold-ScikitLearn" />
       </list>
     </recent_temporary>
   </component>
@@ -718,13 +735,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474255822808</updated>
-    </task>
-    <task id="LOCAL-00006" summary="New Flow">
-      <created>1474712178812</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1474712178812</updated>
     </task>
     <task id="LOCAL-00007" summary="Add probability distribution function">
       <created>1474730691474</created>
@@ -1062,7 +1072,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476948692281</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="K Fold - Scikit Learn">
+      <created>1477293752876</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1477293752876</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1076,14 +1093,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14901747" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15393013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38638744" sideWeight="0.5049127" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32565445" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.4978166" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29424083" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29424083" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1128,7 +1145,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="K Closest average calculation&#10;" />
     <MESSAGE value="Math complete&#10;" />
     <MESSAGE value="MUltiple Model Training" />
     <MESSAGE value="Scoring Model" />
@@ -1153,7 +1169,8 @@
     <MESSAGE value="My Outlier Detection" />
     <MESSAGE value="New Face" />
     <MESSAGE value="Merge branch 'master' of https://github.com/roshanmadhushanka/PythonML&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Training.csv&#10;#&#9;hTrainMy.csv&#10;#&#9;hValidateMy.csv&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/roshanmadhushanka/PythonML&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Training.csv&#10;#&#9;hTrainMy.csv&#10;#&#9;hValidateMy.csv&#10;" />
+    <MESSAGE value="K Fold - Scikit Learn" />
+    <option name="LAST_COMMIT_MESSAGE" value="K Fold - Scikit Learn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1162,7 +1179,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Testing - H2O RFR.py" />
     <entry file="file://$PROJECT_DIR$/SingleModelPrediction4.py" />
     <entry file="file://$PROJECT_DIR$/test5.py" />
     <entry file="file://$PROJECT_DIR$/test4.py" />
@@ -1278,25 +1294,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="72" column="84" selection-start-line="72" selection-start-column="84" selection-end-line="72" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backup/Testing - SKL RFR.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backup/test5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="33" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,14 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1649">
           <caret line="169" column="9" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TunedModel[DeepLearning].py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1434,13 +1427,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="72" column="84" selection-start-line="72" selection-start-column="84" selection-end-line="72" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TunedModel[DeepLearning].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="58" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Demo-KFold-ScikitLearn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="27" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DL-NoiseRemoval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="40" column="85" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
+          <folding>
+            <element signature="e#39#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

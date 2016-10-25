@@ -5,6 +5,19 @@ from sklearn_pandas import DataFrameMapper
 from sklearn.cross_validation import KFold
 from sklearn.ensemble import RandomForestRegressor
 
+def predictionEngine(models, test_data):
+    predictions = []
+    for model in models:
+        predictions.append(model.predict(test_data))
+
+    for i in range
+
+
+
+
+
+
+
 # Load data
 p_train = pd.read_csv('Training.csv')
 p_test = pd.read_csv('Testing.csv')
