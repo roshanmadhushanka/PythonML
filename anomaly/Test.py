@@ -55,6 +55,28 @@ def iqr(series, threshold=3):
 
     return anomaly_indexes
 
+def percentile_based(series, lower, upper):
+    '''
+    Remove anomalies based on the percentile
+
+    :param series: Input series
+    :param lower: Lower percentile as a fraction
+    :param upper: Upper percentile as a fraction
+    :return: Filtered series
+    '''
+
+    series = np.array(list(series))
+    q_lower = np.percentile(series, lower*100)
+    q_upper = np.percentile(series, upper*100)
+
+    anomaly_indexes = []
+    for i in range(series.size):
+        if series[i] < q_lower or series[i] > q_upper:
+            anomaly_indexes.append(i)
+
+    x, p = np.histogram(anomaly_indexes)
+    return anomaly_indexes
+
 
 
 

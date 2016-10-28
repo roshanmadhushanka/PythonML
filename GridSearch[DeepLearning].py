@@ -2,7 +2,7 @@
 from h2o.estimators import H2ODeepLearningEstimator
 from h2o.grid import H2OGridSearch
 
-from dataprocessor import ProcessData
+from dataprocessor import ProcessData, Filter
 from anomaly import Test
 import numpy as np
 import h2o
@@ -22,22 +22,8 @@ selected_columns.remove('Setting1')
 selected_columns.remove('Setting2')
 selected_columns.remove('Setting3')
 
-
-tot = 0
-anomaly_series = []
-for column in selected_columns:
-    series = pData[column]
-    anomaly = Test.threeSigma(series, threshold=3)
-    anomaly_series.extend(anomaly)
-
-# Sort indexes
-anomaly_series.sort()
-anomaly_series = list(set(anomaly_series))
-print anomaly_series
-print len(anomaly_series)
-
-# Remove anomalies
-df = pData.drop(pData.index[anomaly_series])
+# Filtered data frame
+df = Filter.filterDataPercentile(panda_frame=pData, columns=selected_columns, lower_percentile=0.01, upper_percentile=0.99, column_err_threshold=1)
 
 # Feature engineering
 data_frame = ProcessData.trainDataToFrame(df, moving_k_closest_average=True, standard_deviation=True)
@@ -70,7 +56,7 @@ hyper_parameters = {'activation': ['tanh', 'tanh_with_dropout', 'rectifier', 're
                     'hidden': [512],
                     'loss': ['automatic']}
 
-grid_search = H2OGridSearch(H2ODeepLearningEstimator, hyper_params=hyper_parameters)
+grid_search = H2OGridSearch(H2ODeepLearningEstimator(nfold=10), hyper_params=hyper_parameters)
 grid_search.train(x=training_columns, y='RUL', training_frame=hTrain, validation_frame=hValidate)
 grid_search.show()
 models = grid_search.sort_by("mse")

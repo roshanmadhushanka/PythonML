@@ -2,7 +2,7 @@ import pandas as pd
 import h2o
 from h2o.estimators import H2ODeepLearningEstimator
 
-from dataprocessor import ProcessData, Process
+from dataprocessor import ProcessData, Filter
 
 # Initialize server
 h2o.init()

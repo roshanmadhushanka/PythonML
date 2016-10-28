@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c6d6d8-51c7-401f-b006-4f44b00d3098" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ScikitLearn Feature Selection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Article 01.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Article 02.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ScikitLearn Feature Selection Automate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataprocessor/Filter.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataprocessor/Process.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DL-NoiseRemoval.py" afterPath="$PROJECT_DIR$/DL-NoiseRemoval.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo-KFold-ScikitLearn.py" afterPath="$PROJECT_DIR$/Demo-KFold-ScikitLearn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridSearch[DeepLearning].py" afterPath="$PROJECT_DIR$/GridSearch[DeepLearning].py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScikitLearn Feature Selection.py" afterPath="$PROJECT_DIR$/ScikitLearn Feature Selection.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sup.py" afterPath="$PROJECT_DIR$/Sup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing.csv" afterPath="$PROJECT_DIR$/Testing.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Training.csv" afterPath="$PROJECT_DIR$/Training.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anomaly/Test.py" afterPath="$PROJECT_DIR$/anomaly/Test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataprocessor/ProcessData.py" afterPath="$PROJECT_DIR$/dataprocessor/ProcessData.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/featureeng/Math.py" afterPath="$PROJECT_DIR$/featureeng/Math.py" />
     </list>
     <ignored path="Update.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,59 +37,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProcessData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
+      <file leaf-file-name="json.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="607" column="74" selection-start-line="607" selection-start-column="74" selection-end-line="607" selection-end-column="74" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test5.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScikitLearn Feature Selection.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScikitLearn Feature Selection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScikitLearn Feature Selection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+            <state relative-caret-position="165">
+              <caret line="17" column="165" selection-start-line="17" selection-start-column="165" selection-end-line="17" selection-end-column="165" />
               <folding>
                 <element signature="e#33#52#0" expanded="true" />
-                <marker date="1477386481534" expanded="false" signature="1525:1564" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GridSearch[GradientBoosting].py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GridSearch[GradientBoosting].py">
+      <file leaf-file-name="TunedModel[DeepLearning].py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TunedModel[DeepLearning].py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+            <state relative-caret-position="480">
+              <caret line="38" column="58" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo-SingleModel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo-SingleModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article 02.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Article 02.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Filter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataprocessor/Filter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="28" column="120" selection-start-line="28" selection-start-column="120" selection-end-line="28" selection-end-column="120" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#146#811#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridSearch[DeepLearning].py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#31#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article 01.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Article 01.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding>
+                <element signature="e#15#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,49 +131,21 @@
       <file leaf-file-name="Testing - SKL RFR.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backup/Testing - SKL RFR.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="51" column="57" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="57" />
+            <state relative-caret-position="930">
+              <caret line="69" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleModelPrediction2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backup/SingleModelPrediction2.py">
+      <file leaf-file-name="ScikitLearn Feature Selection Automate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScikitLearn Feature Selection Automate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="39" column="85" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Testing.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Training.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Training.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoencoder6.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backup/autoencoder6.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1426">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="18" column="169" selection-start-line="18" selection-start-column="169" selection-end-line="18" selection-end-column="169" />
+              <folding>
+                <element signature="e#32#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,16 +165,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/autoencoder2.py" />
-        <option value="$PROJECT_DIR$/autoencoder4.py" />
-        <option value="$PROJECT_DIR$/autoencoder5.py" />
-        <option value="$PROJECT_DIR$/MultipleModelPrediction7.py" />
-        <option value="$PROJECT_DIR$/autoencoder3.py" />
-        <option value="$PROJECT_DIR$/MaxTrain[DL][3 Sigma].py" />
         <option value="$PROJECT_DIR$/ml/Algorithm.py" />
         <option value="$PROJECT_DIR$/ml/PredictionEngine.py" />
         <option value="$PROJECT_DIR$/autoencoder10[DL][3 Sigma].py" />
-        <option value="$PROJECT_DIR$/anomaly/Test.py" />
         <option value="$PROJECT_DIR$/ColumnAnomalyCheck.py" />
         <option value="$PROJECT_DIR$/autoencoder9[DL][IQR Rule].py" />
         <option value="$PROJECT_DIR$/test2.py" />
@@ -183,7 +193,6 @@
         <option value="$PROJECT_DIR$/GridSearch[GradientBoosting].py" />
         <option value="$PROJECT_DIR$/TunedModel[RandomForest].py" />
         <option value="$PROJECT_DIR$/GridSearch[RandomForest].py" />
-        <option value="$PROJECT_DIR$/GridSearch[DeepLearning].py" />
         <option value="$PROJECT_DIR$/Demo.py" />
         <option value="$PROJECT_DIR$/backup/Testing - SKL RFR.py" />
         <option value="$PROJECT_DIR$/featureeng/Measures.py" />
@@ -191,14 +200,22 @@
         <option value="$PROJECT_DIR$/FeatureSelection.py" />
         <option value="$PROJECT_DIR$/Demo-KFold.py" />
         <option value="$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py" />
-        <option value="$PROJECT_DIR$/dataprocessor/Process.py" />
         <option value="$PROJECT_DIR$/dataprocessor/__init__.py" />
         <option value="$PROJECT_DIR$/TunedModel[DeepLearning].py" />
         <option value="$PROJECT_DIR$/Demo-KFold-ScikitLearn.py" />
         <option value="$PROJECT_DIR$/DL-NoiseRemoval.py" />
-        <option value="$PROJECT_DIR$/dataprocessor/ProcessData.py" />
         <option value="$PROJECT_DIR$/Sup.py" />
+        <option value="$PROJECT_DIR$/Demo-SingleModel.py" />
+        <option value="$PROJECT_DIR$/anomaly/Test.py" />
+        <option value="$PROJECT_DIR$/dataprocessor/ProcessData.py" />
+        <option value="$PROJECT_DIR$/featureeng/Math.py" />
+        <option value="$PROJECT_DIR$/dataprocessor/Process.py" />
+        <option value="$PROJECT_DIR$/testresult.txt" />
+        <option value="$PROJECT_DIR$/ScikitLearn Feature Selection Automate.py" />
         <option value="$PROJECT_DIR$/ScikitLearn Feature Selection.py" />
+        <option value="$PROJECT_DIR$/GridSearch[DeepLearning].py" />
+        <option value="$PROJECT_DIR$/Article 01.py" />
+        <option value="$PROJECT_DIR$/Article 02.py" />
       </list>
     </option>
   </component>
@@ -233,6 +250,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,63 +280,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="presenting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="featureeng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datasets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,24 +312,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="anomaly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,7 +333,41 @@
       <recent name="$PROJECT_DIR$/GridSearch[DL]" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ScikitLearn Feature Selection">
+  <component name="RunManager" selected="Python.Article 02">
+    <configuration default="false" name="ScikitLearn Feature Selection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScikitLearn Feature Selection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ScikitLearn Feature Selection Automate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Update" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScikitLearn Feature Selection Automate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="GridSearch[DeepLearning]" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -404,7 +385,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="DL-NoiseRemoval" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Article 01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -416,12 +397,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DL-NoiseRemoval.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Article 01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="Article 02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -433,41 +414,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test5.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Sup" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sup.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ScikitLearn Feature Selection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Update" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScikitLearn Feature Selection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Article 02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -607,19 +554,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.GridSearch[DeepLearning]" />
-      <item index="1" class="java.lang.String" itemvalue="Python.DL-NoiseRemoval" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test5" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Sup" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ScikitLearn Feature Selection" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ScikitLearn Feature Selection" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ScikitLearn Feature Selection Automate" />
+      <item index="2" class="java.lang.String" itemvalue="Python.GridSearch[DeepLearning]" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Article 01" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Article 02" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ScikitLearn Feature Selection" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Sup" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test5" />
-        <item index="3" class="java.lang.String" itemvalue="Python.DL-NoiseRemoval" />
-        <item index="4" class="java.lang.String" itemvalue="Python.GridSearch[DeepLearning]" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Article 02" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Article 01" />
+        <item index="2" class="java.lang.String" itemvalue="Python.GridSearch[DeepLearning]" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ScikitLearn Feature Selection" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ScikitLearn Feature Selection Automate" />
       </list>
     </recent_temporary>
   </component>
@@ -636,13 +583,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474255822808</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Change Process Data Class. Setup two methods for train and test">
-      <created>1474861156645</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1474861156645</updated>
     </task>
     <task id="LOCAL-00009" summary="Resolving probability distribution calculation">
       <created>1474885060600</created>
@@ -980,7 +920,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477369198305</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Select features and train scikitlearn">
+      <created>1477394539752</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1477394539752</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1001,7 +948,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38638744" sideWeight="0.5049127" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32565445" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.4978166" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29424083" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44293195" sideWeight="0.49508733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1046,7 +993,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MUltiple Model Training" />
     <MESSAGE value="Scoring Model" />
     <MESSAGE value="Scoring Model Update 1" />
     <MESSAGE value="Probability Out Method Complete" />
@@ -1071,7 +1017,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/roshanmadhushanka/PythonML&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Training.csv&#10;#&#9;hTrainMy.csv&#10;#&#9;hValidateMy.csv&#10;" />
     <MESSAGE value="K Fold - Scikit Learn" />
     <MESSAGE value="Select features and train" />
-    <option name="LAST_COMMIT_MESSAGE" value="Select features and train" />
+    <MESSAGE value="Select features and train scikitlearn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Select features and train scikitlearn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1080,16 +1027,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MaxTrain[DL][IQR].py" />
-    <entry file="file://$PROJECT_DIR$/ArticleExample.py" />
-    <entry file="file://$PROJECT_DIR$/autoencoder3.py" />
-    <entry file="file://$PROJECT_DIR$/test3.py" />
-    <entry file="file://$PROJECT_DIR$/GridSearch[DL]/TEST6-GridSearch.py" />
-    <entry file="file://$PROJECT_DIR$/GridSearch[DL]/TEST6-HyperTunedModel.py" />
-    <entry file="file://$PROJECT_DIR$/GridSearchRandomForest/Model.py" />
-    <entry file="file://$PROJECT_DIR$/GridSearchRandomForest/GridSearch.py" />
-    <entry file="file://$PROJECT_DIR$/TEST6-GridSearch.py" />
-    <entry file="file://$PROJECT_DIR$/TEST6-HyperTunedModel.py" />
     <entry file="file://$PROJECT_DIR$/backup/TEST6-GridSearch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -1148,13 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/presenting/Chart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GridSearch[RandomForest].py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
@@ -1190,24 +1120,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureeng/Measures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FeatureSelection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1236,15 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="30" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataprocessor/Process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,35 +1159,174 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DL-NoiseRemoval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="85" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup/autoencoder6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1426">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Training.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup/SingleModelPrediction2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="85" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GridSearch[GradientBoosting].py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo-KFold-WithoutAutoEncoders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo-KFold.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
+        <state relative-caret-position="1050">
           <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo-KFold-ScikitLearn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anomaly/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/presenting/Chart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureeng/Measures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureeng/DataSetSpecific.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureeng/Math.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScikitLearn[Regression][AutoEncoders].py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="133" column="23" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="23" />
+        <state relative-caret-position="359">
+          <caret line="144" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testresult.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testresult.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="827" column="0" selection-start-line="827" selection-start-column="0" selection-end-line="827" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScikitLearn Feature Selection Automate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="169" selection-start-line="18" selection-start-column="169" selection-end-line="18" selection-end-column="169" />
           <folding>
-            <element signature="e#0#10#0" expanded="false" />
+            <element signature="e#32#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
+    <entry file="file://$PROJECT_DIR$/ScikitLearn Feature Selection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="72" column="84" selection-start-line="72" selection-start-column="84" selection-end-line="72" selection-end-column="84" />
-          <folding />
+        <state relative-caret-position="165">
+          <caret line="17" column="165" selection-start-line="17" selection-start-column="165" selection-end-line="17" selection-end-column="165" />
+          <folding>
+            <element signature="e#33#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1292,109 +1338,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo-KFold-ScikitLearn.py">
+    <entry file="file://$PROJECT_DIR$/GridSearch[DeepLearning].py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DL-NoiseRemoval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="85" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
-          <folding>
-            <element signature="e#39#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backup/autoencoder6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1426">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Training.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataprocessor/ProcessData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="607" column="74" selection-start-line="607" selection-start-column="74" selection-end-line="607" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backup/SingleModelPrediction2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" column="85" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#31#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backup/Testing - SKL RFR.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="51" column="57" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="57" />
+        <state relative-caret-position="930">
+          <caret line="69" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GridSearch[GradientBoosting].py">
+    <entry file="file://$PROJECT_DIR$/Demo-SingleModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="73" column="37" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        <state relative-caret-position="1020">
+          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScikitLearn Feature Selection.py">
+    <entry file="file://$PROJECT_DIR$/Article 01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        <state relative-caret-position="270">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
-            <element signature="e#33#52#0" expanded="true" />
-            <marker date="1477386481534" expanded="false" signature="1525:1564" ph="..." />
+            <element signature="e#15#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataprocessor/Filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="28" column="120" selection-start-line="28" selection-start-column="120" selection-end-line="28" selection-end-column="120" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#146#811#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article 02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

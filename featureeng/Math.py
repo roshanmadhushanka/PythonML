@@ -374,3 +374,9 @@ def moving_probability(series, window=10, no_of_bins=5, default=False):
     else:
         return ret
 
+def time_series(series, window=3):
+    result = []
+    for i in xrange(window):
+        tmp = [0]*(i+1)
+        result.append(tmp.extend(series[i+1:]))
+    return np.array(result)

@@ -1,5 +1,5 @@
 import pandas as pd
-from dataprocessor import Process
+from dataprocessor import Filter
 from sklearn.cross_validation import cross_val_score
 from sklearn_pandas import DataFrameMapper
 from sklearn.cross_validation import KFold
@@ -27,7 +27,7 @@ removing_columns = ['UnitNumber', 'Time', 'RUL', 'Setting1', 'Setting2', 'Settin
 selected_columns = [x for x in all_columns if x not in removing_columns]
 
 # Filter training dataset
-p_noise_filtered = Process.filterData(panda_frame=p_train, columns=[], removal_method="iqr", threshold=3)
+p_noise_filtered = Filter.filterData(panda_frame=p_train, columns=[], removal_method="iqr", threshold=3)
 
 removing_columns = ['UnitNumber', 'Time', 'RUL']
 training_columns = [x for x in all_columns if x not in removing_columns]

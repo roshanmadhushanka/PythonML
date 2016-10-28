@@ -2,7 +2,7 @@
 import h2o
 import thread
 import pandas as pd
-from dataprocessor import Process
+from dataprocessor import Filter
 from h2o.estimators import H2ODeepLearningEstimator
 from h2o.estimators.gbm import H2OGradientBoostingEstimator
 from parser import DataFrameParser
@@ -19,7 +19,7 @@ all_columns = list(pTrain.columns)
 removing_columns = ['UnitNumber', 'Time', 'RUL', 'Setting1', 'Setting2', 'Setting3']
 selected_columns = [x for x in all_columns if x not in removing_columns]
 
-filtered = Process.filterData(panda_frame=pTrain, columns=selected_columns, removal_method="iqr", threshold=3)
+filtered = Filter.filterData(panda_frame=pTrain, columns=selected_columns, removal_method="iqr", threshold=3)
 
 hTrain = h2o.H2OFrame(filtered)
 hTrain.set_names(list(pTrain.columns))
