@@ -28,3 +28,38 @@ def correlation(seriesX, seriesY, method='pearson'):
 def r2(actual, predicted):
     return 1 - (mean_squared_error(actual, np.array(predicted)) / np.var(actual))
 
+def confusion_matrix(actual, predict):
+    if len(actual) <> len(predict):
+        return
+
+    tn = 0
+    tp = 0
+    fn = 0
+    fp = 0
+
+    for i in range(len(actual)):
+        if actual[i] == u'"0"' and predict[i] == u'"0"':
+            tn += 1
+        elif actual[i] == u'"0"' and predict[i] == u'"1"':
+            fp += 1
+        elif actual[i] == u'"1"' and predict[i] == u'"0"':
+            fn += 1
+        elif actual[i] == u'"1"' and predict[i] == u'"1"':
+            tp += 1
+
+
+    print "TP", tp
+    print "TN", tn
+    print "FP", fp
+    print "FN", fn
+
+    print "Accuracy", 100.0 * (tp + tn) / (tp + tn + fp + fn), "%"
+
+    recall = float(tp) / (tp + fn)
+    precision = float(tp) / (tp + fp)
+    f1 = 2*precision*recall / (precision + recall)
+
+    print "Recall    :", recall
+    print "Precision :", precision
+    print "F1 Score  :", f1
+

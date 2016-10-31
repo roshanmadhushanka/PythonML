@@ -17,3 +17,7 @@ def pandasToSkLearn(panda_frame, training_features, response_feature):
 def h2oToNumpyArray(h2o_frame):
     h2o_frame = h2o_frame.get_frame_data()
     return np.array(map(float, h2o_frame.split("\n")[1:-1]))
+
+def h2oToList(h2o_frame):
+    h2o_frame = h2o_frame.get_frame_data()
+    return h2o_frame.split("\n")[1:-1]

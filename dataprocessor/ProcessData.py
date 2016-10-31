@@ -7,7 +7,7 @@ _moving_average_window = 5
 _moving_standard_deviation_window = 10
 _moving_probability_window = 10
 
-def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, probability_from_file=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False,rul=True):
+def testData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, probability_from_file=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False, rul=True,bin_classification=False):
     print "Testing frame process has started"
     print "---------------------------------"
     # Test data set preprocessor
@@ -23,7 +23,7 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
     # Select seperation points to apply moving operations
     indices = Select.indices_seperate(feature_name="UnitNumber", data_frame=testing_frame)
 
-    # Total work - progress
+    # Total work - progress,
     total_work = len(selected_column_names)
 
     if moving_average:
@@ -225,11 +225,18 @@ def testData(moving_average=False, moving_median=False, standard_deviation=False
         filtered_frame['RUL'] = pd.Series(ground_truth['RUL'], index=filtered_frame.index)
         print "Applying RUL"
 
+    if bin_classification:
+        label = [0 if x >= 30 else 1 for x in ground_truth['RUL']]
+        filtered_frame['BIN'] = pd.Series(label, index=filtered_frame.index)
+        print "Applying BIN"
+
+
+
     print "Testing frame process is completed\n"
     filtered_frame.to_csv("Testing.csv", index=False)
     return filtered_frame
 
-def trainData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False):
+def trainData(moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False, rul=False, bin_classification=False):
     print "Training frame process has started"
     print "----------------------------------"
 
@@ -411,17 +418,23 @@ def trainData(moving_average=False, moving_median=False, standard_deviation=Fals
                     index=training_frame.index)
             Progress.printProgress(iteration=current_work, total=total_work, decimals=1, prefix="Progress",
                                        suffix="Complete")
+    if rul:
+        # Add remaining useful life
+        time_column = training_frame['Time']
+        rul = DataSetSpecific.remaining_usefullifetime(indices=indices, time_series=time_column)
+        training_frame['RUL'] = pd.Series(rul, index=training_frame.index)
 
-    # Add remaining useful life
-    time_column = training_frame['Time']
-    rul = DataSetSpecific.remaining_usefullifetime(indices=indices, time_series=time_column)
-    training_frame['RUL'] = pd.Series(rul, index=training_frame.index)
+    if bin_classification:
+        time_column = training_frame['Time']
+        label = DataSetSpecific.binary_classification(indices=indices, time_series=time_column)
+        training_frame['BIN'] = pd.Series(label, index=training_frame.index)
+        print "Applying BIN"
 
     print "Training frame process is completed\n"
     training_frame.to_csv("Training.csv", index=False)
     return training_frame
 
-def trainDataToFrame(training_frame, selected_column_names, moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False, rul=False):
+def trainDataToFrame(training_frame, selected_column_names, moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False, rul=False, bin_classification=False):
     print "Training frame process has started"
     print "----------------------------------"
 
@@ -599,12 +612,20 @@ def trainDataToFrame(training_frame, selected_column_names, moving_average=False
         time_column = training_frame['Time']
         rul = DataSetSpecific.remaining_usefullifetime(indices=indices, time_series=time_column)
         training_frame['RUL'] = pd.Series(rul, index=training_frame.index)
+        print "Applying RUL"
+
+    if bin_classification:
+        time_column = training_frame['Time']
+        label = DataSetSpecific.binary_classification(indices=indices, time_series=time_column)
+        training_frame['BIN'] = pd.Series(label, index=training_frame.index)
+        print "Applying BIN"
+
 
     print "Training frame process is completed\n"
     training_frame.to_csv("Training.csv", index=False)
     return training_frame
 
-def testDataToFrame(testing_frame, selected_column_names, moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, probability_from_file=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False,rul=True):
+def testDataToFrame(testing_frame, selected_column_names, moving_average=False, moving_median=False, standard_deviation=False, moving_entropy=False, entropy=False, probability_distribution=False, moving_probability=False, probability_from_file=False, moving_k_closest_average=False, moving_threshold_average=False, moving_median_centered_average=False, moving_weighted_average=False,rul=True, bin_classification=False):
     print "Testing frame process has started"
     print "---------------------------------"
     # Test data set preprocessor
@@ -816,6 +837,11 @@ def testDataToFrame(testing_frame, selected_column_names, moving_average=False, 
     if rul:
         filtered_frame['RUL'] = pd.Series(ground_truth['RUL'], index=filtered_frame.index)
         print "Applying RUL"
+
+    if bin_classification:
+        label = [0 if x >= 30 else 1 for x in ground_truth['RUL']]
+        filtered_frame['BIN'] = pd.Series(label, index=filtered_frame.index)
+        print "Applying BIN"
 
     print "Testing frame process is completed\n"
     filtered_frame.to_csv("Testing.csv", index=False)

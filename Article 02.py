@@ -15,4 +15,5 @@ columns.remove('Setting1')
 columns.remove('Setting2')
 columns.remove('Setting3')
 p_train = Filter.filterDataPercentile(panda_frame=p_train, columns=columns, lower_percentile=0.01, upper_percentile=0.99, column_err_threshold=1)
-p_train.to_csv("Filtered.csv")
+
+p_train.to_csv("Filter1.csv", index=False)

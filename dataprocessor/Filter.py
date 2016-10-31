@@ -68,3 +68,19 @@ def filterDataPercentile(panda_frame, columns, lower_percentile, upper_percentil
     # Remove anomalies
     p_filtered = panda_frame.drop(panda_frame.index[anomaly_index])
     return p_filtered
+
+def filterDataAutoEncoder(panda_frame, reconstruction_error, threshold):
+    '''
+    :param panda_frame: Input data frame
+    :param reconstruction_error: Reconstruction error fromauto encoders
+    :param threshold: Anomaly removal threshold
+    :return:
+    '''
+    rm_index = []
+    for i in range(len(reconstruction_error)):
+        if reconstruction_error[i] > threshold:
+            rm_index.append(i)
+
+
+    p_filtered = panda_frame.drop(panda_frame.index[rm_index])
+    return p_filtered

@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 from h2o.estimators import H2OAutoEncoderEstimator
 from h2o.estimators import H2ODeepLearningEstimator
+from parser import DataFrameParser
 
 # Initialize server
 from sklearn.metrics import mean_absolute_error
@@ -13,6 +14,18 @@ from tqdm import trange
 from presenting import Chart
 
 h2o.init()
+def calculateError(actual, predict):
+    actual = DataFrameParser.h2oToNumpyArray(actual)
+    predict = DataFrameParser.h2oToNumpyArray(predict)
+
+    error = 0
+    for i in range(len(actual)):
+        d = predict[i] - actual[i]
+        if d > 0:
+            error += math.exp(d/10.0)
+        elif d < 0:
+            error += math.exp(d/13.0)
+    return error
 
 # Configuration parameters
 _vr_auto_encoder = 0.1  # Validation ratio for AutoEncoder
@@ -83,7 +96,7 @@ iqr = q75 - q25
 
 rm_index = [] # Stores row numbers which have anomalies
 for i in range(h_train.nrow):
-    if abs(err_list[i] - q75) > 3 * iqr:
+    if abs(err_list[i] - q75) > 4 * iqr:
         rm_index.append(i)
 
 # Remove anomalies
@@ -110,21 +123,24 @@ print "Building Models"
 print "---------------"
 model_array = range(_nmodels)
 for i in range(_nmodels):
-    model_array[i] = H2ODeepLearningEstimator(epochs=100, loss='Automatic', activation='RectifierWithDropout', distribution='poisson', hidden=[512])
+    model_array[i] = H2ODeepLearningEstimator()
 
 # Training models
 print "Training Models"
 print "---------------"
 for i in range(_nmodels):
-    model_array[i].train(x=dl_train_columns, y=response_column, training_frame=h_train)
+    model_array[i].train(x=dl_train_columns, y=response_column, training_frame=h_train, nfolds=10)
 
 # Validate models and assign weights
 print "Validating Models"
 print "-----------------"
 rmse_vals = np.zeros(shape=_nmodels) # Store root mean squared error of each model
 for i in range(_nmodels):
-    performance = model_array[i].model_performance(test_data=h_validate)
-    rmse_vals[i] = math.sqrt(performance.mse())
+    # performance = model_array[i].model_performance(test_data=h_validate)
+    # rmse_vals[i] = math.sqrt(performance.mse())
+    predict = model_array[i].predict(test_data=h_validate)
+    actual = h_test['RUL']
+    rmse_vals[i] = calculateError(actual, predict)
 
 # Calculate weights
 weights_array = 100 * np.amin(rmse_vals) / rmse_vals         # Lowest RMSE has highest weight and vice versa

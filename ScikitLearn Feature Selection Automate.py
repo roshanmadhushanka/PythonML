@@ -1,5 +1,6 @@
 # Recursive Feature Elimination
 import pandas as pd
+from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.feature_selection import RFE
 from sklearn.metrics import mean_absolute_error
@@ -53,7 +54,7 @@ for num_features in range(10, 24):
     y_test = test[:, column_count-1]
 
     # Setting up algorithm
-    rf = RandomForestRegressor(max_depth=20, n_estimators=50)
+    rf = GradientBoostingRegressor()
 
 
     rfe = RFE(rf, num_features)
