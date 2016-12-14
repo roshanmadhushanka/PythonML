@@ -2,6 +2,7 @@ import h2o
 import numpy as np
 from h2o.estimators import H2OAutoEncoderEstimator
 from h2o.estimators import H2ODeepLearningEstimator
+from h2o.estimators import H2ORandomForestEstimator
 from dataprocessor import ProcessData, Filter
 from featureeng import Measures
 from parser import DataFrameParser
@@ -10,8 +11,8 @@ from parser import DataFrameParser
 h2o.init()
 
 # AutoEncoder anomaly removal process
-p_train = ProcessData.trainData(moving_k_closest_average=True, standard_deviation=True, probability_distribution=True, bin_classification=True)
-p_test = ProcessData.testData(moving_k_closest_average=True, standard_deviation=True, probability_from_file=True, bin_classification=True)
+p_train = ProcessData.trainData(bin_classification=True)
+p_test = ProcessData.testData(bin_classification=True)
 
 # Converting to h2o frane
 h_test = h2o.H2OFrame(p_test)
@@ -50,7 +51,7 @@ err_list = map(float, error_str.split("\n")[1:-1])
 err_list = np.array(err_list)
 
 # Threshold
-threshold = np.amax(err_list) * 0.97
+threshold = np.amax(err_list)
 
 print "Max Reconstruction Error       :", reconstruction_error.max()
 print "Threshold Reconstruction Error :", threshold
@@ -59,13 +60,13 @@ print "Threshold Reconstruction Error :", threshold
 p_filter = Filter.filterDataAutoEncoder(panda_frame=p_train, reconstruction_error=err_list, threshold=threshold)
 
 # Drop features
-del p_filter['Setting3']
-del p_filter['Sensor1']
-del p_filter['Sensor5']
-del p_filter['Sensor10']
-del p_filter['Sensor16']
-del p_filter['Sensor18']
-del p_filter['Sensor19']
+# del p_filter['Setting3']
+# del p_filter['Sensor1']
+# del p_filter['Sensor5']
+# del p_filter['Sensor10']
+# del p_filter['Sensor16']
+# del p_filter['Sensor18']
+# del p_filter['Sensor19']
 
 
 h_filter = h2o.H2OFrame(p_filter)
@@ -83,7 +84,10 @@ training_columns.remove('BIN')
 h_filter['BIN'] = h_filter['BIN'].asfactor()
 h_test['BIN'] = h_test['BIN'].asfactor()
 
-model = H2ODeepLearningEstimator(epochs=100, nfolds=10, balance_classes=True)
+h2o.export_file(frame=h_test, path='test_sid.csv', force=True)
+h2o.export_file(frame=h_filter, path='train_sid.csv', force=True)
+
+model = H2ORandomForestEstimator(nbins=250, ntress=100, max_depth=50, nfolds=10)
 model.train(x=training_columns, y='BIN', training_frame=h_filter)
 
 predict = model.predict(test_data=h_test)
@@ -93,6 +97,8 @@ actual = DataFrameParser.h2oToList(h_test['BIN'])
 Measures.confusion_matrix(actual, predict)
 print predict
 print actual
+
+h2o.download_pojo(model=model, path="/home/wso2123/PycharmProjects/FeatureProcessor/", get_jar=True)
 
 
 
