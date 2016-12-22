@@ -51,8 +51,7 @@ y_train = data[:, column_count-1]
 x_test = test[:, 0:column_count-1]
 y_test = test[:, column_count-1]
 
-# Setting up algorithm
-rf = RandomForestRegressor(max_depth=20, n_estimators=50)
+# Setting up algorithm RandomForestRegressor(max_depth=20, n_estimators=50)
 
 rfe = RFE(rf, 20)
 rfe = rfe.fit(x_train, y_train)
